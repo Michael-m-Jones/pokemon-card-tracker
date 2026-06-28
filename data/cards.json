@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "title": "Poke Card Tracker",
   "description": "A shareable tracker for Pokemon card market prices and PSA 10 upside.",
-  "lastUpdated": "2026-06-28T17:20:43.159Z",
+  "lastUpdated": "2026-06-28T17:38:58.343Z",
   "collections": [
     {
       "id": "michael",
@@ -39,7 +39,8 @@
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swsh7-212"
-          }
+          },
+          "markets": {}
         },
         {
           "id": "mewtwo-and-mew-gx-sm-black-star-promo-sm191",
@@ -135,6 +136,15 @@
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/bw11-RC24"
+          },
+          "markets": {
+            "cardmarket": {
+              "unit": "EUR",
+              "trend": 138.37,
+              "average": 142.91,
+              "low": 59.87,
+              "updatedAt": "2026-06-27T22:58:40.744Z"
+            }
           }
         },
         {
@@ -199,6 +209,15 @@
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swsh8-251"
+          },
+          "markets": {
+            "cardmarket": {
+              "unit": "EUR",
+              "trend": 83.27,
+              "average": 106.02,
+              "low": 39.99,
+              "updatedAt": "2026-06-27T22:58:40.744Z"
+            }
           }
         },
         {
@@ -296,6 +315,15 @@
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swshp-SWSH262"
+          },
+          "markets": {
+            "cardmarket": {
+              "unit": "EUR",
+              "trend": 109.25,
+              "average": 88.27,
+              "low": 49.99,
+              "updatedAt": "2026-06-27T22:58:40.744Z"
+            }
           }
         },
         {
@@ -360,6 +388,15 @@
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/xyp-XY76"
+          },
+          "markets": {
+            "cardmarket": {
+              "unit": "EUR",
+              "trend": 42.09,
+              "average": 45.16,
+              "low": 10.99,
+              "updatedAt": "2026-06-27T22:58:40.744Z"
+            }
           }
         },
         {
@@ -424,7 +461,8 @@
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/xyp-XY114"
-          }
+          },
+          "markets": {}
         },
         {
           "id": "charizard-v-swsh-promo-ultra-premium-collection-swsh260",
@@ -457,6 +495,15 @@
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swshp-SWSH260"
+          },
+          "markets": {
+            "cardmarket": {
+              "unit": "EUR",
+              "trend": 26.75,
+              "average": 17.08,
+              "low": 6,
+              "updatedAt": "2026-06-27T22:58:40.744Z"
+            }
           }
         },
         {
@@ -522,6 +569,15 @@
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swshp-SWSH261"
+          },
+          "markets": {
+            "cardmarket": {
+              "unit": "EUR",
+              "trend": 60.39,
+              "average": 39.83,
+              "low": 23,
+              "updatedAt": "2026-06-27T22:58:40.744Z"
+            }
           }
         },
         {
@@ -657,23 +713,58 @@
     {
       "id": "samantha",
       "title": "Samantha's Spectacular Hunt",
-      "tag": "Sam's collection · ready to catch 'em",
+      "tag": "Sam's collection · Charmander, Dratini, Dragonair, Totodile, Lapras & Numel",
       "cards": [],
       "emptyState": {
         "title": "Samantha's Spectacular Hunt",
-        "message": "This hunt is just catching fire. Tell Claude which cards are Sam's and they'll blaze in here — Charmander-approved.",
-        "tone": "orange"
+        "message": "A cozy watchlist for Sam's future pulls, led by Charmander and the sweetest little water-and-dragon crew.",
+        "tone": "favorites"
+      },
+      "theme": {
+        "favorites": [
+          {
+            "name": "Charmander",
+            "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png"
+          },
+          {
+            "name": "Dratini",
+            "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/147.png"
+          },
+          {
+            "name": "Dragonair",
+            "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/148.png"
+          },
+          {
+            "name": "Totodile",
+            "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/158.png"
+          },
+          {
+            "name": "Lapras",
+            "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/131.png"
+          },
+          {
+            "name": "Numel",
+            "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/322.png"
+          }
+        ]
       }
     }
   ],
   "notes": [
-    "Avg market is the average of available sources shown on each card.",
-    "PokemonTCG updates refresh TCGplayer market prices when available; PriceCharting, PokeScope, PSA 10 values, and gem rates remain editable data unless you add a custom source.",
+    "Avg market is the average of available USD raw-card sources shown on each card: PriceCharting, TCGplayer, and PokeScope when available.",
+    "The scheduled updater refreshes TCGplayer through PokemonTCG and adds Cardmarket EUR trend prices through TCGdex where available. EUR Cardmarket values are displayed separately and are not mixed into the USD average.",
+    "PokeData and JustTCG are good personal-use/API-key candidates to wire in next; I did not expose or scrape either in the browser.",
     "PSA 10 gem rate is the share of graded copies that earned a 10; lower rates are tougher."
   ],
   "updateSummary": {
-    "provider": "PokemonTCG",
-    "updatedCards": 20,
+    "providers": [
+      "PokemonTCG",
+      "TCGdex/Cardmarket"
+    ],
+    "updatedCards": 26,
+    "pokemonTcgUpdatedCards": 20,
+    "cardmarketUpdatedCards": 6,
+    "cardmarketSkippedCards": 2,
     "failedCards": 0
   }
 }

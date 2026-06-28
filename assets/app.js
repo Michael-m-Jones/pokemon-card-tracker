@@ -26,6 +26,12 @@ const integerMoney = new Intl.NumberFormat("en-US", {
   maximumFractionDigits: 0
 });
 
+const euroMoney = new Intl.NumberFormat("en-US", {
+  style: "currency",
+  currency: "EUR",
+  maximumFractionDigits: 0
+});
+
 const els = {
   title: document.querySelector("#collection-title"),
   tag: document.querySelector("#collection-tag"),
@@ -83,6 +89,11 @@ function formatMoney(value, rounded = false) {
   const number = finiteNumber(value);
   if (number === null) return "-";
   return rounded ? integerMoney.format(number) : money.format(number);
+}
+
+function formatEuro(value) {
+  const number = finiteNumber(value);
+  return number === null ? "-" : euroMoney.format(number);
 }
 
 function sourceAverage(sources) {
@@ -208,6 +219,8 @@ function renderCards(collection) {
     const stateCopy = collection.emptyState || {};
     node.querySelector("h2").textContent = stateCopy.title || collection.title;
     node.querySelector("p").textContent = stateCopy.message || "No cards here yet.";
+    const favorites = renderFavorites(collection.theme?.favorites || []);
+    if (favorites) node.querySelector(".empty-state").prepend(favorites);
     els.cards.replaceChildren(node);
     return;
   }
@@ -275,6 +288,7 @@ function renderCard(card) {
   body.append(prices);
 
   body.append(renderSources(card));
+  body.append(renderMarkets(card));
   body.append(renderGem(gem));
   article.append(body);
   return article;
@@ -310,6 +324,38 @@ function renderSources(card) {
     const span = setText(document.createElement("span"), value === null ? `${label} -` : `${label} ${formatMoney(value, true)}`);
     if (value === null) span.className = "source-missing";
     row.append(span);
+  });
+  return row;
+}
+
+function renderMarkets(card) {
+  const market = card.markets?.cardmarket;
+  if (!market) return document.createDocumentFragment();
+
+  const row = document.createElement("div");
+  row.className = "market-row";
+  row.append(setText(document.createElement("span"), "Cardmarket"));
+  row.firstChild.className = "market-key";
+  row.append(setText(document.createElement("span"), `${formatEuro(market.trend ?? market.average)} trend`));
+  row.lastChild.className = "market-value";
+  return row;
+}
+
+function renderFavorites(favorites) {
+  if (!favorites.length) return null;
+
+  const row = document.createElement("div");
+  row.className = "favorite-pokemon";
+  favorites.forEach((favorite) => {
+    const figure = document.createElement("figure");
+    figure.className = "favorite";
+    const image = document.createElement("img");
+    image.src = favorite.imageUrl;
+    image.alt = favorite.name;
+    image.loading = "lazy";
+    figure.append(image);
+    figure.append(setText(document.createElement("figcaption"), favorite.name));
+    row.append(figure);
   });
   return row;
 }

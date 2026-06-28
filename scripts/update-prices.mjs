@@ -2,11 +2,14 @@ import { readFile, writeFile } from "node:fs/promises";
 
 const DATA_PATH = new URL("../data/cards.json", import.meta.url);
 const API_BASE = "https://api.pokemontcg.io/v2/cards";
+const TCGDEX_BASE = "https://api.tcgdex.net/v2/en/cards";
 const apiKey = process.env.POKEMONTCG_API_KEY;
 
 const data = JSON.parse(await readFile(DATA_PATH, "utf8"));
 const cards = data.collections.flatMap((collection) => collection.cards || []);
-let updatedCount = 0;
+let pokemonTcgUpdatedCount = 0;
+let tcgDexUpdatedCount = 0;
+let tcgDexSkippedCount = 0;
 let failedCount = 0;
 
 for (const card of cards) {
@@ -21,7 +24,7 @@ for (const card of cards) {
       card.sources.tcgplayer = round(tcgPrice);
       card.sourceUpdatedAt ||= {};
       card.sourceUpdatedAt.tcgplayer = payload.tcgplayer?.updatedAt || today();
-      updatedCount += 1;
+      pokemonTcgUpdatedCount += 1;
     }
 
     if (payload.images?.large || payload.images?.small) {
@@ -34,9 +37,8 @@ for (const card of cards) {
       card.externalUrls.tcgplayer = payload.tcgplayer.url;
     }
 
-    card.prices ||= {};
-    card.prices.avgMarket = round(average(Object.values(card.sources || {})));
-    card.chase = Number(card.prices.avgMarket) >= 100;
+    await refreshTcgDexMarkets(card);
+    recalculateCard(card);
   } catch (error) {
     failedCount += 1;
     console.warn(`Could not update ${card.name} (${card.pokemonTcgId}): ${error.message}`);
@@ -47,15 +49,18 @@ for (const card of cards) {
 
 data.lastUpdated = new Date().toISOString();
 data.updateSummary = {
-  provider: "PokemonTCG",
-  updatedCards: updatedCount,
+  providers: ["PokemonTCG", "TCGdex/Cardmarket"],
+  updatedCards: pokemonTcgUpdatedCount + tcgDexUpdatedCount,
+  pokemonTcgUpdatedCards: pokemonTcgUpdatedCount,
+  cardmarketUpdatedCards: tcgDexUpdatedCount,
+  cardmarketSkippedCards: tcgDexSkippedCount,
   failedCards: failedCount
 };
 
 await writeFile(DATA_PATH, `${JSON.stringify(data, null, 2)}\n`);
 
-console.log(`Updated ${updatedCount} cards from PokemonTCG. ${failedCount} failed.`);
-if (updatedCount === 0 && cards.some((card) => card.pokemonTcgId)) {
+console.log(`Updated ${pokemonTcgUpdatedCount} PokemonTCG prices and ${tcgDexUpdatedCount} Cardmarket prices. Skipped ${tcgDexSkippedCount} suspect Cardmarket matches. ${failedCount} failed.`);
+if (pokemonTcgUpdatedCount === 0 && cards.some((card) => card.pokemonTcgId)) {
   process.exitCode = 1;
 }
 
@@ -70,6 +75,44 @@ async function fetchCard(id) {
     throw new Error("missing card data");
   }
   return json.data;
+}
+
+async function refreshTcgDexMarkets(card) {
+  const response = await fetch(`${TCGDEX_BASE}/${encodeURIComponent(card.pokemonTcgId)}`);
+  if (!response.ok) return;
+
+  const payload = await response.json();
+  const cardmarket = payload.pricing?.cardmarket;
+  if (!cardmarket) return;
+
+  const trend = numeric(cardmarket.trend);
+  const averagePrice = numeric(cardmarket.avg);
+  const low = numeric(cardmarket.low);
+  const displayPrice = trend ?? averagePrice ?? low;
+  if (displayPrice === null) return;
+
+  const currentUsdAverage = average(Object.values(card.sources || {}));
+  if (currentUsdAverage && (displayPrice < currentUsdAverage * 0.25 || displayPrice > currentUsdAverage * 2.75)) {
+    if (card.markets?.cardmarket) delete card.markets.cardmarket;
+    tcgDexSkippedCount += 1;
+    return;
+  }
+
+  card.markets ||= {};
+  card.markets.cardmarket = {
+    unit: cardmarket.unit || "EUR",
+    trend: round(trend),
+    average: round(averagePrice),
+    low: round(low),
+    updatedAt: cardmarket.updated || today()
+  };
+  tcgDexUpdatedCount += 1;
+}
+
+function recalculateCard(card) {
+  card.prices ||= {};
+  card.prices.avgMarket = round(average(Object.values(card.sources || {})));
+  card.chase = Number(card.prices.avgMarket) >= 100;
 }
 
 function marketPrice(prices = {}) {

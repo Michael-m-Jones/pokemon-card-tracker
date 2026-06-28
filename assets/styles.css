@@ -397,6 +397,31 @@ h1 {
   text-decoration: line-through;
 }
 
+.market-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: space-between;
+  min-height: 32px;
+  margin-top: 7px;
+  padding: 6px 8px;
+  border: 1px solid #d9e7f2;
+  border-radius: 8px;
+  background: #f5fbff;
+  color: #28516a;
+  font-size: 11px;
+  font-weight: 850;
+}
+
+.market-key {
+  color: #426b80;
+}
+
+.market-value {
+  color: #0f6b8d;
+  white-space: nowrap;
+}
+
 .gem {
   display: flex;
   align-items: center;
@@ -434,8 +459,41 @@ h1 {
   padding: 42px 22px;
   border: 1px solid #f0c28e;
   border-radius: 8px;
-  background: linear-gradient(180deg, #fff7ee, #ffe9d5);
+  background:
+    linear-gradient(180deg, rgba(255, 248, 238, 0.88), rgba(230, 248, 255, 0.9)),
+    radial-gradient(circle at 18% 18%, rgba(255, 122, 26, 0.2), transparent 26%),
+    radial-gradient(circle at 88% 10%, rgba(91, 177, 255, 0.2), transparent 30%);
   text-align: center;
+}
+
+.favorite-pokemon {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 8px;
+  margin: 0 auto 10px;
+  flex-wrap: wrap;
+}
+
+.favorite {
+  width: min(112px, 28vw);
+  margin: 0;
+  display: grid;
+  justify-items: center;
+  gap: 2px;
+}
+
+.favorite img {
+  width: 100%;
+  height: 86px;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 14px rgba(23, 32, 51, 0.16));
+}
+
+.favorite figcaption {
+  color: #5e4969;
+  font-size: 11px;
+  font-weight: 900;
 }
 
 .mascot {
