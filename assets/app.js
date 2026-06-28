@@ -107,6 +107,16 @@ function formatEuro(value) {
   return number === null ? "-" : euroMoney.format(number);
 }
 
+function formatSourceMoney(value) {
+  const number = finiteNumber(value);
+  return number === null ? "-" : formatMoney(number, Math.abs(number) >= 1);
+}
+
+function formatSummaryMoney(value) {
+  const number = finiteNumber(value);
+  return number === null ? "-" : formatMoney(number, Math.abs(number) >= 1);
+}
+
 function sourceAverage(sources) {
   const values = Object.values(sources || {}).map(finiteNumber).filter((value) => value !== null);
   if (!values.length) return null;
@@ -208,12 +218,13 @@ function renderSorts() {
 function renderStats(collection) {
   const cards = collection.cards || [];
   const totalRaw = cards.reduce((sum, card) => sum + avgMarket(card), 0);
-  const totalPsa = cards.reduce((sum, card) => sum + (psa10(card) || 0), 0);
+  const psaValues = cards.map(psa10).filter((value) => value !== null);
+  const totalPsa = psaValues.reduce((sum, value) => sum + value, 0);
   const bestUpside = cards.reduce((best, card) => (gradeUpside(card) > gradeUpside(best || {}) ? card : best), null);
   const stats = [
     ["Cards", String(cards.length)],
-    ["Total avg market", formatMoney(totalRaw, true)],
-    ["Total PSA 10", formatMoney(totalPsa, true)],
+    ["Total avg market", formatSummaryMoney(totalRaw)],
+    ["Total PSA 10", psaValues.length ? formatSummaryMoney(totalPsa) : "-"],
     ["Top upside", bestUpside ? `${bestUpside.name} ${gradeUpside(bestUpside).toFixed(1)}x` : "-"]
   ];
   els.stats.replaceChildren(...stats.map(([label, value]) => {
@@ -339,7 +350,7 @@ function renderSources(card) {
   labels.forEach(([key, label], index) => {
     if (index) row.append(setText(document.createElement("span"), "·"));
     const value = finiteNumber(card.sources?.[key]);
-    const span = setText(document.createElement("span"), value === null ? `${label} -` : `${label} ${formatMoney(value, true)}`);
+    const span = setText(document.createElement("span"), value === null ? `${label} -` : `${label} ${formatSourceMoney(value)}`);
     if (value === null) span.className = "source-missing";
     row.append(span);
   });

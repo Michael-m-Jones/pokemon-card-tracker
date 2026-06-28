@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "title": "Poke Card Tracker",
   "description": "A shareable tracker for Pokemon card market prices and PSA 10 upside.",
-  "lastUpdated": "2026-06-28T17:41:35.809Z",
+  "lastUpdated": "2026-06-28T23:42:32Z",
   "collections": [
     {
       "id": "michael",
@@ -714,7 +714,41 @@
       "id": "samantha",
       "title": "Samantha's Spectacular Hunt",
       "tag": "A cozy couples collecting page",
-      "cards": [],
+      "cards": [
+        {
+          "id": "dratini-ascended-heroes-150",
+          "pokemonTcgId": "me2pt5-150",
+          "name": "Dratini",
+          "set": "Ascended Heroes",
+          "year": 2026,
+          "rarity": "Common",
+          "number": "150/217",
+          "imageUrl": "https://images.scrydex.com/pokemon/me2pt5-150/large",
+          "fallbackImageUrl": "https://images.scrydex.com/pokemon/me2pt5-150/small",
+          "holo": false,
+          "chase": false,
+          "prices": {
+            "avgMarket": 0.21,
+            "psa10": null,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": null,
+            "tcgplayer": 0.21,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/me2pt5-150"
+          },
+          "markets": {}
+        }
+      ],
       "emptyState": {
         "title": "Samantha's Spectacular Hunt",
         "message": "A playful little space for future pulls, favorite cards, and the next tiny collecting win.",
