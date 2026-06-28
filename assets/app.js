@@ -6,7 +6,8 @@ const state = {
 };
 
 const sortOptions = [
-  ["raw", "Avg price"],
+  ["raw", "Price high-low"],
+  ["rawAsc", "Price low-high"],
   ["psa", "PSA 10"],
   ["gem", "Gem rate"],
   ["upside", "Grade upside"],
@@ -145,6 +146,7 @@ function sortedCards(cards) {
     if (state.sortKey === "psa") return (psa10(b) ?? -1) - (psa10(a) ?? -1);
     if (state.sortKey === "gem") return (finiteNumber(b.grading?.gemRate) ?? -1) - (finiteNumber(a.grading?.gemRate) ?? -1);
     if (state.sortKey === "upside") return gradeUpside(b) - gradeUpside(a);
+    if (state.sortKey === "rawAsc") return avgMarket(a) - avgMarket(b);
     return avgMarket(b) - avgMarket(a);
   });
   return copy;
