@@ -40,6 +40,25 @@ const els = {
   emptyTemplate: document.querySelector("#empty-template")
 };
 
+function collections() {
+  if (!state.data) return [];
+  const baseCollections = state.data.collections || [];
+  const grailCards = baseCollections
+    .flatMap((collection) => (collection.cards || []).map((card) => ({ ...card, homeCollection: collection.title })))
+    .filter((card) => card.chase || avgMarket(card) >= 100);
+
+  return [
+    ...baseCollections,
+    {
+      id: "grails",
+      title: "Grail Watchlist",
+      tag: `${grailCards.length} high-value cards tracked`,
+      cards: grailCards,
+      generated: true
+    }
+  ];
+}
+
 async function loadData() {
   els.updatedAt.textContent = "Loading latest data...";
   const response = await fetch(`data/cards.json?ts=${Date.now()}`, { cache: "no-store" });
@@ -47,12 +66,12 @@ async function loadData() {
     throw new Error(`Could not load card data (${response.status})`);
   }
   state.data = await response.json();
-  state.activeCollectionId ||= state.data.collections[0]?.id;
+  state.activeCollectionId ||= collections()[0]?.id;
   render();
 }
 
 function activeCollection() {
-  return state.data.collections.find((collection) => collection.id === state.activeCollectionId) || state.data.collections[0];
+  return collections().find((collection) => collection.id === state.activeCollectionId) || collections()[0];
 }
 
 function finiteNumber(value) {
@@ -131,11 +150,12 @@ function render() {
 }
 
 function renderTabs() {
-  els.tabs.replaceChildren(...state.data.collections.map((collection, index) => {
+  els.tabs.replaceChildren(...collections().map((collection, index) => {
     const button = document.createElement("button");
     button.type = "button";
     button.className = `tab${collection.id === state.activeCollectionId ? " active" : ""}`;
-    button.style.setProperty("--tab-color", index === 1 ? "#e96f25" : "#e83a3a");
+    const tabColor = collection.id === "grails" ? "#d89500" : index === 1 ? "#e96f25" : "#e83a3a";
+    button.style.setProperty("--tab-color", tabColor);
     button.textContent = collection.title;
     button.addEventListener("click", () => {
       state.activeCollectionId = collection.id;
