@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="A shareable Pokemon card price tracker with scheduled market updates.">
     <title>Poke Card Tracker</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="assets/styles.css">
   </head>
   <body>
@@ -21,11 +22,13 @@
           <h1 id="collection-title">Poke Card Tracker</h1>
           <p id="collection-tag" class="tagline">Loading cards...</p>
         </div>
+        <div id="header-favorites" class="header-favorites" aria-hidden="true"></div>
       </div>
     </header>
 
     <main class="wrap">
       <nav id="tabs" class="tabs" aria-label="Collections"></nav>
+      <section id="theme-panel" class="theme-panel" hidden></section>
 
       <section class="summary-band" aria-label="Collection summary">
         <div class="stats" id="stats"></div>

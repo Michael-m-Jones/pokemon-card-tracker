@@ -36,6 +36,8 @@ const els = {
   title: document.querySelector("#collection-title"),
   tag: document.querySelector("#collection-tag"),
   tabs: document.querySelector("#tabs"),
+  headerFavorites: document.querySelector("#header-favorites"),
+  themePanel: document.querySelector("#theme-panel"),
   stats: document.querySelector("#stats"),
   sorts: document.querySelector("#sorts"),
   cards: document.querySelector("#cards"),
@@ -149,9 +151,12 @@ function render() {
   const collection = activeCollection();
   if (!collection) return;
   document.body.classList.toggle("hide-summary", state.summaryHidden);
+  document.body.classList.toggle("theme-empty", !!collection.theme && !(collection.cards || []).length);
+  document.body.dataset.activeCollection = collection.id;
   els.title.textContent = collection.title;
   els.tag.textContent = collection.tag;
   renderTabs();
+  renderTheme(collection);
   renderSorts();
   renderStats(collection);
   renderCards(collection);
@@ -217,10 +222,12 @@ function renderCards(collection) {
   if (!cards.length) {
     const node = els.emptyTemplate.content.cloneNode(true);
     const stateCopy = collection.emptyState || {};
+    const emptyState = node.querySelector(".empty-state");
     node.querySelector("h2").textContent = stateCopy.title || collection.title;
     node.querySelector("p").textContent = stateCopy.message || "No cards here yet.";
     const favorites = renderFavorites(collection.theme?.favorites || []);
-    if (favorites) node.querySelector(".empty-state").prepend(favorites);
+    if (collection.theme) emptyState.classList.add("sam-empty");
+    if (favorites) emptyState.prepend(favorites);
     els.cards.replaceChildren(node);
     return;
   }
@@ -339,6 +346,60 @@ function renderMarkets(card) {
   row.append(setText(document.createElement("span"), `${formatEuro(market.trend ?? market.average)} trend`));
   row.lastChild.className = "market-value";
   return row;
+}
+
+function renderTheme(collection) {
+  const favorites = collection.theme?.favorites || [];
+  els.headerFavorites.replaceChildren();
+  els.themePanel.replaceChildren();
+
+  if (!favorites.length) {
+    els.themePanel.hidden = true;
+    return;
+  }
+
+  favorites.slice(0, 4).forEach((favorite, index) => {
+    const image = document.createElement("img");
+    image.src = favorite.imageUrl;
+    image.alt = "";
+    image.loading = "eager";
+    image.fetchPriority = "high";
+    image.style.setProperty("--lift", `${index % 2 ? 8 : 0}px`);
+    els.headerFavorites.append(image);
+  });
+
+  const intro = document.createElement("div");
+  intro.className = "theme-copy";
+  intro.append(setText(document.createElement("p"), "Sam's cozy catch path"));
+  intro.firstChild.className = "theme-kicker";
+  intro.append(setText(document.createElement("h2"), "Firelight, river bends, soft waves, tiny mountain steps."));
+
+  const trail = document.createElement("div");
+  trail.className = "theme-trail";
+  favorites.forEach((favorite, index) => {
+    const item = document.createElement("figure");
+    item.className = "theme-favorite";
+    item.style.setProperty("--delay", `${index * 70}ms`);
+    const image = document.createElement("img");
+    image.src = favorite.imageUrl;
+    image.alt = favorite.name;
+    image.loading = "eager";
+    image.fetchPriority = "high";
+    item.append(image);
+    item.append(setText(document.createElement("figcaption"), favorite.name));
+    trail.append(item);
+  });
+
+  const motifs = document.createElement("div");
+  motifs.className = "theme-motifs";
+  ["flame", "scale", "splash", "shell", "sprout"].forEach((motif) => {
+    const span = document.createElement("span");
+    span.className = `motif motif-${motif}`;
+    motifs.append(span);
+  });
+
+  els.themePanel.append(intro, trail, motifs);
+  els.themePanel.hidden = false;
 }
 
 function renderFavorites(favorites) {

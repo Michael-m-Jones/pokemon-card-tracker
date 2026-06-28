@@ -724,27 +724,27 @@
         "favorites": [
           {
             "name": "Charmander",
-            "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png"
+            "imageUrl": "assets/pokemon/charmander.png"
           },
           {
             "name": "Dratini",
-            "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/147.png"
+            "imageUrl": "assets/pokemon/dratini.png"
           },
           {
             "name": "Dragonair",
-            "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/148.png"
+            "imageUrl": "assets/pokemon/dragonair.png"
           },
           {
             "name": "Totodile",
-            "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/158.png"
+            "imageUrl": "assets/pokemon/totodile.png"
           },
           {
             "name": "Lapras",
-            "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/131.png"
+            "imageUrl": "assets/pokemon/lapras.png"
           },
           {
             "name": "Numel",
-            "imageUrl": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/322.png"
+            "imageUrl": "assets/pokemon/numel.png"
           }
         ]
       }
