@@ -1,0 +1,41 @@
+name: Update card prices
+
+on:
+  schedule:
+    - cron: "0 13 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-prices:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Refresh PokemonTCG prices
+        env:
+          POKEMONTCG_API_KEY: ${{ secrets.POKEMONTCG_API_KEY }}
+        run: node scripts/update-prices.mjs
+
+      - name: Validate data
+        run: node scripts/validate-data.mjs
+
+      - name: Commit updated data
+        run: |
+          if git diff --quiet data/cards.json; then
+            echo "No price changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/cards.json
+          git commit -m "Update card prices"
+          git push

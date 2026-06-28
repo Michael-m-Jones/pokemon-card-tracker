@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A shareable Pokemon card price tracker with scheduled market updates.">
+    <title>Poke Card Tracker</title>
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <svg class="pokeball" viewBox="0 0 100 100" aria-hidden="true">
+          <circle cx="50" cy="50" r="46" fill="#fff" stroke="currentColor" stroke-width="6"></circle>
+          <path d="M5 50a45 45 0 0 1 90 0Z" fill="#e83a3a" stroke="currentColor" stroke-width="6"></path>
+          <line x1="5" y1="50" x2="95" y2="50" stroke="currentColor" stroke-width="6"></line>
+          <circle cx="50" cy="50" r="14" fill="#fff" stroke="currentColor" stroke-width="6"></circle>
+        </svg>
+        <div>
+          <p class="eyebrow">Live collection tracker</p>
+          <h1 id="collection-title">Poke Card Tracker</h1>
+          <p id="collection-tag" class="tagline">Loading cards...</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <nav id="tabs" class="tabs" aria-label="Collections"></nav>
+
+      <section class="summary-band" aria-label="Collection summary">
+        <div class="stats" id="stats"></div>
+        <div class="toolbar">
+          <div class="sorts" id="sorts" aria-label="Sort cards"></div>
+          <button id="summary-toggle" class="soft-button" type="button">Hide totals</button>
+        </div>
+      </section>
+
+      <div class="status-row">
+        <p id="updated-at" class="updated-at"></p>
+        <button id="refresh-data" class="soft-button" type="button">Refresh</button>
+      </div>
+
+      <section id="cards" class="grid" aria-live="polite"></section>
+
+      <section class="source-notes" aria-label="Data notes">
+        <h2>Data Notes</h2>
+        <ul id="notes"></ul>
+      </section>
+    </main>
+
+    <template id="empty-template">
+      <div class="empty-state">
+        <svg viewBox="0 0 200 175" class="mascot" role="img" aria-label="Charmander">
+          <path d="M150 26 C168 52 165 78 145 86 C127 79 130 50 150 26 Z" fill="#ff7a1a"></path>
+          <path d="M149 44 C160 60 158 74 146 78 C136 73 138 56 149 44 Z" fill="#ffd23f"></path>
+          <path d="M116 128 C150 130 152 96 140 82 C150 100 138 110 116 112 Z" fill="#ef9a3d"></path>
+          <ellipse cx="44" cy="116" rx="10" ry="15" fill="#f4912e"></ellipse>
+          <ellipse cx="128" cy="116" rx="10" ry="15" fill="#f4912e"></ellipse>
+          <ellipse cx="86" cy="104" rx="48" ry="52" fill="#f4912e"></ellipse>
+          <ellipse cx="86" cy="118" rx="28" ry="31" fill="#ffe1b0"></ellipse>
+          <ellipse cx="66" cy="156" rx="15" ry="9" fill="#ef9a3d"></ellipse>
+          <ellipse cx="106" cy="156" rx="15" ry="9" fill="#ef9a3d"></ellipse>
+          <ellipse cx="72" cy="86" rx="10" ry="13" fill="#fff"></ellipse>
+          <ellipse cx="100" cy="86" rx="10" ry="13" fill="#fff"></ellipse>
+          <circle cx="74" cy="89" r="4.5" fill="#2a2233"></circle>
+          <circle cx="98" cy="89" r="4.5" fill="#2a2233"></circle>
+          <circle cx="75.5" cy="87" r="1.5" fill="#fff"></circle>
+          <circle cx="99.5" cy="87" r="1.5" fill="#fff"></circle>
+          <path d="M78 112 Q86 120 94 112" fill="none" stroke="#b8651f" stroke-width="3" stroke-linecap="round"></path>
+          <circle cx="80" cy="104" r="1.6" fill="#b8651f"></circle>
+          <circle cx="92" cy="104" r="1.6" fill="#b8651f"></circle>
+        </svg>
+        <h2></h2>
+        <p></p>
+      </div>
+    </template>
+
+    <script src="assets/app.js" defer></script>
+  </body>
+</html>

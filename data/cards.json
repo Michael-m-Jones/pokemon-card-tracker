@@ -1,0 +1,679 @@
+{
+  "schemaVersion": 1,
+  "title": "Poke Card Tracker",
+  "description": "A shareable tracker for Pokemon card market prices and PSA 10 upside.",
+  "lastUpdated": "2026-06-28T17:13:46.560Z",
+  "collections": [
+    {
+      "id": "michael",
+      "title": "Michael's Magnificent Hunt",
+      "tag": "The main collection · 20 cards tracked",
+      "cards": [
+        {
+          "id": "sylveon-vmax-evolving-skies-212",
+          "pokemonTcgId": "swsh7-212",
+          "name": "Sylveon VMAX",
+          "set": "Evolving Skies",
+          "year": 2021,
+          "rarity": "Alt-Art Secret Rare",
+          "number": "212/203",
+          "imageUrl": "https://images.pokemontcg.io/swsh7/212_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/swsh7/212.png",
+          "holo": true,
+          "chase": true,
+          "prices": {
+            "avgMarket": 362.5,
+            "psa10": 735,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 369,
+            "tcgplayer": 389.5,
+            "pokescope": 329
+          },
+          "grading": {
+            "gemRate": 73
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swsh7-212"
+          }
+        },
+        {
+          "id": "mewtwo-and-mew-gx-sm-black-star-promo-sm191",
+          "pokemonTcgId": "smp-SM191",
+          "name": "Mewtwo & Mew GX",
+          "set": "SM Black Star Promo",
+          "year": 2019,
+          "rarity": "Tag Team GX promo",
+          "number": "SM191",
+          "imageUrl": "https://images.pokemontcg.io/smp/SM191_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/smp/SM191.png",
+          "holo": true,
+          "chase": true,
+          "prices": {
+            "avgMarket": 324.91,
+            "psa10": 2125,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 318,
+            "tcgplayer": 315.74,
+            "pokescope": 341
+          },
+          "grading": {
+            "gemRate": 51
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/smp-SM191"
+          }
+        },
+        {
+          "id": "umbreon-and-darkrai-gx-sm-black-star-promo-sm241",
+          "pokemonTcgId": "smp-SM241",
+          "name": "Umbreon & Darkrai GX",
+          "set": "SM Black Star Promo",
+          "year": 2020,
+          "rarity": "Tag Team GX promo",
+          "number": "SM241",
+          "imageUrl": "https://images.pokemontcg.io/smp/SM241_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/smp/SM241.png",
+          "holo": true,
+          "chase": true,
+          "prices": {
+            "avgMarket": 205.32,
+            "psa10": 2462.5,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 139,
+            "tcgplayer": 271.63,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": 9
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/smp-SM241"
+          }
+        },
+        {
+          "id": "mew-ex-legendary-treasures-radiant-collection-rc24",
+          "pokemonTcgId": "bw11-RC24",
+          "name": "Mew EX",
+          "set": "Legendary Treasures: Radiant Collection",
+          "year": 2013,
+          "rarity": "Full Art EX",
+          "number": "RC24",
+          "imageUrl": "https://images.pokemontcg.io/bw11/RC24_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/bw11/RC24.png",
+          "holo": true,
+          "chase": true,
+          "prices": {
+            "avgMarket": 178.38,
+            "psa10": null,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": null,
+            "tcgplayer": 182.76,
+            "pokescope": 174
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/bw11-RC24"
+          }
+        },
+        {
+          "id": "eevee-and-snorlax-gx-sm-black-star-promo-tag-team-tins-sm169",
+          "pokemonTcgId": "smp-SM169",
+          "name": "Eevee & Snorlax GX",
+          "set": "SM Black Star Promo (Tag Team Tins)",
+          "year": 2019,
+          "rarity": "Tag Team GX promo",
+          "number": "SM169",
+          "imageUrl": "https://images.pokemontcg.io/smp/SM169_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/smp/SM169.png",
+          "holo": true,
+          "chase": true,
+          "prices": {
+            "avgMarket": 162.48,
+            "psa10": 1230.2,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 150,
+            "tcgplayer": 169.45,
+            "pokescope": 168
+          },
+          "grading": {
+            "gemRate": 40
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/smp-SM169"
+          }
+        },
+        {
+          "id": "mew-v-fusion-strike-251",
+          "pokemonTcgId": "swsh8-251",
+          "name": "Mew V",
+          "set": "Fusion Strike",
+          "year": 2021,
+          "rarity": "Alt-Art Secret Rare",
+          "number": "251/264",
+          "imageUrl": "https://images.pokemontcg.io/swsh8/251_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/swsh8/251.png",
+          "holo": true,
+          "chase": true,
+          "prices": {
+            "avgMarket": 115.17,
+            "psa10": 240,
+            "psa10Estimated": true
+          },
+          "sources": {
+            "priceCharting": null,
+            "tcgplayer": 116.34,
+            "pokescope": 114
+          },
+          "grading": {
+            "gemRate": 44
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swsh8-251"
+          }
+        },
+        {
+          "id": "garchomp-and-giratina-gx-sm-black-star-promo-sm193",
+          "pokemonTcgId": "smp-SM193",
+          "name": "Garchomp & Giratina GX",
+          "set": "SM Black Star Promo",
+          "year": 2019,
+          "rarity": "Tag Team GX promo",
+          "number": "SM193",
+          "imageUrl": "https://images.pokemontcg.io/smp/SM193_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/smp/SM193.png",
+          "holo": false,
+          "chase": false,
+          "prices": {
+            "avgMarket": 92.3,
+            "psa10": 610,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 85,
+            "tcgplayer": 95.89,
+            "pokescope": 96
+          },
+          "grading": {
+            "gemRate": 53
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/smp-SM193"
+          }
+        },
+        {
+          "id": "pikachu-scarlet-and-violet-151-173",
+          "pokemonTcgId": "sv3pt5-173",
+          "name": "Pikachu",
+          "set": "Scarlet & Violet 151",
+          "year": 2023,
+          "rarity": "Illustration Rare",
+          "number": "173/165",
+          "imageUrl": "https://images.pokemontcg.io/sv3pt5/173_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/sv3pt5/173.png",
+          "holo": false,
+          "chase": false,
+          "prices": {
+            "avgMarket": 86.92,
+            "psa10": 612.5,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 84,
+            "tcgplayer": 93.77,
+            "pokescope": 83
+          },
+          "grading": {
+            "gemRate": 84
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv3pt5-173"
+          }
+        },
+        {
+          "id": "charizard-vstar-swsh-promo-ultra-premium-collection-swsh262",
+          "pokemonTcgId": "swshp-SWSH262",
+          "name": "Charizard VSTAR",
+          "nickname": "\"Fighting\" Charizard",
+          "set": "SWSH Promo (Ultra Premium Collection)",
+          "year": 2022,
+          "rarity": "Alt-Art promo",
+          "number": "SWSH262",
+          "imageUrl": "https://images.pokemontcg.io/swshp/SWSH262_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/swshp/SWSH262.png",
+          "holo": false,
+          "chase": false,
+          "prices": {
+            "avgMarket": 86.04,
+            "psa10": 1621.01,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 85,
+            "tcgplayer": 84.12,
+            "pokescope": 89
+          },
+          "grading": {
+            "gemRate": 17
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swshp-SWSH262"
+          }
+        },
+        {
+          "id": "eevee-gx-sm-black-star-promo-sm233",
+          "pokemonTcgId": "smp-SM233",
+          "name": "Eevee GX",
+          "set": "SM Black Star Promo",
+          "year": 2019,
+          "rarity": "Full Art promo",
+          "number": "SM233",
+          "imageUrl": "https://images.pokemontcg.io/smp/SM233_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/smp/SM233.png",
+          "holo": false,
+          "chase": true,
+          "prices": {
+            "avgMarket": 103.2,
+            "psa10": 2300,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 62,
+            "tcgplayer": 157.59,
+            "pokescope": 90
+          },
+          "grading": {
+            "gemRate": 6
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/smp-SM233"
+          }
+        },
+        {
+          "id": "zekrom-xy-black-star-promo-xy76",
+          "pokemonTcgId": "xyp-XY76",
+          "name": "Zekrom",
+          "set": "XY Black Star Promo",
+          "year": 2015,
+          "rarity": "Full Art promo",
+          "number": "XY76",
+          "imageUrl": "https://images.pokemontcg.io/xyp/XY76_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/xyp/XY76.png",
+          "holo": false,
+          "chase": false,
+          "prices": {
+            "avgMarket": 73.49,
+            "psa10": 1763.72,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 38,
+            "tcgplayer": 91.46,
+            "pokescope": 91
+          },
+          "grading": {
+            "gemRate": 1
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/xyp-XY76"
+          }
+        },
+        {
+          "id": "darkrai-bw-black-star-promo-team-plasma-bw73",
+          "pokemonTcgId": "bwp-BW73",
+          "name": "Darkrai",
+          "set": "BW Black Star Promo (Team Plasma)",
+          "year": 2013,
+          "rarity": "Full Art promo",
+          "number": "BW73",
+          "imageUrl": "https://images.pokemontcg.io/bwp/BW73_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/bwp/BW73.png",
+          "holo": false,
+          "chase": true,
+          "prices": {
+            "avgMarket": 135.88,
+            "psa10": 1499.9,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 65,
+            "tcgplayer": 206.76,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": 2
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/bwp-BW73"
+          }
+        },
+        {
+          "id": "darkrai-xy-black-star-promo-mythical-collection-xy114",
+          "pokemonTcgId": "xyp-XY114",
+          "name": "Darkrai",
+          "set": "XY Black Star Promo (Mythical Collection)",
+          "year": 2016,
+          "rarity": "Full Art promo",
+          "number": "XY114",
+          "imageUrl": "https://images.pokemontcg.io/xyp/XY114_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/xyp/XY114.png",
+          "holo": false,
+          "chase": false,
+          "prices": {
+            "avgMarket": 66.84,
+            "psa10": 2012.5,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 35,
+            "tcgplayer": 82.53,
+            "pokescope": 83
+          },
+          "grading": {
+            "gemRate": 6
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/xyp-XY114"
+          }
+        },
+        {
+          "id": "charizard-v-swsh-promo-ultra-premium-collection-swsh260",
+          "pokemonTcgId": "swshp-SWSH260",
+          "name": "Charizard V",
+          "nickname": "\"Sleeping\" Charizard",
+          "set": "SWSH Promo (Ultra Premium Collection)",
+          "year": 2022,
+          "rarity": "Alt-Art promo",
+          "number": "SWSH260",
+          "imageUrl": "https://images.pokemontcg.io/swshp/SWSH260_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/swshp/SWSH260.png",
+          "holo": false,
+          "chase": false,
+          "prices": {
+            "avgMarket": 57.2,
+            "psa10": 425,
+            "psa10Estimated": true
+          },
+          "sources": {
+            "priceCharting": 50,
+            "tcgplayer": 60.59,
+            "pokescope": 61
+          },
+          "grading": {
+            "gemRate": 20
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swshp-SWSH260"
+          }
+        },
+        {
+          "id": "pikachu-crown-zenith-160",
+          "pokemonTcgId": "swsh12pt5-160",
+          "name": "Pikachu",
+          "set": "Crown Zenith",
+          "year": 2023,
+          "rarity": "Secret Rare",
+          "number": "160/159",
+          "imageUrl": "https://images.pokemontcg.io/swsh12pt5/160_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/swsh12pt5/160.png",
+          "holo": false,
+          "chase": false,
+          "prices": {
+            "avgMarket": 44.63,
+            "psa10": 191,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 29,
+            "tcgplayer": 53.88,
+            "pokescope": 51
+          },
+          "grading": {
+            "gemRate": 54
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5-160"
+          }
+        },
+        {
+          "id": "charizard-vmax-swsh-promo-ultra-premium-collection-swsh261",
+          "pokemonTcgId": "swshp-SWSH261",
+          "name": "Charizard VMAX",
+          "nickname": "\"Godzilla\" Charizard",
+          "set": "SWSH Promo (Ultra Premium Collection)",
+          "year": 2022,
+          "rarity": "Alt-Art promo",
+          "number": "SWSH261",
+          "imageUrl": "https://images.pokemontcg.io/swshp/SWSH261_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/swshp/SWSH261.png",
+          "holo": false,
+          "chase": false,
+          "prices": {
+            "avgMarket": 40.66,
+            "psa10": 594.85,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 36,
+            "tcgplayer": 45.99,
+            "pokescope": 40
+          },
+          "grading": {
+            "gemRate": 24
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swshp-SWSH261"
+          }
+        },
+        {
+          "id": "regigigas-vstar-crown-zenith-galarian-gallery-gg55",
+          "pokemonTcgId": "swsh12pt5gg-GG55",
+          "name": "Regigigas VSTAR",
+          "set": "Crown Zenith: Galarian Gallery",
+          "year": 2023,
+          "rarity": "Special Illustration",
+          "number": "GG55",
+          "imageUrl": "https://images.pokemontcg.io/swsh12pt5gg/GG55_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/swsh12pt5gg/GG55.png",
+          "holo": false,
+          "chase": false,
+          "prices": {
+            "avgMarket": 26.82,
+            "psa10": 130,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 24,
+            "tcgplayer": 28.45,
+            "pokescope": 28
+          },
+          "grading": {
+            "gemRate": 62
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG55"
+          }
+        },
+        {
+          "id": "snorlax-sv-black-star-promo-151-etb-svp-051",
+          "pokemonTcgId": "svp-51",
+          "name": "Snorlax",
+          "set": "SV Black Star Promo (151 ETB)",
+          "year": 2023,
+          "rarity": "Promo",
+          "number": "SVP 051",
+          "imageUrl": "https://images.pokemontcg.io/svp/51_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/svp/51.png",
+          "holo": false,
+          "chase": false,
+          "prices": {
+            "avgMarket": 21.86,
+            "psa10": 209.07,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 18,
+            "tcgplayer": 23.57,
+            "pokescope": 24
+          },
+          "grading": {
+            "gemRate": 30
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/svp-51"
+          }
+        },
+        {
+          "id": "mimikyu-sv-black-star-promo-paldean-fates-svp-075",
+          "pokemonTcgId": "svp-75",
+          "name": "Mimikyu",
+          "set": "SV Black Star Promo (Paldean Fates)",
+          "year": 2024,
+          "rarity": "Illustration Rare promo",
+          "number": "SVP 075",
+          "imageUrl": "https://images.pokemontcg.io/svp/75_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/svp/75.png",
+          "holo": false,
+          "chase": false,
+          "prices": {
+            "avgMarket": 15.06,
+            "psa10": 148.5,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 15,
+            "tcgplayer": 15.19,
+            "pokescope": 15
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/svp-75"
+          }
+        },
+        {
+          "id": "magmortar-crown-zenith-galarian-gallery-gg03",
+          "pokemonTcgId": "swsh12pt5gg-GG03",
+          "name": "Magmortar",
+          "set": "Crown Zenith: Galarian Gallery",
+          "year": 2023,
+          "rarity": "Special Illustration",
+          "number": "GG03",
+          "imageUrl": "https://images.pokemontcg.io/swsh12pt5gg/GG03_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/swsh12pt5gg/GG03.png",
+          "holo": false,
+          "chase": false,
+          "prices": {
+            "avgMarket": 11.66,
+            "psa10": 119.27,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 7,
+            "tcgplayer": 13.97,
+            "pokescope": 14
+          },
+          "grading": {
+            "gemRate": 32
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG03"
+          }
+        }
+      ]
+    },
+    {
+      "id": "samantha",
+      "title": "Samantha's Spectacular Hunt",
+      "tag": "Sam's collection · ready to catch 'em",
+      "cards": [],
+      "emptyState": {
+        "title": "Samantha's Spectacular Hunt",
+        "message": "This hunt is just catching fire. Tell Claude which cards are Sam's and they'll blaze in here — Charmander-approved.",
+        "tone": "orange"
+      }
+    }
+  ],
+  "notes": [
+    "Avg market is the average of available sources shown on each card.",
+    "PokemonTCG updates refresh TCGplayer market prices when available; PriceCharting, PokeScope, PSA 10 values, and gem rates remain editable data unless you add a custom source.",
+    "PSA 10 gem rate is the share of graded copies that earned a 10; lower rates are tougher."
+  ],
+  "updateSummary": {
+    "provider": "PokemonTCG",
+    "updatedCards": 20,
+    "failedCards": 0
+  }
+}
