@@ -2,6 +2,8 @@
 
 A static, shareable Pokemon card price tracker for GitHub Pages.
 
+Live site: https://michael-m-jones.github.io/pokemon-card-tracker/
+
 ## How it works
 
 - `index.html`, `assets/styles.css`, and `assets/app.js` render the public site.
