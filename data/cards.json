@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "title": "Poke Card Tracker",
   "description": "A shareable tracker for Pokemon card market prices and PSA 10 upside.",
-  "lastUpdated": "2026-06-28T23:57:22.542Z",
+  "lastUpdated": "2026-06-29T00:07:46.264Z",
   "collections": [
     {
       "id": "michael",
@@ -707,6 +707,39 @@
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG03"
           }
+        },
+        {
+          "id": "groudon-paradox-rift-199",
+          "pokemonTcgId": "sv4-199",
+          "name": "Groudon",
+          "set": "Paradox Rift",
+          "year": 2023,
+          "rarity": "Illustration Rare",
+          "number": "199/182",
+          "imageUrl": "https://images.pokemontcg.io/sv4/199_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/sv4/199.png",
+          "holo": true,
+          "chase": true,
+          "prices": {
+            "avgMarket": 118.85,
+            "psa10": null,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": null,
+            "tcgplayer": 118.85,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv4-199"
+          },
+          "markets": {}
         }
       ]
     },
@@ -782,25 +815,25 @@
           "markets": {}
         },
         {
-          "id": "bulbasaur-scarlet-violet-black-star-promos-46",
-          "pokemonTcgId": "svp-46",
+          "id": "bulbasaur-stellar-crown-143",
+          "pokemonTcgId": "sv7-143",
           "name": "Bulbasaur",
-          "set": "Scarlet & Violet Black Star Promos",
-          "year": 2023,
-          "rarity": "Promo",
-          "number": "46/215",
-          "imageUrl": "https://images.pokemontcg.io/svp/46_hires.png",
-          "fallbackImageUrl": "https://images.pokemontcg.io/svp/46.png",
+          "set": "Stellar Crown",
+          "year": 2024,
+          "rarity": "Illustration Rare",
+          "number": "143/142",
+          "imageUrl": "https://images.pokemontcg.io/sv7/143_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/sv7/143.png",
           "holo": true,
-          "chase": false,
+          "chase": true,
           "prices": {
-            "avgMarket": 1.98,
+            "avgMarket": 131.3,
             "psa10": null,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": null,
-            "tcgplayer": 1.98,
+            "tcgplayer": 131.3,
             "pokescope": null
           },
           "grading": {
@@ -810,10 +843,10 @@
             "tcgplayer": "2026/06/28"
           },
           "externalUrls": {
-            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/svp-46"
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv7-143"
           },
           "markets": {},
-          "nickname": "Windowsill promo"
+          "nickname": "Stellar Crown IR"
         },
         {
           "id": "drowzee-scarlet-violet-210",
@@ -1281,25 +1314,25 @@
           "markets": {}
         },
         {
-          "id": "piplup-cosmic-eclipse-239",
-          "pokemonTcgId": "sm12-239",
+          "id": "piplup-phantasmal-flames-98",
+          "pokemonTcgId": "me2-98",
           "name": "Piplup",
-          "set": "Cosmic Eclipse",
-          "year": 2019,
-          "rarity": "Rare Secret",
-          "number": "239/236",
-          "imageUrl": "https://images.pokemontcg.io/sm12/239_hires.png",
-          "fallbackImageUrl": "https://images.pokemontcg.io/sm12/239.png",
+          "set": "Phantasmal Flames",
+          "year": 2025,
+          "rarity": "Illustration Rare",
+          "number": "98/94",
+          "imageUrl": "https://images.pokemontcg.io/me2/98_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/me2/98.png",
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 79.06,
+            "avgMarket": 16.13,
             "psa10": null,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": null,
-            "tcgplayer": 79.06,
+            "tcgplayer": 16.13,
             "pokescope": null
           },
           "grading": {
@@ -1309,9 +1342,10 @@
             "tcgplayer": "2026/06/28"
           },
           "externalUrls": {
-            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sm12-239"
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/me2-98"
           },
-          "markets": {}
+          "markets": {},
+          "nickname": "Phantasmal Flames IR"
         },
         {
           "id": "swanna-white-flare-110",
