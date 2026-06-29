@@ -13,10 +13,13 @@ for (const collection of data.collections || []) {
 
   for (const card of collection.cards || []) {
     const label = `${collection.id}/${card.name || "(unnamed)"}`;
-    for (const field of ["id", "pokemonTcgId", "name", "set", "year", "rarity", "number", "imageUrl"]) {
+    for (const field of ["id", "name", "set", "year", "rarity", "number", "imageUrl"]) {
       if (card[field] === undefined || card[field] === null || card[field] === "") {
         errors.push(`${label} is missing ${field}.`);
       }
+    }
+    if (!card.pokemonTcgId && !card.externalUrls?.priceCharting) {
+      errors.push(`${label} is missing pokemonTcgId or an external PriceCharting URL.`);
     }
     if (!Number.isFinite(Number(card.prices?.avgMarket))) {
       errors.push(`${label} is missing avg market price.`);

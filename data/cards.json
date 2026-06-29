@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "title": "Poke Card Tracker",
   "description": "A shareable tracker for Pokemon card market prices and PSA 10 upside.",
-  "lastUpdated": "2026-06-28T23:42:32Z",
+  "lastUpdated": "2026-06-28T23:57:22.542Z",
   "collections": [
     {
       "id": "michael",
@@ -716,25 +716,25 @@
       "tag": "A cozy couples collecting page",
       "cards": [
         {
-          "id": "dratini-ascended-heroes-150",
-          "pokemonTcgId": "me2pt5-150",
-          "name": "Dratini",
-          "set": "Ascended Heroes",
-          "year": 2026,
-          "rarity": "Common",
-          "number": "150/217",
-          "imageUrl": "https://images.scrydex.com/pokemon/me2pt5-150/large",
-          "fallbackImageUrl": "https://images.scrydex.com/pokemon/me2pt5-150/small",
-          "holo": false,
+          "id": "bulbasaur-151-166",
+          "pokemonTcgId": "sv3pt5-166",
+          "name": "Bulbasaur",
+          "set": "151",
+          "year": 2023,
+          "rarity": "Illustration Rare",
+          "number": "166/165",
+          "imageUrl": "https://images.pokemontcg.io/sv3pt5/166_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/sv3pt5/166.png",
+          "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 0.21,
+            "avgMarket": 91.19,
             "psa10": null,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": null,
-            "tcgplayer": 0.21,
+            "tcgplayer": 91.19,
             "pokescope": null
           },
           "grading": {
@@ -744,9 +744,941 @@
             "tcgplayer": "2026/06/28"
           },
           "externalUrls": {
-            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/me2pt5-150"
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv3pt5-166"
           },
           "markets": {}
+        },
+        {
+          "id": "ivysaur-151-167",
+          "pokemonTcgId": "sv3pt5-167",
+          "name": "Ivysaur",
+          "set": "151",
+          "year": 2023,
+          "rarity": "Illustration Rare",
+          "number": "167/165",
+          "imageUrl": "https://images.pokemontcg.io/sv3pt5/167_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/sv3pt5/167.png",
+          "holo": true,
+          "chase": false,
+          "prices": {
+            "avgMarket": 55.46,
+            "psa10": null,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": null,
+            "tcgplayer": 55.46,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv3pt5-167"
+          },
+          "markets": {}
+        },
+        {
+          "id": "bulbasaur-scarlet-violet-black-star-promos-46",
+          "pokemonTcgId": "svp-46",
+          "name": "Bulbasaur",
+          "set": "Scarlet & Violet Black Star Promos",
+          "year": 2023,
+          "rarity": "Promo",
+          "number": "46/215",
+          "imageUrl": "https://images.pokemontcg.io/svp/46_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/svp/46.png",
+          "holo": true,
+          "chase": false,
+          "prices": {
+            "avgMarket": 1.98,
+            "psa10": null,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": null,
+            "tcgplayer": 1.98,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/svp-46"
+          },
+          "markets": {},
+          "nickname": "Windowsill promo"
+        },
+        {
+          "id": "drowzee-scarlet-violet-210",
+          "pokemonTcgId": "sv1-210",
+          "name": "Drowzee",
+          "set": "Scarlet & Violet",
+          "year": 2023,
+          "rarity": "Illustration Rare",
+          "number": "210/198",
+          "imageUrl": "https://images.pokemontcg.io/sv1/210_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/sv1/210.png",
+          "holo": true,
+          "chase": false,
+          "prices": {
+            "avgMarket": 70.45,
+            "psa10": null,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": null,
+            "tcgplayer": 70.45,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv1-210"
+          },
+          "markets": {},
+          "nickname": "Ferris wheel"
+        },
+        {
+          "id": "foongus-black-bolt-95",
+          "pokemonTcgId": "zsv10pt5-95",
+          "name": "Foongus",
+          "set": "Black Bolt",
+          "year": 2025,
+          "rarity": "Illustration Rare",
+          "number": "95/86",
+          "imageUrl": "https://images.pokemontcg.io/zsv10pt5/95_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/zsv10pt5/95.png",
+          "holo": true,
+          "chase": false,
+          "prices": {
+            "avgMarket": 20.18,
+            "psa10": null,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": null,
+            "tcgplayer": 20.18,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/zsv10pt5-95"
+          },
+          "markets": {},
+          "nickname": "Trippy little forest"
+        },
+        {
+          "id": "magikarp-paldea-evolved-203",
+          "pokemonTcgId": "sv2-203",
+          "name": "Magikarp",
+          "set": "Paldea Evolved",
+          "year": 2023,
+          "rarity": "Illustration Rare",
+          "number": "203/193",
+          "imageUrl": "https://images.pokemontcg.io/sv2/203_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/sv2/203.png",
+          "holo": true,
+          "chase": true,
+          "prices": {
+            "avgMarket": 428.96,
+            "psa10": null,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": null,
+            "tcgplayer": 428.96,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv2-203"
+          },
+          "markets": {}
+        },
+        {
+          "id": "dondozo-scarlet-violet-207",
+          "pokemonTcgId": "sv1-207",
+          "name": "Dondozo",
+          "set": "Scarlet & Violet",
+          "year": 2023,
+          "rarity": "Illustration Rare",
+          "number": "207/198",
+          "imageUrl": "https://images.pokemontcg.io/sv1/207_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/sv1/207.png",
+          "holo": true,
+          "chase": false,
+          "prices": {
+            "avgMarket": 15.65,
+            "psa10": null,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": null,
+            "tcgplayer": 15.65,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv1-207"
+          },
+          "markets": {}
+        },
+        {
+          "id": "sawsbuck-temporal-forces-166",
+          "pokemonTcgId": "sv5-166",
+          "name": "Sawsbuck",
+          "set": "Temporal Forces",
+          "year": 2024,
+          "rarity": "Illustration Rare",
+          "number": "166/162",
+          "imageUrl": "https://images.pokemontcg.io/sv5/166_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/sv5/166.png",
+          "holo": true,
+          "chase": false,
+          "prices": {
+            "avgMarket": 58.77,
+            "psa10": null,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": null,
+            "tcgplayer": 58.77,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv5-166"
+          },
+          "markets": {}
+        },
+        {
+          "id": "braviary-surging-sparks-214",
+          "pokemonTcgId": "sv8-214",
+          "name": "Braviary",
+          "set": "Surging Sparks",
+          "year": 2024,
+          "rarity": "Illustration Rare",
+          "number": "214/191",
+          "imageUrl": "https://images.pokemontcg.io/sv8/214_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/sv8/214.png",
+          "holo": true,
+          "chase": false,
+          "prices": {
+            "avgMarket": 6.43,
+            "psa10": null,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": null,
+            "tcgplayer": 6.43,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv8-214"
+          },
+          "markets": {}
+        },
+        {
+          "id": "greninja-ex-twilight-masquerade-214",
+          "pokemonTcgId": "sv6-214",
+          "name": "Greninja ex",
+          "set": "Twilight Masquerade",
+          "year": 2024,
+          "rarity": "Special Illustration Rare",
+          "number": "214/167",
+          "imageUrl": "https://images.pokemontcg.io/sv6/214_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/sv6/214.png",
+          "holo": true,
+          "chase": true,
+          "prices": {
+            "avgMarket": 400.79,
+            "psa10": null,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": null,
+            "tcgplayer": 400.79,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv6-214"
+          },
+          "markets": {}
+        },
+        {
+          "id": "chi-yu-ex-paldea-evolved-259",
+          "pokemonTcgId": "sv2-259",
+          "name": "Chi-Yu ex",
+          "set": "Paldea Evolved",
+          "year": 2023,
+          "rarity": "Special Illustration Rare",
+          "number": "259/193",
+          "imageUrl": "https://images.pokemontcg.io/sv2/259_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/sv2/259.png",
+          "holo": true,
+          "chase": false,
+          "prices": {
+            "avgMarket": 56.5,
+            "psa10": null,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": null,
+            "tcgplayer": 56.5,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv2-259"
+          },
+          "markets": {}
+        },
+        {
+          "id": "dottler-paradox-rift-184",
+          "pokemonTcgId": "sv4-184",
+          "name": "Dottler",
+          "set": "Paradox Rift",
+          "year": 2023,
+          "rarity": "Illustration Rare",
+          "number": "184/182",
+          "imageUrl": "https://images.pokemontcg.io/sv4/184_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/sv4/184.png",
+          "holo": true,
+          "chase": false,
+          "prices": {
+            "avgMarket": 5.19,
+            "psa10": null,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": null,
+            "tcgplayer": 5.19,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv4-184"
+          },
+          "markets": {}
+        },
+        {
+          "id": "vivillon-surging-sparks-193",
+          "pokemonTcgId": "sv8-193",
+          "name": "Vivillon",
+          "set": "Surging Sparks",
+          "year": 2024,
+          "rarity": "Illustration Rare",
+          "number": "193/191",
+          "imageUrl": "https://images.pokemontcg.io/sv8/193_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/sv8/193.png",
+          "holo": true,
+          "chase": false,
+          "prices": {
+            "avgMarket": 5.79,
+            "psa10": null,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": null,
+            "tcgplayer": 5.79,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv8-193"
+          },
+          "markets": {}
+        },
+        {
+          "id": "applin-twilight-masquerade-185",
+          "pokemonTcgId": "sv6-185",
+          "name": "Applin",
+          "set": "Twilight Masquerade",
+          "year": 2024,
+          "rarity": "Illustration Rare",
+          "number": "185/167",
+          "imageUrl": "https://images.pokemontcg.io/sv6/185_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/sv6/185.png",
+          "holo": true,
+          "chase": false,
+          "prices": {
+            "avgMarket": 12.62,
+            "psa10": null,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": null,
+            "tcgplayer": 12.62,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv6-185"
+          },
+          "markets": {},
+          "nickname": "In a tree"
+        },
+        {
+          "id": "venipede-black-bolt-132",
+          "pokemonTcgId": "zsv10pt5-132",
+          "name": "Venipede",
+          "set": "Black Bolt",
+          "year": 2025,
+          "rarity": "Illustration Rare",
+          "number": "132/86",
+          "imageUrl": "https://images.pokemontcg.io/zsv10pt5/132_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/zsv10pt5/132.png",
+          "holo": true,
+          "chase": false,
+          "prices": {
+            "avgMarket": 10.52,
+            "psa10": null,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": null,
+            "tcgplayer": 10.52,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/zsv10pt5-132"
+          },
+          "markets": {}
+        },
+        {
+          "id": "horsea-shrouded-fable-67",
+          "pokemonTcgId": "sv6pt5-67",
+          "name": "Horsea",
+          "set": "Shrouded Fable",
+          "year": 2024,
+          "rarity": "Illustration Rare",
+          "number": "67/64",
+          "imageUrl": "https://images.pokemontcg.io/sv6pt5/67_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/sv6pt5/67.png",
+          "holo": true,
+          "chase": false,
+          "prices": {
+            "avgMarket": 51.15,
+            "psa10": null,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": null,
+            "tcgplayer": 51.15,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv6pt5-67"
+          },
+          "markets": {}
+        },
+        {
+          "id": "dragonair-151-181",
+          "pokemonTcgId": "sv3pt5-181",
+          "name": "Dragonair",
+          "set": "151",
+          "year": 2023,
+          "rarity": "Illustration Rare",
+          "number": "181/165",
+          "imageUrl": "https://images.pokemontcg.io/sv3pt5/181_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/sv3pt5/181.png",
+          "holo": true,
+          "chase": false,
+          "prices": {
+            "avgMarket": 53.65,
+            "psa10": null,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": null,
+            "tcgplayer": 53.65,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv3pt5-181"
+          },
+          "markets": {}
+        },
+        {
+          "id": "piplup-cosmic-eclipse-239",
+          "pokemonTcgId": "sm12-239",
+          "name": "Piplup",
+          "set": "Cosmic Eclipse",
+          "year": 2019,
+          "rarity": "Rare Secret",
+          "number": "239/236",
+          "imageUrl": "https://images.pokemontcg.io/sm12/239_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/sm12/239.png",
+          "holo": true,
+          "chase": false,
+          "prices": {
+            "avgMarket": 79.06,
+            "psa10": null,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": null,
+            "tcgplayer": 79.06,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sm12-239"
+          },
+          "markets": {}
+        },
+        {
+          "id": "swanna-white-flare-110",
+          "pokemonTcgId": "rsv10pt5-110",
+          "name": "Swanna",
+          "set": "White Flare",
+          "year": 2025,
+          "rarity": "Illustration Rare",
+          "number": "110/86",
+          "imageUrl": "https://images.pokemontcg.io/rsv10pt5/110_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/rsv10pt5/110.png",
+          "holo": true,
+          "chase": false,
+          "prices": {
+            "avgMarket": 14.93,
+            "psa10": null,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": null,
+            "tcgplayer": 14.93,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/rsv10pt5-110"
+          },
+          "markets": {}
+        },
+        {
+          "id": "tynamo-black-bolt-113",
+          "pokemonTcgId": "zsv10pt5-113",
+          "name": "Tynamo",
+          "set": "Black Bolt",
+          "year": 2025,
+          "rarity": "Illustration Rare",
+          "number": "113/86",
+          "imageUrl": "https://images.pokemontcg.io/zsv10pt5/113_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/zsv10pt5/113.png",
+          "holo": true,
+          "chase": false,
+          "prices": {
+            "avgMarket": 19.79,
+            "psa10": null,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": null,
+            "tcgplayer": 19.79,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/zsv10pt5-113"
+          },
+          "markets": {},
+          "nickname": "In the water"
+        },
+        {
+          "id": "poliwhirl-151-176",
+          "pokemonTcgId": "sv3pt5-176",
+          "name": "Poliwhirl",
+          "set": "151",
+          "year": 2023,
+          "rarity": "Illustration Rare",
+          "number": "176/165",
+          "imageUrl": "https://images.pokemontcg.io/sv3pt5/176_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/sv3pt5/176.png",
+          "holo": true,
+          "chase": false,
+          "prices": {
+            "avgMarket": 58.52,
+            "psa10": null,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": null,
+            "tcgplayer": 58.52,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv3pt5-176"
+          },
+          "markets": {},
+          "nickname": "Rainy street"
+        },
+        {
+          "id": "gastly-temporal-forces-177",
+          "pokemonTcgId": "sv5-177",
+          "name": "Gastly",
+          "set": "Temporal Forces",
+          "year": 2024,
+          "rarity": "Illustration Rare",
+          "number": "177/162",
+          "imageUrl": "https://images.pokemontcg.io/sv5/177_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/sv5/177.png",
+          "holo": true,
+          "chase": true,
+          "prices": {
+            "avgMarket": 106.77,
+            "psa10": null,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": null,
+            "tcgplayer": 106.77,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv5-177"
+          },
+          "markets": {},
+          "nickname": "Temporal Forces IR"
+        },
+        {
+          "id": "munna-black-bolt-116",
+          "pokemonTcgId": "zsv10pt5-116",
+          "name": "Munna",
+          "set": "Black Bolt",
+          "year": 2025,
+          "rarity": "Illustration Rare",
+          "number": "116/86",
+          "imageUrl": "https://images.pokemontcg.io/zsv10pt5/116_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/zsv10pt5/116.png",
+          "holo": true,
+          "chase": false,
+          "prices": {
+            "avgMarket": 20.88,
+            "psa10": null,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": null,
+            "tcgplayer": 20.88,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/zsv10pt5-116"
+          },
+          "markets": {}
+        },
+        {
+          "id": "cubone-chinese-gem-pack-3-407",
+          "name": "Cubone",
+          "set": "Chinese Gem Pack Vol. 3",
+          "year": 2025,
+          "rarity": "Chinese Exclusive Art Rare",
+          "number": "407",
+          "imageUrl": "https://storage.googleapis.com/images.pricecharting.com/2oixyvnr7ezlsyaf/1600.jpg",
+          "fallbackImageUrl": "https://storage.googleapis.com/images.pricecharting.com/2oixyvnr7ezlsyaf/240.jpg",
+          "holo": true,
+          "chase": true,
+          "prices": {
+            "avgMarket": 302.5,
+            "psa10": null,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 302.5,
+            "tcgplayer": null,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "priceCharting": "2026/06/28"
+          },
+          "externalUrls": {
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-chinese-gem-pack-3/cubone-407"
+          },
+          "markets": {}
+        },
+        {
+          "id": "farigiraf-paldea-evolved-228",
+          "pokemonTcgId": "sv2-228",
+          "name": "Farigiraf",
+          "set": "Paldea Evolved",
+          "year": 2023,
+          "rarity": "Illustration Rare",
+          "number": "228/193",
+          "imageUrl": "https://images.pokemontcg.io/sv2/228_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/sv2/228.png",
+          "holo": true,
+          "chase": false,
+          "prices": {
+            "avgMarket": 14.63,
+            "psa10": null,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": null,
+            "tcgplayer": 14.63,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv2-228"
+          },
+          "markets": {}
+        },
+        {
+          "id": "skeledirge-ex-paldea-evolved-258",
+          "pokemonTcgId": "sv2-258",
+          "name": "Skeledirge ex",
+          "set": "Paldea Evolved",
+          "year": 2023,
+          "rarity": "Special Illustration Rare",
+          "number": "258/193",
+          "imageUrl": "https://images.pokemontcg.io/sv2/258_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/sv2/258.png",
+          "holo": true,
+          "chase": false,
+          "prices": {
+            "avgMarket": 38.11,
+            "psa10": null,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": null,
+            "tcgplayer": 38.11,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv2-258"
+          },
+          "markets": {}
+        },
+        {
+          "id": "snorunt-paradox-rift-188",
+          "pokemonTcgId": "sv4-188",
+          "name": "Snorunt",
+          "set": "Paradox Rift",
+          "year": 2023,
+          "rarity": "Illustration Rare",
+          "number": "188/182",
+          "imageUrl": "https://images.pokemontcg.io/sv4/188_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/sv4/188.png",
+          "holo": true,
+          "chase": false,
+          "prices": {
+            "avgMarket": 10.53,
+            "psa10": null,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": null,
+            "tcgplayer": 10.53,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv4-188"
+          },
+          "markets": {}
+        },
+        {
+          "id": "cresselia-shrouded-fable-71",
+          "pokemonTcgId": "sv6pt5-71",
+          "name": "Cresselia",
+          "set": "Shrouded Fable",
+          "year": 2024,
+          "rarity": "Illustration Rare",
+          "number": "71/64",
+          "imageUrl": "https://images.pokemontcg.io/sv6pt5/71_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/sv6pt5/71.png",
+          "holo": true,
+          "chase": false,
+          "prices": {
+            "avgMarket": 29.89,
+            "psa10": null,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": null,
+            "tcgplayer": 29.89,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv6pt5-71"
+          },
+          "markets": {},
+          "nickname": "Crescent Purge"
+        },
+        {
+          "id": "snom-temporal-forces-168",
+          "pokemonTcgId": "sv5-168",
+          "name": "Snom",
+          "set": "Temporal Forces",
+          "year": 2024,
+          "rarity": "Illustration Rare",
+          "number": "168/162",
+          "imageUrl": "https://images.pokemontcg.io/sv5/168_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/sv5/168.png",
+          "holo": true,
+          "chase": false,
+          "prices": {
+            "avgMarket": 18.17,
+            "psa10": null,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": null,
+            "tcgplayer": 18.17,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv5-168"
+          },
+          "markets": {},
+          "nickname": "Powder Snow"
         }
       ],
       "emptyState": {
