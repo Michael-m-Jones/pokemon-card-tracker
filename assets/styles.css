@@ -11,6 +11,7 @@
   --green: #1f9d57;
   --amber: #d89500;
   --orange: #e96f25;
+  --card-accent: var(--red);
   --shadow: 0 10px 28px rgba(23, 32, 51, 0.08);
 }
 
@@ -36,11 +37,16 @@ body[data-active-collection="samantha"] {
   --muted: #69758b;
   --line: #d5e5ef;
   --blue: #3d91c8;
+  --card-accent: #3d91c8;
   --shadow: 0 14px 30px rgba(45, 77, 105, 0.14);
   background:
     linear-gradient(180deg, rgba(255, 146, 92, 0.18), rgba(103, 184, 216, 0.12) 290px, transparent 560px),
     repeating-linear-gradient(135deg, rgba(255, 146, 92, 0.08) 0 2px, transparent 2px 22px),
     var(--bg);
+}
+
+body[data-active-collection="grails"] {
+  --card-accent: var(--amber);
 }
 
 button,
@@ -458,7 +464,7 @@ body[data-active-collection="samantha"] .card {
   display: block;
   width: 100%;
   height: 8px;
-  background: var(--accent, var(--blue));
+  background: var(--card-accent);
   content: "";
 }
 
@@ -517,8 +523,7 @@ body[data-active-collection="samantha"] .card-body {
   margin-bottom: 7px;
 }
 
-.set-badge,
-.chase-badge {
+.set-badge {
   display: inline-flex;
   align-items: center;
   min-height: 23px;
@@ -532,11 +537,6 @@ body[data-active-collection="samantha"] .card-body {
 
 .set-badge {
   background: var(--ink);
-}
-
-.chase-badge {
-  background: #efbf2f;
-  color: #332400;
 }
 
 .nickname {
@@ -679,7 +679,7 @@ body[data-active-collection="samantha"] .market-row {
   height: 10px;
   flex: 0 0 auto;
   border-radius: 999px;
-  background: var(--accent, var(--blue));
+  background: var(--card-accent);
 }
 
 .gem-label {
@@ -688,7 +688,7 @@ body[data-active-collection="samantha"] .market-row {
 
 .gem-value {
   margin-left: auto;
-  color: var(--accent, var(--blue));
+  color: var(--card-accent);
   white-space: nowrap;
 }
 

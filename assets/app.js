@@ -268,7 +268,6 @@ function renderCard(card) {
   const hasGemRate = finiteNumber(card.grading?.gemRate) !== null;
   const article = document.createElement("article");
   article.className = "card";
-  article.style.setProperty("--accent", gem.color);
 
   const body = document.createElement("div");
   body.className = "card-body";
@@ -301,11 +300,6 @@ function renderCard(card) {
   const setBadge = setText(document.createElement("span"), `${card.set} · ${card.year}`);
   setBadge.className = "set-badge";
   badges.append(setBadge);
-  if (avgMarket(card) >= 100 || card.chase) {
-    const chase = setText(document.createElement("span"), "Chase");
-    chase.className = "chase-badge";
-    badges.append(chase);
-  }
   body.append(badges);
 
   if (card.nickname) {
