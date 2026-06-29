@@ -58,22 +58,7 @@ const els = {
 };
 
 function collections() {
-  if (!state.data) return [];
-  const baseCollections = state.data.collections || [];
-  const grailCards = baseCollections
-    .flatMap((collection) => (collection.cards || []).map((card) => ({ ...card, homeCollection: collection.title })))
-    .filter((card) => card.chase || avgMarket(card) >= 100);
-
-  return [
-    ...baseCollections,
-    {
-      id: "grails",
-      title: "Grail Watchlist",
-      tag: `${grailCards.length} high-value cards tracked`,
-      cards: grailCards,
-      generated: true
-    }
-  ];
+  return state.data?.collections || [];
 }
 
 async function loadData() {
@@ -162,6 +147,22 @@ function sortedCards(cards) {
   return copy;
 }
 
+function availableSortOptions(collection) {
+  const cards = collection.cards || [];
+  const hasPsa = cards.some((card) => psa10(card) !== null);
+  const hasGemRate = cards.some((card) => finiteNumber(card.grading?.gemRate) !== null);
+  return sortOptions.filter(([key]) => {
+    if (key === "psa" || key === "upside") return hasPsa;
+    if (key === "gem") return hasGemRate;
+    return true;
+  });
+}
+
+function ensureSortAvailable(collection) {
+  const hasActiveSort = availableSortOptions(collection).some(([key]) => key === state.sortKey);
+  if (!hasActiveSort) state.sortKey = "raw";
+}
+
 function setText(node, value) {
   node.textContent = value;
   return node;
@@ -170,6 +171,7 @@ function setText(node, value) {
 function render() {
   const collection = activeCollection();
   if (!collection) return;
+  ensureSortAvailable(collection);
   document.body.classList.toggle("hide-summary", state.summaryHidden);
   document.body.classList.toggle("theme-empty", !!collection.theme && !(collection.cards || []).length);
   document.body.dataset.activeCollection = collection.id;
@@ -177,7 +179,7 @@ function render() {
   els.tag.textContent = collection.tag;
   renderTabs();
   renderTheme(collection);
-  renderSorts();
+  renderSorts(collection);
   renderStats(collection);
   renderCards(collection);
   renderNotes();
@@ -201,8 +203,8 @@ function renderTabs() {
   }));
 }
 
-function renderSorts() {
-  els.sorts.replaceChildren(...sortOptions.map(([key, label]) => {
+function renderSorts(collection) {
+  els.sorts.replaceChildren(...availableSortOptions(collection).map(([key, label]) => {
     const button = document.createElement("button");
     button.type = "button";
     button.className = `sort-button${key === state.sortKey ? " active" : ""}`;
@@ -223,10 +225,14 @@ function renderStats(collection) {
   const bestUpside = cards.reduce((best, card) => (gradeUpside(card) > gradeUpside(best || {}) ? card : best), null);
   const stats = [
     ["Cards", String(cards.length)],
-    ["Total avg market", formatSummaryMoney(totalRaw)],
-    ["Total PSA 10", psaValues.length ? formatSummaryMoney(totalPsa) : "-"],
-    ["Top upside", bestUpside ? `${bestUpside.name} ${gradeUpside(bestUpside).toFixed(1)}x` : "-"]
+    ["Total avg market", formatSummaryMoney(totalRaw)]
   ];
+  if (psaValues.length) {
+    stats.push(["Total PSA 10", formatSummaryMoney(totalPsa)]);
+    if (bestUpside && gradeUpside(bestUpside) >= 0) {
+      stats.push(["Top upside", `${bestUpside.name} ${gradeUpside(bestUpside).toFixed(1)}x`]);
+    }
+  }
   els.stats.replaceChildren(...stats.map(([label, value]) => {
     const stat = document.createElement("div");
     stat.className = "stat";
@@ -258,6 +264,8 @@ function renderCards(collection) {
 
 function renderCard(card) {
   const gem = gemInfo(card.grading?.gemRate);
+  const hasPsa = psa10(card) !== null;
+  const hasGemRate = finiteNumber(card.grading?.gemRate) !== null;
   const article = document.createElement("article");
   article.className = "card";
   article.style.setProperty("--accent", gem.color);
@@ -311,14 +319,16 @@ function renderCard(card) {
   body.lastChild.className = "meta";
 
   const prices = document.createElement("div");
-  prices.className = "prices";
+  prices.className = `prices${hasPsa ? "" : " single-price"}`;
   prices.append(priceBox("Avg market", formatMoney(avgMarket(card))));
-  prices.append(priceBox("PSA 10", formatMoney(psa10(card)), "psa-value", card.prices?.psa10Estimated));
+  if (hasPsa) {
+    prices.append(priceBox("PSA 10", formatMoney(psa10(card)), "psa-value", card.prices?.psa10Estimated));
+  }
   body.append(prices);
 
   body.append(renderSources(card));
   body.append(renderMarkets(card));
-  body.append(renderGem(gem));
+  if (hasGemRate) body.append(renderGem(gem));
   article.append(body);
   return article;
 }

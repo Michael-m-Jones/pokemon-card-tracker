@@ -2,12 +2,12 @@
   "schemaVersion": 1,
   "title": "Poke Card Tracker",
   "description": "A shareable tracker for Pokemon card market prices and PSA 10 upside.",
-  "lastUpdated": "2026-06-29T00:07:46.264Z",
+  "lastUpdated": "2026-06-29T00:25:00.000Z",
   "collections": [
     {
       "id": "michael",
       "title": "Michael's Magnificent Hunt",
-      "tag": "The main collection · 20 cards tracked",
+      "tag": "The main collection · 22 cards tracked",
       "cards": [
         {
           "id": "sylveon-vmax-evolving-skies-212",
@@ -721,12 +721,12 @@
           "holo": true,
           "chase": true,
           "prices": {
-            "avgMarket": 118.85,
-            "psa10": null,
+            "avgMarket": 112.93,
+            "psa10": 656.23,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": null,
+            "priceCharting": 107.0,
             "tcgplayer": 118.85,
             "pokescope": null
           },
@@ -734,83 +734,12 @@
             "gemRate": null
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/06/28"
+            "tcgplayer": "2026/06/28",
+            "priceCharting": "2026/06/28"
           },
           "externalUrls": {
-            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv4-199"
-          },
-          "markets": {}
-        }
-      ]
-    },
-    {
-      "id": "samantha",
-      "title": "Samantha's Spectacular Hunt",
-      "tag": "A cozy couples collecting page",
-      "cards": [
-        {
-          "id": "bulbasaur-151-166",
-          "pokemonTcgId": "sv3pt5-166",
-          "name": "Bulbasaur",
-          "set": "151",
-          "year": 2023,
-          "rarity": "Illustration Rare",
-          "number": "166/165",
-          "imageUrl": "https://images.pokemontcg.io/sv3pt5/166_hires.png",
-          "fallbackImageUrl": "https://images.pokemontcg.io/sv3pt5/166.png",
-          "holo": true,
-          "chase": false,
-          "prices": {
-            "avgMarket": 91.19,
-            "psa10": null,
-            "psa10Estimated": false
-          },
-          "sources": {
-            "priceCharting": null,
-            "tcgplayer": 91.19,
-            "pokescope": null
-          },
-          "grading": {
-            "gemRate": null
-          },
-          "sourceUpdatedAt": {
-            "tcgplayer": "2026/06/28"
-          },
-          "externalUrls": {
-            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv3pt5-166"
-          },
-          "markets": {}
-        },
-        {
-          "id": "ivysaur-151-167",
-          "pokemonTcgId": "sv3pt5-167",
-          "name": "Ivysaur",
-          "set": "151",
-          "year": 2023,
-          "rarity": "Illustration Rare",
-          "number": "167/165",
-          "imageUrl": "https://images.pokemontcg.io/sv3pt5/167_hires.png",
-          "fallbackImageUrl": "https://images.pokemontcg.io/sv3pt5/167.png",
-          "holo": true,
-          "chase": false,
-          "prices": {
-            "avgMarket": 55.46,
-            "psa10": null,
-            "psa10Estimated": false
-          },
-          "sources": {
-            "priceCharting": null,
-            "tcgplayer": 55.46,
-            "pokescope": null
-          },
-          "grading": {
-            "gemRate": null
-          },
-          "sourceUpdatedAt": {
-            "tcgplayer": "2026/06/28"
-          },
-          "externalUrls": {
-            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv3pt5-167"
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv4-199",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-paradox-rift/groudon-199"
           },
           "markets": {}
         },
@@ -827,12 +756,12 @@
           "holo": true,
           "chase": true,
           "prices": {
-            "avgMarket": 131.3,
-            "psa10": null,
+            "avgMarket": 122.53,
+            "psa10": 364.05,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": null,
+            "priceCharting": 113.75,
             "tcgplayer": 131.3,
             "pokescope": null
           },
@@ -840,10 +769,124 @@
             "gemRate": null
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/06/28"
+            "tcgplayer": "2026/06/28",
+            "priceCharting": "2026/06/28"
           },
           "externalUrls": {
-            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv7-143"
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv7-143",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-stellar-crown/bulbasaur-143"
+          },
+          "markets": {}
+        }
+      ]
+    },
+    {
+      "id": "samantha",
+      "title": "Samantha's Spectacular Hunt",
+      "tag": "A cozy couples collecting page · 29 cards tracked",
+      "cards": [
+        {
+          "id": "bulbasaur-151-166",
+          "pokemonTcgId": "sv3pt5-166",
+          "name": "Bulbasaur",
+          "set": "151",
+          "year": 2023,
+          "rarity": "Illustration Rare",
+          "number": "166/165",
+          "imageUrl": "https://images.pokemontcg.io/sv3pt5/166_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/sv3pt5/166.png",
+          "holo": true,
+          "chase": false,
+          "prices": {
+            "avgMarket": 85.6,
+            "psa10": 348.5,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 80.0,
+            "tcgplayer": 91.19,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28",
+            "priceCharting": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv3pt5-166",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-scarlet-%26-violet-151/bulbasaur-166"
+          },
+          "markets": {}
+        },
+        {
+          "id": "ivysaur-151-167",
+          "pokemonTcgId": "sv3pt5-167",
+          "name": "Ivysaur",
+          "set": "151",
+          "year": 2023,
+          "rarity": "Illustration Rare",
+          "number": "167/165",
+          "imageUrl": "https://images.pokemontcg.io/sv3pt5/167_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/sv3pt5/167.png",
+          "holo": true,
+          "chase": false,
+          "prices": {
+            "avgMarket": 51.58,
+            "psa10": 350.53,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 47.69,
+            "tcgplayer": 55.46,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28",
+            "priceCharting": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv3pt5-167",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-scarlet-%26-violet-151/ivysaur-167"
+          },
+          "markets": {}
+        },
+        {
+          "id": "bulbasaur-stellar-crown-143",
+          "pokemonTcgId": "sv7-143",
+          "name": "Bulbasaur",
+          "set": "Stellar Crown",
+          "year": 2024,
+          "rarity": "Illustration Rare",
+          "number": "143/142",
+          "imageUrl": "https://images.pokemontcg.io/sv7/143_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/sv7/143.png",
+          "holo": true,
+          "chase": true,
+          "prices": {
+            "avgMarket": 122.53,
+            "psa10": 364.05,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 113.75,
+            "tcgplayer": 131.3,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/06/28",
+            "priceCharting": "2026/06/28"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv7-143",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-stellar-crown/bulbasaur-143"
           },
           "markets": {},
           "nickname": "Stellar Crown IR"
@@ -861,12 +904,12 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 70.45,
-            "psa10": null,
+            "avgMarket": 67.73,
+            "psa10": 877.5,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": null,
+            "priceCharting": 65.0,
             "tcgplayer": 70.45,
             "pokescope": null
           },
@@ -874,10 +917,12 @@
             "gemRate": null
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/06/28"
+            "tcgplayer": "2026/06/28",
+            "priceCharting": "2026/06/28"
           },
           "externalUrls": {
-            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv1-210"
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv1-210",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-scarlet-%26-violet/drowzee-210"
           },
           "markets": {},
           "nickname": "Ferris wheel"
@@ -895,12 +940,12 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 20.18,
-            "psa10": null,
+            "avgMarket": 18.87,
+            "psa10": 99.99,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": null,
+            "priceCharting": 17.56,
             "tcgplayer": 20.18,
             "pokescope": null
           },
@@ -908,10 +953,12 @@
             "gemRate": null
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/06/28"
+            "tcgplayer": "2026/06/28",
+            "priceCharting": "2026/06/28"
           },
           "externalUrls": {
-            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/zsv10pt5-95"
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/zsv10pt5-95",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-black-bolt/foongus-95"
           },
           "markets": {},
           "nickname": "Trippy little forest"
@@ -929,12 +976,12 @@
           "holo": true,
           "chase": true,
           "prices": {
-            "avgMarket": 428.96,
-            "psa10": null,
+            "avgMarket": 403.4,
+            "psa10": 4925.0,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": null,
+            "priceCharting": 377.83,
             "tcgplayer": 428.96,
             "pokescope": null
           },
@@ -942,10 +989,12 @@
             "gemRate": null
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/06/28"
+            "tcgplayer": "2026/06/28",
+            "priceCharting": "2026/06/28"
           },
           "externalUrls": {
-            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv2-203"
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv2-203",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-paldea-evolved/magikarp-203"
           },
           "markets": {}
         },
@@ -962,12 +1011,12 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 15.65,
-            "psa10": null,
+            "avgMarket": 15.29,
+            "psa10": 300.0,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": null,
+            "priceCharting": 14.93,
             "tcgplayer": 15.65,
             "pokescope": null
           },
@@ -975,10 +1024,12 @@
             "gemRate": null
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/06/28"
+            "tcgplayer": "2026/06/28",
+            "priceCharting": "2026/06/28"
           },
           "externalUrls": {
-            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv1-207"
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv1-207",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-scarlet-%26-violet/dondozo-207"
           },
           "markets": {}
         },
@@ -995,12 +1046,12 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 58.77,
-            "psa10": null,
+            "avgMarket": 53.89,
+            "psa10": 233.5,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": null,
+            "priceCharting": 49.0,
             "tcgplayer": 58.77,
             "pokescope": null
           },
@@ -1008,10 +1059,12 @@
             "gemRate": null
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/06/28"
+            "tcgplayer": "2026/06/28",
+            "priceCharting": "2026/06/28"
           },
           "externalUrls": {
-            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv5-166"
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv5-166",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-temporal-forces/sawsbuck-166"
           },
           "markets": {}
         },
@@ -1028,12 +1081,12 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 6.43,
-            "psa10": null,
+            "avgMarket": 6.19,
+            "psa10": 93.5,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": null,
+            "priceCharting": 5.95,
             "tcgplayer": 6.43,
             "pokescope": null
           },
@@ -1041,10 +1094,12 @@
             "gemRate": null
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/06/28"
+            "tcgplayer": "2026/06/28",
+            "priceCharting": "2026/06/28"
           },
           "externalUrls": {
-            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv8-214"
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv8-214",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-surging-sparks/braviary-214"
           },
           "markets": {}
         },
@@ -1061,12 +1116,12 @@
           "holo": true,
           "chase": true,
           "prices": {
-            "avgMarket": 400.79,
-            "psa10": null,
+            "avgMarket": 381.71,
+            "psa10": 965.78,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": null,
+            "priceCharting": 362.63,
             "tcgplayer": 400.79,
             "pokescope": null
           },
@@ -1074,10 +1129,12 @@
             "gemRate": null
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/06/28"
+            "tcgplayer": "2026/06/28",
+            "priceCharting": "2026/06/28"
           },
           "externalUrls": {
-            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv6-214"
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv6-214",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-twilight-masquerade/greninja-ex-214"
           },
           "markets": {}
         },
@@ -1094,12 +1151,12 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 56.5,
-            "psa10": null,
+            "avgMarket": 53.78,
+            "psa10": 212.62,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": null,
+            "priceCharting": 51.05,
             "tcgplayer": 56.5,
             "pokescope": null
           },
@@ -1107,10 +1164,12 @@
             "gemRate": null
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/06/28"
+            "tcgplayer": "2026/06/28",
+            "priceCharting": "2026/06/28"
           },
           "externalUrls": {
-            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv2-259"
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv2-259",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-paldea-evolved/chi-yu-ex-259"
           },
           "markets": {}
         },
@@ -1127,12 +1186,12 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 5.19,
-            "psa10": null,
+            "avgMarket": 5.01,
+            "psa10": 58.71,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": null,
+            "priceCharting": 4.83,
             "tcgplayer": 5.19,
             "pokescope": null
           },
@@ -1140,10 +1199,12 @@
             "gemRate": null
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/06/28"
+            "tcgplayer": "2026/06/28",
+            "priceCharting": "2026/06/28"
           },
           "externalUrls": {
-            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv4-184"
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv4-184",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-paradox-rift/dottler-184"
           },
           "markets": {}
         },
@@ -1160,12 +1221,12 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 5.79,
-            "psa10": null,
+            "avgMarket": 5.15,
+            "psa10": 71.01,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": null,
+            "priceCharting": 4.5,
             "tcgplayer": 5.79,
             "pokescope": null
           },
@@ -1173,10 +1234,12 @@
             "gemRate": null
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/06/28"
+            "tcgplayer": "2026/06/28",
+            "priceCharting": "2026/06/28"
           },
           "externalUrls": {
-            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv8-193"
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv8-193",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-surging-sparks/vivillon-193"
           },
           "markets": {}
         },
@@ -1193,12 +1256,12 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 12.62,
-            "psa10": null,
+            "avgMarket": 11.08,
+            "psa10": 90.01,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": null,
+            "priceCharting": 9.53,
             "tcgplayer": 12.62,
             "pokescope": null
           },
@@ -1206,10 +1269,12 @@
             "gemRate": null
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/06/28"
+            "tcgplayer": "2026/06/28",
+            "priceCharting": "2026/06/28"
           },
           "externalUrls": {
-            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv6-185"
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv6-185",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-twilight-masquerade/applin-185"
           },
           "markets": {},
           "nickname": "In a tree"
@@ -1227,12 +1292,12 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 10.52,
-            "psa10": null,
+            "avgMarket": 9.26,
+            "psa10": 48.0,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": null,
+            "priceCharting": 7.99,
             "tcgplayer": 10.52,
             "pokescope": null
           },
@@ -1240,10 +1305,12 @@
             "gemRate": null
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/06/28"
+            "tcgplayer": "2026/06/28",
+            "priceCharting": "2026/06/28"
           },
           "externalUrls": {
-            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/zsv10pt5-132"
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/zsv10pt5-132",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-black-bolt/venipede-132"
           },
           "markets": {}
         },
@@ -1260,12 +1327,12 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 51.15,
-            "psa10": null,
+            "avgMarket": 47.58,
+            "psa10": 261.65,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": null,
+            "priceCharting": 44.0,
             "tcgplayer": 51.15,
             "pokescope": null
           },
@@ -1273,10 +1340,12 @@
             "gemRate": null
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/06/28"
+            "tcgplayer": "2026/06/28",
+            "priceCharting": "2026/06/28"
           },
           "externalUrls": {
-            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv6pt5-67"
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv6pt5-67",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-shrouded-fable/horsea-67"
           },
           "markets": {}
         },
@@ -1293,12 +1362,12 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 53.65,
-            "psa10": null,
+            "avgMarket": 49.33,
+            "psa10": 284.0,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": null,
+            "priceCharting": 45.0,
             "tcgplayer": 53.65,
             "pokescope": null
           },
@@ -1306,10 +1375,12 @@
             "gemRate": null
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/06/28"
+            "tcgplayer": "2026/06/28",
+            "priceCharting": "2026/06/28"
           },
           "externalUrls": {
-            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv3pt5-181"
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv3pt5-181",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-scarlet-%26-violet-151/dragonair-181"
           },
           "markets": {}
         },
@@ -1326,12 +1397,12 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 16.13,
-            "psa10": null,
+            "avgMarket": 15.12,
+            "psa10": 160.19,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": null,
+            "priceCharting": 14.1,
             "tcgplayer": 16.13,
             "pokescope": null
           },
@@ -1339,10 +1410,12 @@
             "gemRate": null
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/06/28"
+            "tcgplayer": "2026/06/28",
+            "priceCharting": "2026/06/28"
           },
           "externalUrls": {
-            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/me2-98"
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/me2-98",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-phantasmal-flames/piplup-98"
           },
           "markets": {},
           "nickname": "Phantasmal Flames IR"
@@ -1360,12 +1433,12 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 14.93,
-            "psa10": null,
+            "avgMarket": 13.59,
+            "psa10": 100.0,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": null,
+            "priceCharting": 12.25,
             "tcgplayer": 14.93,
             "pokescope": null
           },
@@ -1373,10 +1446,12 @@
             "gemRate": null
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/06/28"
+            "tcgplayer": "2026/06/28",
+            "priceCharting": "2026/06/28"
           },
           "externalUrls": {
-            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/rsv10pt5-110"
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/rsv10pt5-110",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-white-flare/swanna-110"
           },
           "markets": {}
         },
@@ -1393,12 +1468,12 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 19.79,
-            "psa10": null,
+            "avgMarket": 18.52,
+            "psa10": 194.5,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": null,
+            "priceCharting": 17.25,
             "tcgplayer": 19.79,
             "pokescope": null
           },
@@ -1406,10 +1481,12 @@
             "gemRate": null
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/06/28"
+            "tcgplayer": "2026/06/28",
+            "priceCharting": "2026/06/28"
           },
           "externalUrls": {
-            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/zsv10pt5-113"
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/zsv10pt5-113",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-black-bolt/tynamo-113"
           },
           "markets": {},
           "nickname": "In the water"
@@ -1427,12 +1504,12 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 58.52,
-            "psa10": null,
+            "avgMarket": 54.76,
+            "psa10": 367.5,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": null,
+            "priceCharting": 51.0,
             "tcgplayer": 58.52,
             "pokescope": null
           },
@@ -1440,10 +1517,12 @@
             "gemRate": null
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/06/28"
+            "tcgplayer": "2026/06/28",
+            "priceCharting": "2026/06/28"
           },
           "externalUrls": {
-            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv3pt5-176"
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv3pt5-176",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-scarlet-%26-violet-151/poliwhirl-176"
           },
           "markets": {},
           "nickname": "Rainy street"
@@ -1461,12 +1540,12 @@
           "holo": true,
           "chase": true,
           "prices": {
-            "avgMarket": 106.77,
-            "psa10": null,
+            "avgMarket": 105.89,
+            "psa10": 699.99,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": null,
+            "priceCharting": 105.0,
             "tcgplayer": 106.77,
             "pokescope": null
           },
@@ -1474,10 +1553,12 @@
             "gemRate": null
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/06/28"
+            "tcgplayer": "2026/06/28",
+            "priceCharting": "2026/06/28"
           },
           "externalUrls": {
-            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv5-177"
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv5-177",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-temporal-forces/gastly-177"
           },
           "markets": {},
           "nickname": "Temporal Forces IR"
@@ -1495,12 +1576,12 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 20.88,
-            "psa10": null,
+            "avgMarket": 19.69,
+            "psa10": 160.0,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": null,
+            "priceCharting": 18.49,
             "tcgplayer": 20.88,
             "pokescope": null
           },
@@ -1508,10 +1589,12 @@
             "gemRate": null
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/06/28"
+            "tcgplayer": "2026/06/28",
+            "priceCharting": "2026/06/28"
           },
           "externalUrls": {
-            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/zsv10pt5-116"
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/zsv10pt5-116",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-black-bolt/munna-116"
           },
           "markets": {}
         },
@@ -1528,7 +1611,7 @@
           "chase": true,
           "prices": {
             "avgMarket": 302.5,
-            "psa10": null,
+            "psa10": 1025.0,
             "psa10Estimated": false
           },
           "sources": {
@@ -1560,12 +1643,12 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 14.63,
-            "psa10": null,
+            "avgMarket": 13.78,
+            "psa10": 100.0,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": null,
+            "priceCharting": 12.92,
             "tcgplayer": 14.63,
             "pokescope": null
           },
@@ -1573,10 +1656,12 @@
             "gemRate": null
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/06/28"
+            "tcgplayer": "2026/06/28",
+            "priceCharting": "2026/06/28"
           },
           "externalUrls": {
-            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv2-228"
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv2-228",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-paldea-evolved/farigiraf-228"
           },
           "markets": {}
         },
@@ -1593,12 +1678,12 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 38.11,
-            "psa10": null,
+            "avgMarket": 35.63,
+            "psa10": 121.45,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": null,
+            "priceCharting": 33.14,
             "tcgplayer": 38.11,
             "pokescope": null
           },
@@ -1606,10 +1691,12 @@
             "gemRate": null
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/06/28"
+            "tcgplayer": "2026/06/28",
+            "priceCharting": "2026/06/28"
           },
           "externalUrls": {
-            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv2-258"
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv2-258",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-paldea-evolved/skeledirge-ex-258"
           },
           "markets": {}
         },
@@ -1626,12 +1713,12 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 10.53,
-            "psa10": null,
+            "avgMarket": 10.3,
+            "psa10": 75.0,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": null,
+            "priceCharting": 10.07,
             "tcgplayer": 10.53,
             "pokescope": null
           },
@@ -1639,10 +1726,12 @@
             "gemRate": null
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/06/28"
+            "tcgplayer": "2026/06/28",
+            "priceCharting": "2026/06/28"
           },
           "externalUrls": {
-            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv4-188"
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv4-188",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-paradox-rift/snorunt-188"
           },
           "markets": {}
         },
@@ -1659,12 +1748,12 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 29.89,
-            "psa10": null,
+            "avgMarket": 27.95,
+            "psa10": 160.75,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": null,
+            "priceCharting": 26.0,
             "tcgplayer": 29.89,
             "pokescope": null
           },
@@ -1672,10 +1761,12 @@
             "gemRate": null
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/06/28"
+            "tcgplayer": "2026/06/28",
+            "priceCharting": "2026/06/28"
           },
           "externalUrls": {
-            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv6pt5-71"
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv6pt5-71",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-shrouded-fable/cresselia-71"
           },
           "markets": {},
           "nickname": "Crescent Purge"
@@ -1693,12 +1784,12 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 18.17,
-            "psa10": null,
+            "avgMarket": 15.45,
+            "psa10": 97.51,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": null,
+            "priceCharting": 12.72,
             "tcgplayer": 18.17,
             "pokescope": null
           },
@@ -1706,10 +1797,12 @@
             "gemRate": null
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/06/28"
+            "tcgplayer": "2026/06/28",
+            "priceCharting": "2026/06/28"
           },
           "externalUrls": {
-            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv5-168"
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv5-168",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-temporal-forces/snom-168"
           },
           "markets": {},
           "nickname": "Powder Snow"
@@ -1748,6 +1841,123 @@
           }
         ]
       }
+    },
+    {
+      "id": "grails",
+      "title": "Grail Watchlist",
+      "tag": "3 PSA 10 grails tracked",
+      "cards": [
+        {
+          "id": "team-aquas-kyogre-ex-japanese-double-crisis-6",
+          "name": "Team Aqua's Kyogre EX",
+          "nickname": "Japanese Double Crisis PSA 10 target",
+          "set": "Japanese Double Crisis",
+          "year": 2015,
+          "rarity": "Rare Ultra",
+          "number": "6/34",
+          "imageUrl": "https://storage.googleapis.com/images.pricecharting.com/ebd37d62a779c50fab813e849c94e9697a4bcbe1829cd2397d8ec2f0464d1396/1600.jpg",
+          "fallbackImageUrl": "https://storage.googleapis.com/images.pricecharting.com/ebd37d62a779c50fab813e849c94e9697a4bcbe1829cd2397d8ec2f0464d1396/240.jpg",
+          "holo": true,
+          "chase": true,
+          "prices": {
+            "avgMarket": 318.0,
+            "psa10": 2550.78,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 318.0,
+            "tcgplayer": null,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "priceCharting": "2026/06/28"
+          },
+          "externalUrls": {
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-japanese-double-crisis/team-aqua%27s-kyogre-ex-6"
+          },
+          "markets": {}
+        },
+        {
+          "id": "mew-ex-paldean-fates-232",
+          "pokemonTcgId": "sv4pt5-232",
+          "name": "Mew ex",
+          "nickname": "Bubble Mew",
+          "set": "Paldean Fates",
+          "year": 2024,
+          "rarity": "Special Illustration Rare",
+          "number": "232/091",
+          "imageUrl": "https://images.pokemontcg.io/sv4pt5/232_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/sv4pt5/232.png",
+          "holo": true,
+          "chase": true,
+          "prices": {
+            "avgMarket": 970.35,
+            "psa10": 3895.5,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 905.04,
+            "tcgplayer": 1035.66,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "priceCharting": "2026/06/28",
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-paldean-fates/mew-ex-232",
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv4pt5-232"
+          },
+          "markets": {}
+        },
+        {
+          "id": "giratina-v-lost-origin-186",
+          "pokemonTcgId": "swsh11-186",
+          "name": "Giratina V",
+          "nickname": "Lost Origin alternate art",
+          "set": "Lost Origin",
+          "year": 2022,
+          "rarity": "Rare Ultra",
+          "number": "186/196",
+          "imageUrl": "https://images.pokemontcg.io/swsh11/186_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/swsh11/186.png",
+          "holo": true,
+          "chase": true,
+          "prices": {
+            "avgMarket": 851.98,
+            "psa10": 3255.5,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 837.75,
+            "tcgplayer": 866.21,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "priceCharting": "2026/06/28",
+            "tcgplayer": "2026/06/28"
+          },
+          "externalUrls": {
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-lost-origin/giratina-v-186",
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swsh11-186"
+          },
+          "markets": {}
+        }
+      ],
+      "emptyState": {
+        "title": "Grail Watchlist",
+        "message": "Add the next dream card when it starts calling your name.",
+        "tone": "grails"
+      }
     }
   ],
   "notes": [
@@ -1759,12 +1969,14 @@
   "updateSummary": {
     "providers": [
       "PokemonTCG",
-      "TCGdex/Cardmarket"
+      "TCGdex/Cardmarket",
+      "PriceCharting"
     ],
-    "updatedCards": 26,
-    "pokemonTcgUpdatedCards": 20,
-    "cardmarketUpdatedCards": 6,
-    "cardmarketSkippedCards": 2,
+    "updatedCards": 33,
+    "pokemonTcgUpdatedCards": 0,
+    "cardmarketUpdatedCards": 0,
+    "priceChartingUpdatedCards": 33,
+    "cardmarketSkippedCards": 0,
     "failedCards": 0
   }
 }

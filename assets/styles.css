@@ -569,6 +569,10 @@ body[data-active-collection="samantha"] .card-body {
   margin-top: auto;
 }
 
+.prices.single-price {
+  grid-template-columns: 1fr;
+}
+
 .price-box {
   min-height: 68px;
   padding: 8px;
