@@ -7,7 +7,7 @@
     {
       "id": "michael",
       "title": "Michael's Magnificent Hunt",
-      "tag": "The main collection · 22 cards tracked",
+      "tag": "The main collection · 24 cards tracked",
       "cards": [
         {
           "id": "sylveon-vmax-evolving-skies-212",
@@ -777,6 +777,78 @@
             "priceCharting": "https://www.pricecharting.com/game/pokemon-stellar-crown/bulbasaur-143"
           },
           "markets": {}
+        },
+        {
+          "id": "reshiram-and-zekrom-gx-cosmic-eclipse-157",
+          "pokemonTcgId": "sm12-157",
+          "name": "Reshiram & Zekrom-GX",
+          "set": "Cosmic Eclipse",
+          "year": 2019,
+          "rarity": "Rare Holo GX",
+          "number": "157/236",
+          "imageUrl": "https://images.pokemontcg.io/sm12/157_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/sm12/157.png",
+          "holo": true,
+          "chase": false,
+          "prices": {
+            "avgMarket": 91.39,
+            "psa10": 905.71,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 84.67,
+            "tcgplayer": 98.11,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "priceCharting": "2026/06/30",
+            "tcgplayer": "2026/06/30"
+          },
+          "externalUrls": {
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-cosmic-eclipse/reshiram-&-zekrom-gx-157",
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sm12-157"
+          },
+          "markets": {},
+          "nickname": "Cosmic Eclipse tag team"
+        },
+        {
+          "id": "venusaur-ex-151-198",
+          "pokemonTcgId": "sv3pt5-198",
+          "name": "Venusaur ex",
+          "set": "151",
+          "year": 2023,
+          "rarity": "Special Illustration Rare",
+          "number": "198/165",
+          "imageUrl": "https://images.pokemontcg.io/sv3pt5/198_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/sv3pt5/198.png",
+          "holo": true,
+          "chase": true,
+          "prices": {
+            "avgMarket": 122.03,
+            "psa10": 491.86,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 120.0,
+            "tcgplayer": 124.05,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "priceCharting": "2026/06/30",
+            "tcgplayer": "2026/06/30"
+          },
+          "externalUrls": {
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-scarlet-%26-violet-151/venusaur-ex-198",
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv3pt5-198"
+          },
+          "markets": {},
+          "nickname": "151 SIR"
         }
       ]
     },
@@ -1983,6 +2055,7 @@
     "pokemonTcgUpdatedCards": 52,
     "cardmarketUpdatedCards": 7,
     "cardmarketSkippedCards": 2,
-    "failedCards": 0
+    "failedCards": 0,
+    "manualAddedCards": 2
   }
 }
