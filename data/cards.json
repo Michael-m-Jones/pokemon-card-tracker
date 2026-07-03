@@ -2,12 +2,12 @@
   "schemaVersion": 1,
   "title": "Poke Card Tracker",
   "description": "A shareable tracker for Pokemon card market prices and PSA 10 upside.",
-  "lastUpdated": "2026-07-03T15:14:08.172Z",
+  "lastUpdated": "2026-07-03T12:00:00.000Z",
   "collections": [
     {
       "id": "michael",
       "title": "Michael's Magnificent Hunt",
-      "tag": "The main collection · 24 cards tracked",
+      "tag": "The main collection · 26 cards tracked",
       "cards": [
         {
           "id": "sylveon-vmax-evolving-skies-212",
@@ -857,6 +857,78 @@
           },
           "markets": {},
           "nickname": "151 SIR"
+        },
+        {
+          "id": "espeon-and-deoxys-gx-sm-promo-sm240",
+          "pokemonTcgId": "smp-SM240",
+          "name": "Espeon & Deoxys-GX",
+          "set": "SM Black Star Promos",
+          "year": 2019,
+          "rarity": "Promo",
+          "number": "SM240",
+          "imageUrl": "https://images.pokemontcg.io/smp/SM240_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/smp/SM240.png",
+          "holo": true,
+          "chase": true,
+          "prices": {
+            "avgMarket": 122.97,
+            "psa10": 4724.5,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 113.99,
+            "tcgplayer": 131.94,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "priceCharting": "2026/07/03",
+            "tcgplayer": "2026/07/03"
+          },
+          "externalUrls": {
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-promo/espeon-&-deoxys-gx-sm240",
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/smp-SM240"
+          },
+          "markets": {},
+          "nickname": "SM240 promo"
+        },
+        {
+          "id": "gardevoir-and-sylveon-gx-unbroken-bonds-205",
+          "pokemonTcgId": "sm10-205",
+          "name": "Gardevoir & Sylveon-GX",
+          "set": "Unbroken Bonds",
+          "year": 2019,
+          "rarity": "Rare Ultra",
+          "number": "205/214",
+          "imageUrl": "https://images.pokemontcg.io/sm10/205_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/sm10/205.png",
+          "holo": true,
+          "chase": true,
+          "prices": {
+            "avgMarket": 607.74,
+            "psa10": 5049.5,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 610.0,
+            "tcgplayer": 605.47,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "priceCharting": "2026/07/03",
+            "tcgplayer": "2026/07/03"
+          },
+          "externalUrls": {
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-unbroken-bonds/gardevoir-&-sylveon-gx-205",
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sm10-205"
+          },
+          "markets": {},
+          "nickname": "Unbroken Bonds alternate art"
         }
       ]
     },
@@ -2063,6 +2135,7 @@
     "pokemonTcgUpdatedCards": 54,
     "cardmarketUpdatedCards": 8,
     "cardmarketSkippedCards": 2,
-    "failedCards": 0
+    "failedCards": 0,
+    "manualAddedCards": 2
   }
 }
