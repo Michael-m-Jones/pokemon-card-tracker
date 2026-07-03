@@ -2,12 +2,12 @@
   "schemaVersion": 1,
   "title": "Poke Card Tracker",
   "description": "A shareable tracker for Pokemon card market prices and PSA 10 upside.",
-  "lastUpdated": "2026-07-03T13:00:00.000Z",
+  "lastUpdated": "2026-07-03T13:30:00.000Z",
   "collections": [
     {
       "id": "michael",
       "title": "Michael's Magnificent Hunt",
-      "tag": "The main collection · 27 cards tracked",
+      "tag": "The main collection · 26 cards tracked",
       "cards": [
         {
           "id": "sylveon-vmax-evolving-skies-212",
@@ -893,42 +893,6 @@
           },
           "markets": {},
           "nickname": "SM240 promo"
-        },
-        {
-          "id": "gardevoir-and-sylveon-gx-unbroken-bonds-205",
-          "pokemonTcgId": "sm10-205",
-          "name": "Gardevoir & Sylveon-GX",
-          "set": "Unbroken Bonds",
-          "year": 2019,
-          "rarity": "Rare Ultra",
-          "number": "205/214",
-          "imageUrl": "https://images.pokemontcg.io/sm10/205_hires.png",
-          "fallbackImageUrl": "https://images.pokemontcg.io/sm10/205.png",
-          "holo": true,
-          "chase": true,
-          "prices": {
-            "avgMarket": 607.74,
-            "psa10": 5049.5,
-            "psa10Estimated": false
-          },
-          "sources": {
-            "priceCharting": 610.0,
-            "tcgplayer": 605.47,
-            "pokescope": null
-          },
-          "grading": {
-            "gemRate": null
-          },
-          "sourceUpdatedAt": {
-            "priceCharting": "2026/07/03",
-            "tcgplayer": "2026/07/03"
-          },
-          "externalUrls": {
-            "priceCharting": "https://www.pricecharting.com/game/pokemon-unbroken-bonds/gardevoir-&-sylveon-gx-205",
-            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sm10-205"
-          },
-          "markets": {},
-          "nickname": "Unbroken Bonds alternate art"
         },
         {
           "id": "aegislash-paradox-rift-210",
@@ -2172,6 +2136,7 @@
     "cardmarketUpdatedCards": 8,
     "cardmarketSkippedCards": 2,
     "failedCards": 0,
-    "manualAddedCards": 3
+    "manualAddedCards": 3,
+    "manualRemovedCards": 1
   }
 }
