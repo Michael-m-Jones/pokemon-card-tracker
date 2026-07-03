@@ -24,6 +24,14 @@ for (const collection of data.collections || []) {
     if (!Number.isFinite(Number(card.prices?.avgMarket))) {
       errors.push(`${label} is missing avg market price.`);
     }
+    if (!Number.isFinite(Number(card.prices?.psa10))) {
+      errors.push(`${label} is missing PSA 10 price.`);
+    }
+    if (!card.grading || !Object.hasOwn(card.grading, "gemRate")) {
+      errors.push(`${label} is missing PSA 10 gem rate field.`);
+    } else if (card.grading.gemRate !== null && !Number.isFinite(Number(card.grading.gemRate))) {
+      errors.push(`${label} has an invalid PSA 10 gem rate.`);
+    }
     if (!card.sources || !Object.keys(card.sources).length) {
       errors.push(`${label} is missing source prices.`);
     }

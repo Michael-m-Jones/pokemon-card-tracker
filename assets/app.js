@@ -265,7 +265,6 @@ function renderCards(collection) {
 function renderCard(card) {
   const gem = gemInfo(card.grading?.gemRate);
   const hasPsa = psa10(card) !== null;
-  const hasGemRate = finiteNumber(card.grading?.gemRate) !== null;
   const article = document.createElement("article");
   article.className = "card";
 
@@ -322,7 +321,7 @@ function renderCard(card) {
 
   body.append(renderSources(card));
   body.append(renderMarkets(card));
-  if (hasGemRate) body.append(renderGem(gem));
+  body.append(renderGem(gem));
   article.append(body);
   return article;
 }
