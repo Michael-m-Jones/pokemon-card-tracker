@@ -2,12 +2,12 @@
   "schemaVersion": 1,
   "title": "Poke Card Tracker",
   "description": "A shareable tracker for Pokemon card market prices and PSA 10 upside.",
-  "lastUpdated": "2026-07-03T12:00:00.000Z",
+  "lastUpdated": "2026-07-03T13:00:00.000Z",
   "collections": [
     {
       "id": "michael",
       "title": "Michael's Magnificent Hunt",
-      "tag": "The main collection · 26 cards tracked",
+      "tag": "The main collection · 27 cards tracked",
       "cards": [
         {
           "id": "sylveon-vmax-evolving-skies-212",
@@ -929,6 +929,42 @@
           },
           "markets": {},
           "nickname": "Unbroken Bonds alternate art"
+        },
+        {
+          "id": "aegislash-paradox-rift-210",
+          "pokemonTcgId": "sv4-210",
+          "name": "Aegislash",
+          "set": "Paradox Rift",
+          "year": 2023,
+          "rarity": "Illustration Rare",
+          "number": "210/182",
+          "imageUrl": "https://images.pokemontcg.io/sv4/210_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/sv4/210.png",
+          "holo": true,
+          "chase": false,
+          "prices": {
+            "avgMarket": 11.01,
+            "psa10": 115.0,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 10.49,
+            "tcgplayer": 11.52,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": null
+          },
+          "sourceUpdatedAt": {
+            "priceCharting": "2026/07/03",
+            "tcgplayer": "2026/07/03"
+          },
+          "externalUrls": {
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-paradox-rift/aegislash-210",
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv4-210"
+          },
+          "markets": {},
+          "nickname": "Stone building IR"
         }
       ]
     },
@@ -2136,6 +2172,6 @@
     "cardmarketUpdatedCards": 8,
     "cardmarketSkippedCards": 2,
     "failedCards": 0,
-    "manualAddedCards": 2
+    "manualAddedCards": 3
   }
 }
