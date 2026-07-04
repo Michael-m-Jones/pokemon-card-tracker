@@ -1,0 +1,39 @@
+name: Preview card
+
+on:
+  workflow_dispatch:
+    inputs:
+      request_id:
+        description: Preview request id
+        required: true
+      url:
+        description: PriceCharting or PokemonTCG URL
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  preview-card:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Set up Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: Build preview
+        run: |
+          mkdir -p data/previews
+          node scripts/card-preview.mjs "${{ inputs.url }}" > "data/previews/${{ inputs.request_id }}.json" || true
+
+      - name: Commit preview
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "data/previews/${{ inputs.request_id }}.json"
+          git commit -m "Preview card ${{ inputs.request_id }}"
+          git push

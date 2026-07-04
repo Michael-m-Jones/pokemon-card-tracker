@@ -50,7 +50,9 @@ body[data-active-collection="grails"] {
 }
 
 button,
-input {
+input,
+select,
+textarea {
   font: inherit;
 }
 
@@ -86,6 +88,24 @@ body[data-active-collection="samantha"] .site-header {
   min-height: 128px;
   padding: 22px 0 26px;
   overflow: hidden;
+}
+
+.admin-link {
+  position: absolute;
+  right: 0;
+  top: 22px;
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border: 2px solid rgba(255, 255, 255, 0.72);
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1;
+  text-decoration: none;
+  box-shadow: 0 8px 18px rgba(23, 32, 51, 0.18);
 }
 
 .pokeball {
@@ -862,6 +882,191 @@ body[data-active-collection="samantha"] .market-row {
   margin-top: 6px;
 }
 
+.admin-page {
+  background:
+    linear-gradient(180deg, rgba(47, 111, 237, 0.12), transparent 260px),
+    var(--bg);
+}
+
+.admin-header .header-inner {
+  min-height: 112px;
+}
+
+.admin-shell {
+  padding: 24px 0 56px;
+}
+
+.admin-panel,
+.review-panel {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: var(--shadow);
+}
+
+.admin-panel {
+  padding: 18px;
+}
+
+.admin-form,
+.admin-token-row {
+  display: grid;
+  grid-template-columns: minmax(220px, 1fr) minmax(160px, 240px) auto;
+  gap: 12px;
+  align-items: end;
+}
+
+.admin-token-row {
+  margin-top: 14px;
+  grid-template-columns: minmax(220px, 1fr) auto;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+}
+
+.field label,
+.check-field {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 850;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.field input,
+.field select,
+.json-review textarea {
+  width: 100%;
+  min-height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #ffffff;
+  color: var(--ink);
+  padding: 9px 11px;
+  outline: none;
+  box-shadow: inset 0 1px 0 rgba(23, 32, 51, 0.03);
+}
+
+.field input:focus,
+.field select:focus,
+.json-review textarea:focus {
+  border-color: rgba(47, 111, 237, 0.72);
+  box-shadow:
+    inset 0 1px 0 rgba(23, 32, 51, 0.03),
+    0 0 0 3px rgba(47, 111, 237, 0.12);
+}
+
+.primary-button {
+  min-height: 42px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--blue);
+  color: #ffffff;
+  padding: 0 18px;
+  font-weight: 900;
+  box-shadow: 0 10px 20px rgba(47, 111, 237, 0.2);
+}
+
+.admin-status {
+  min-height: 22px;
+  margin: 14px 2px 0;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 750;
+}
+
+.admin-status[data-tone="success"] {
+  color: var(--green);
+}
+
+.admin-status[data-tone="error"] {
+  color: #c02f2f;
+}
+
+.review-panel {
+  margin-top: 18px;
+  padding: 18px;
+}
+
+.review-layout {
+  display: grid;
+  grid-template-columns: minmax(240px, 330px) minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.preview-card {
+  position: sticky;
+  top: 18px;
+}
+
+.review-form {
+  min-width: 0;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.check-field {
+  display: flex;
+  min-height: 42px;
+  align-items: center;
+  gap: 9px;
+  align-self: end;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface-2);
+  padding: 9px 11px;
+}
+
+.check-field input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--blue);
+}
+
+.json-review {
+  margin-top: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f8fafc;
+  overflow: hidden;
+}
+
+.json-review summary {
+  cursor: pointer;
+  padding: 11px 13px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.json-review textarea {
+  min-height: 280px;
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-radius: 0;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 12px;
+  line-height: 1.45;
+  resize: vertical;
+}
+
+.review-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 14px;
+}
+
 .hide-summary .summary-band {
   display: none;
 }
@@ -984,6 +1189,17 @@ body[data-active-collection="samantha"] .source-notes li::before {
   .status-row {
     align-items: stretch;
     flex-direction: column;
+  }
+
+  .admin-form,
+  .admin-token-row,
+  .review-layout,
+  .review-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .preview-card {
+    position: static;
   }
 
   .soft-button {

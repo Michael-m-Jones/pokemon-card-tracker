@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Review and add cards to the Pokemon card tracker.">
+    <title>Add Card · Poke Card Tracker</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/styles.css?v=20260703-admin-flow">
+  </head>
+  <body class="admin-page">
+    <header class="site-header admin-header">
+      <div class="wrap header-inner">
+        <svg class="pokeball" viewBox="0 0 100 100" aria-hidden="true">
+          <circle cx="50" cy="50" r="46" fill="#fff" stroke="currentColor" stroke-width="6"></circle>
+          <path d="M5 50a45 45 0 0 1 90 0Z" fill="#e83a3a" stroke="currentColor" stroke-width="6"></path>
+          <line x1="5" y1="50" x2="95" y2="50" stroke="currentColor" stroke-width="6"></line>
+          <circle cx="50" cy="50" r="14" fill="#fff" stroke="currentColor" stroke-width="6"></circle>
+        </svg>
+        <div>
+          <p class="eyebrow">Card intake</p>
+          <h1>Add a Card</h1>
+          <p class="tagline">Paste, review, then commit to the tracker.</p>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrap admin-shell">
+      <section class="admin-panel">
+        <form id="lookup-form" class="admin-form">
+          <div class="field wide">
+            <label for="card-url">Card URL</label>
+            <input id="card-url" name="card-url" type="url" placeholder="https://www.pricecharting.com/game/..." required>
+          </div>
+          <div class="field">
+            <label for="collection-select">List</label>
+            <select id="collection-select" name="collection-select"></select>
+          </div>
+          <button class="primary-button" type="submit">Preview</button>
+        </form>
+
+        <div class="admin-token-row">
+          <div class="field wide">
+            <label for="github-token">GitHub token</label>
+            <input id="github-token" name="github-token" type="password" autocomplete="off" placeholder="Only saved in this browser">
+          </div>
+          <button id="save-token" class="soft-button" type="button">Save</button>
+        </div>
+
+        <p id="admin-status" class="admin-status" role="status">Loading collections...</p>
+      </section>
+
+      <section id="review-panel" class="review-panel" hidden>
+        <div class="review-layout">
+          <article id="preview-card" class="card preview-card"></article>
+
+          <form id="review-form" class="review-form">
+            <div class="review-grid">
+              <div class="field">
+                <label for="review-name">Name</label>
+                <input id="review-name" name="name" required>
+              </div>
+              <div class="field">
+                <label for="review-set">Set</label>
+                <input id="review-set" name="set" required>
+              </div>
+              <div class="field">
+                <label for="review-number">Number</label>
+                <input id="review-number" name="number" required>
+              </div>
+              <div class="field">
+                <label for="review-year">Year</label>
+                <input id="review-year" name="year" type="number" min="1996" max="2100" required>
+              </div>
+              <div class="field">
+                <label for="review-rarity">Rarity</label>
+                <input id="review-rarity" name="rarity" required>
+              </div>
+              <div class="field">
+                <label for="review-tcg-id">PokemonTCG ID</label>
+                <input id="review-tcg-id" name="pokemonTcgId">
+              </div>
+              <div class="field">
+                <label for="review-avg">Avg market</label>
+                <input id="review-avg" name="avgMarket" type="number" min="0" step="0.01" required>
+              </div>
+              <div class="field">
+                <label for="review-psa">PSA 10</label>
+                <input id="review-psa" name="psa10" type="number" min="0" step="0.01" required>
+              </div>
+              <div class="field">
+                <label for="review-gem">Gem rate</label>
+                <input id="review-gem" name="gemRate" type="number" min="0" max="100" step="1" placeholder="No data">
+              </div>
+              <label class="check-field">
+                <input id="review-holo" name="holo" type="checkbox">
+                <span>Holo</span>
+              </label>
+            </div>
+
+            <details class="json-review">
+              <summary>JSON</summary>
+              <textarea id="review-json" spellcheck="false"></textarea>
+            </details>
+
+            <div class="review-actions">
+              <button id="refresh-preview" class="soft-button" type="button">Refresh preview</button>
+              <button id="commit-card" class="primary-button" type="button">Add to list</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="assets/admin.js?v=20260703-admin-flow" defer></script>
+  </body>
+</html>
