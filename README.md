@@ -25,7 +25,7 @@ Serve the folder with any static file server, then open `index.html` through tha
 
 ## Add-card admin
 
-Open `/admin.html` to paste a PriceCharting or PokemonTCG URL, generate a preview, edit the reviewed JSON, and commit the card to one of the lists.
+Open `/admin.html` to paste a PriceCharting, TCGplayer, or PokemonTCG URL, generate a preview, edit the reviewed JSON, and commit the card to one of the lists.
 
 The preview step runs `.github/workflows/preview-card.yml`, so the GitHub token used in the browser needs permission to run Actions and read/write repository contents. The token is stored only in local browser storage.
 

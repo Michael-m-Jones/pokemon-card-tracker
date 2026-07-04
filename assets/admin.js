@@ -140,8 +140,8 @@ els.commitCard.addEventListener("click", async () => {
 
 async function buildCandidate(inputUrl) {
   const url = normalizeUrl(inputUrl);
-  if (!url.hostname.includes("pricecharting.com") && !url.hostname.includes("pokemontcg.io") && !url.hostname.includes("prices.pokemontcg.io")) {
-    throw new Error("Use a PriceCharting URL or a PokemonTCG price URL.");
+  if (!url.hostname.includes("pricecharting.com") && !url.hostname.includes("tcgplayer.com") && !url.hostname.includes("pokemontcg.io") && !url.hostname.includes("prices.pokemontcg.io")) {
+    throw new Error("Use a PriceCharting, TCGplayer, or PokemonTCG price URL.");
   }
   const token = els.token.value.trim();
   if (!token) throw new Error("Add a GitHub token before previewing.");

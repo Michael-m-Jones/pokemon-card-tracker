@@ -19,6 +19,17 @@ async function buildPreview(url) {
     return mergeCard({ pokemonTcg, priceCharting, priceChartingUrl: canonicalPriceChartingUrl(url) });
   }
 
+  if (url.hostname.includes("tcgplayer.com")) {
+    const pokemonTcg = await findPokemonTcgFromTcgplayer(url);
+    const priceCharting = await findPriceChartingForPokemonTcg(pokemonTcg).catch(() => null);
+    return mergeCard({
+      pokemonTcg,
+      priceCharting,
+      priceChartingUrl: priceCharting?.url,
+      sourceUrl: url.href
+    });
+  }
+
   if (url.hostname.includes("pokemontcg.io") || url.hostname.includes("prices.pokemontcg.io")) {
     const id = decodeURIComponent(url.pathname.split("/").filter(Boolean).pop() || "");
     if (!id) throw new Error("Could not read a PokemonTCG card id from the URL.");
@@ -26,7 +37,7 @@ async function buildPreview(url) {
     return mergeCard({ pokemonTcg });
   }
 
-  throw new Error("Use a PriceCharting URL or PokemonTCG price URL.");
+  throw new Error("Use a PriceCharting, TCGplayer, or PokemonTCG price URL.");
 }
 
 async function priceChartingPreview(url) {
@@ -48,7 +59,8 @@ async function priceChartingPreview(url) {
     raw: parseIdPrice(html, "used_price"),
     psa10: parseIdPrice(html, "manual_only_price"),
     gemRate: parseGemRate(popHtml),
-    imageUrl: parseImageUrl(html)
+    imageUrl: parseImageUrl(html),
+    url: canonicalPriceChartingUrl(url)
   };
 }
 
@@ -61,6 +73,96 @@ async function findPokemonTcgCard(priceCharting) {
   return cards
     .map((card) => ({ card, score: scorePokemonTcgMatch(card, priceCharting) }))
     .sort((a, b) => b.score - a.score)[0].card;
+}
+
+async function findPokemonTcgFromTcgplayer(url) {
+  const pathParts = url.pathname.split("/").filter(Boolean);
+  const productIndex = pathParts.indexOf("product");
+  const productId = productIndex >= 0 ? pathParts[productIndex + 1] : "";
+  const slug = decodeURIComponent(pathParts[productIndex + 2] || pathParts.at(-1) || "");
+  if (!slug) throw new Error("Could not read the TCGplayer product slug.");
+
+  const parsed = await parseTcgplayerSlug(slug);
+  const cards = await searchPokemonTcg(`name:${escapeQueryValue(parsed.searchToken)}`);
+  if (!cards.length) throw new Error("PokemonTCG could not find a matching card for that TCGplayer URL.");
+
+  const best = cards
+    .map((card) => ({ card, score: scoreTcgplayerMatch(card, parsed) }))
+    .sort((a, b) => b.score - a.score)[0];
+
+  if (!best || best.score < 8) {
+    throw new Error("Could not confidently match that TCGplayer URL. Try the PriceCharting URL for this card.");
+  }
+
+  return {
+    ...best.card,
+    tcgplayerProductUrl: productId ? canonicalTcgplayerUrl(url, productId, slug) : url.href
+  };
+}
+
+async function parseTcgplayerSlug(slug) {
+  let tokens = slugify(slug).split("-").filter(Boolean);
+  if (tokens[0] === "pokemon") tokens = tokens.slice(1);
+
+  const setMatch = await matchSetFromTokens(tokens);
+  let nameTokens = setMatch ? tokens.slice(setMatch.end) : tokens;
+  const number = nameTokens.length && /^\d+[a-z]?$/i.test(nameTokens.at(-1)) ? nameTokens.pop().toUpperCase() : "";
+  const filteredNameTokens = nameTokens.filter((token) => !["card", "cards"].includes(token));
+  const searchToken = chooseSearchToken(filteredNameTokens);
+
+  return {
+    setGuess: setMatch?.set.name || "",
+    setTokens: setMatch?.tokens || [],
+    nameGuess: titleFromTokens(filteredNameTokens),
+    nameTokens: filteredNameTokens,
+    number,
+    searchToken
+  };
+}
+
+async function matchSetFromTokens(tokens) {
+  const sets = await fetchPokemonTcgSets();
+  let best = null;
+
+  for (const set of sets) {
+    const setTokens = normalizeWords(set.name);
+    if (!setTokens.length) continue;
+    const end = findContiguousTokens(tokens, setTokens, 0, Math.min(4, tokens.length));
+    if (end === -1) continue;
+    const score = setTokens.length * 10 - end;
+    if (!best || score > best.score) {
+      best = { set, tokens: setTokens, end, score };
+    }
+  }
+
+  return best;
+}
+
+async function fetchPokemonTcgSets() {
+  const response = await fetch("https://api.pokemontcg.io/v2/sets?select=id,name,releaseDate");
+  if (!response.ok) throw new Error(`PokemonTCG set lookup failed (${response.status}).`);
+  const json = await response.json();
+  return json.data || [];
+}
+
+async function findPriceChartingForPokemonTcg(card) {
+  const query = `${card.name} ${card.number}`;
+  const html = await fetchText(`https://www.pricecharting.com/search-products?type=prices&q=${encodeURIComponent(query)}`);
+  const candidates = [...html.matchAll(/<a[^>]+href=["']([^"']*\/game\/pokemon[^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi)]
+    .map((match) => ({
+      href: absolutePriceChartingUrl(match[1]),
+      title: cleanText(stripTags(match[2]))
+    }))
+    .filter((candidate, index, all) => candidate.href && all.findIndex((item) => item.href === candidate.href) === index);
+
+  if (!candidates.length) return null;
+
+  const best = candidates
+    .map((candidate) => ({ candidate, score: scorePriceChartingCandidate(candidate, card) }))
+    .sort((a, b) => b.score - a.score)[0];
+
+  if (!best || best.score < 8) return null;
+  return priceChartingPreview(new URL(best.candidate.href));
 }
 
 async function searchPokemonTcg(query) {
@@ -85,7 +187,7 @@ async function fetchPokemonTcgCard(id) {
   return json.data;
 }
 
-function mergeCard({ pokemonTcg, priceCharting, priceChartingUrl }) {
+function mergeCard({ pokemonTcg, priceCharting, priceChartingUrl, sourceUrl }) {
   const sources = {
     priceCharting: round(priceCharting?.raw),
     tcgplayer: round(marketPrice(pokemonTcg?.tcgplayer?.prices)),
@@ -100,6 +202,8 @@ function mergeCard({ pokemonTcg, priceCharting, priceChartingUrl }) {
   const sourceUpdatedAt = {};
 
   if (pokemonTcg?.tcgplayer?.url) externalUrls.tcgplayer = pokemonTcg.tcgplayer.url;
+  if (pokemonTcg?.tcgplayerProductUrl) externalUrls.tcgplayerProduct = pokemonTcg.tcgplayerProductUrl;
+  if (sourceUrl && !externalUrls.tcgplayerProduct && sourceUrl.includes("tcgplayer.com")) externalUrls.tcgplayerProduct = sourceUrl;
   if (priceChartingUrl) externalUrls.priceCharting = priceChartingUrl;
   if (pokemonTcg?.tcgplayer?.updatedAt) sourceUpdatedAt.tcgplayer = pokemonTcg.tcgplayer.updatedAt;
   if (priceCharting) sourceUpdatedAt.priceCharting = today();
@@ -179,6 +283,31 @@ function scorePokemonTcgMatch(card, priceCharting) {
   return score;
 }
 
+function scoreTcgplayerMatch(card, parsed) {
+  let score = 0;
+  const cardSetWords = normalizeWords(card.set?.name || "");
+  const cardNameWords = normalizeWords(card.name || "");
+  if (parsed.number && String(card.number).toLowerCase() === String(parsed.number).toLowerCase()) score += 20;
+  score += overlapScore(parsed.nameTokens, cardNameWords) * 5;
+  score += overlapScore(parsed.setTokens, cardSetWords) * 4;
+  if ((card.supertype || "").toLowerCase() === "pokemon") score += 2;
+  return score;
+}
+
+function scorePriceChartingCandidate(candidate, card) {
+  const hrefWords = normalizeWords(decodeURIComponent(candidate.href));
+  const titleWords = normalizeWords(candidate.title);
+  const setWords = normalizeWords(card.set?.name || "");
+  const nameWords = normalizeWords(card.name || "");
+  let score = 0;
+
+  score += overlapScore(nameWords, titleWords.length ? titleWords : hrefWords) * 5;
+  score += overlapScore(setWords, hrefWords) * 4;
+  if (candidate.title.includes(`#${card.number}`) || candidate.href.endsWith(`-${String(card.number).toLowerCase()}`)) score += 15;
+  if (/japanese|korean|chinese/i.test(candidate.href) && !/japanese|korean|chinese/i.test(card.set?.name || "")) score -= 20;
+  return score;
+}
+
 async function fetchText(url) {
   const response = await fetch(url, { headers: { "User-Agent": "pokemon-card-tracker/1.0" } });
   if (!response.ok) throw new Error(`Could not fetch ${new URL(url).hostname} (${response.status}).`);
@@ -243,6 +372,12 @@ function canonicalPriceChartingUrl(url) {
   return `${url.origin}${url.pathname}`;
 }
 
+function absolutePriceChartingUrl(href) {
+  if (!href) return "";
+  if (href.startsWith("http")) return href;
+  return `https://www.pricecharting.com${href}`;
+}
+
 function normalizeWords(value) {
   return slugify(value).split("-").filter(Boolean);
 }
@@ -251,6 +386,38 @@ function overlapScore(left, right) {
   if (!left.length || !right.length) return 0;
   const rightSet = new Set(right);
   return left.filter((word) => rightSet.has(word)).length;
+}
+
+function findContiguousTokens(tokens, target, startMin, startMax) {
+  for (let start = startMin; start <= startMax; start += 1) {
+    let tokenIndex = start;
+    let matched = true;
+    for (const targetToken of target) {
+      while (tokens[tokenIndex] === "and") tokenIndex += 1;
+      if (tokens[tokenIndex] !== targetToken) {
+        matched = false;
+        break;
+      }
+      tokenIndex += 1;
+    }
+    if (matched) return tokenIndex;
+  }
+  return -1;
+}
+
+function chooseSearchToken(tokens) {
+  const generic = new Set(["ex", "gx", "v", "vmax", "vstar", "sir", "ir", "full", "art", "holo", "rare", "promo"]);
+  const candidates = tokens.filter((token) => token.length > 2 && !generic.has(token));
+  if (candidates.length) return candidates.sort((a, b) => b.length - a.length)[0];
+  return tokens.find((token) => token.length > 1) || tokens[0] || "";
+}
+
+function titleFromTokens(tokens) {
+  return tokens.map((token) => token.toUpperCase() === token ? token : token.charAt(0).toUpperCase() + token.slice(1)).join(" ");
+}
+
+function canonicalTcgplayerUrl(url, productId, slug) {
+  return `${url.origin}/product/${productId}/${slug}`;
 }
 
 function cleanText(value) {
