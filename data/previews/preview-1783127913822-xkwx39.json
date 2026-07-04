@@ -1,0 +1,40 @@
+{
+  "ok": true,
+  "card": {
+    "id": "team-aqua-s-kyogre-ex-double-crisis-6",
+    "pokemonTcgId": "dc1-6",
+    "name": "Team Aqua's Kyogre-EX",
+    "set": "Double Crisis",
+    "year": 2015,
+    "rarity": "Rare Ultra",
+    "number": "6",
+    "imageUrl": "https://images.pokemontcg.io/dc1/6_hires.png",
+    "fallbackImageUrl": "https://images.pokemontcg.io/dc1/6.png",
+    "holo": true,
+    "chase": true,
+    "prices": {
+      "avgMarket": 364.12,
+      "psa10": 2749.23,
+      "psa10Estimated": false
+    },
+    "sources": {
+      "priceCharting": 234.94,
+      "tcgplayer": 493.29,
+      "pokescope": null
+    },
+    "grading": {
+      "gemRate": 0
+    },
+    "sourceUpdatedAt": {
+      "tcgplayer": "2026/07/03",
+      "priceCharting": "2026-07-04"
+    },
+    "externalUrls": {
+      "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/dc1-6",
+      "tcgplayerProduct": "https://www.tcgplayer.com/product/97052/pokemon-double-crisis-team-aquas-kyogre-ex",
+      "priceCharting": "https://www.pricecharting.com/game/pokemon-double-crisis/team-aqua%27s-kyogre-ex-6"
+    },
+    "markets": {}
+  },
+  "generatedAt": "2026-07-04T01:18:44.140Z"
+}
