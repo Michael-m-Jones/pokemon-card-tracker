@@ -108,6 +108,10 @@ body[data-active-collection="samantha"] .site-header {
   box-shadow: 0 8px 18px rgba(23, 32, 51, 0.18);
 }
 
+.admin-home-link {
+  font-size: 24px;
+}
+
 .pokeball {
   width: 58px;
   height: 58px;
