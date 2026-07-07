@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "title": "Poke Card Tracker",
   "description": "A shareable tracker for Pokemon card market prices and PSA 10 upside.",
-  "lastUpdated": "2026-07-06T16:24:46.304Z",
+  "lastUpdated": "2026-07-07T15:46:11.796Z",
   "collections": [
     {
       "id": "michael",
@@ -913,13 +913,13 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 11.06,
+            "avgMarket": 11.16,
             "psa10": 115,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 10.49,
-            "tcgplayer": 11.62,
+            "tcgplayer": 11.82,
             "pokescope": null
           },
           "grading": {
@@ -927,7 +927,7 @@
           },
           "sourceUpdatedAt": {
             "priceCharting": "2026/07/03",
-            "tcgplayer": "2026/07/06"
+            "tcgplayer": "2026/07/07"
           },
           "externalUrls": {
             "priceCharting": "https://www.pricecharting.com/game/pokemon-paradox-rift/aegislash-210",
@@ -956,20 +956,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 80.66,
+            "avgMarket": 81.04,
             "psa10": 348.5,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 80,
-            "tcgplayer": 81.31,
+            "tcgplayer": 82.07,
             "pokescope": null
           },
           "grading": {
             "gemRate": 29
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/07/06",
+            "tcgplayer": "2026/07/07",
             "priceCharting": "2026/06/28"
           },
           "externalUrls": {
@@ -991,20 +991,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 49.49,
+            "avgMarket": 49.38,
             "psa10": 350.53,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 47.69,
-            "tcgplayer": 51.29,
+            "tcgplayer": 51.06,
             "pokescope": null
           },
           "grading": {
             "gemRate": 27
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/07/06",
+            "tcgplayer": "2026/07/07",
             "priceCharting": "2026/06/28"
           },
           "externalUrls": {
@@ -1026,20 +1026,20 @@
           "holo": true,
           "chase": true,
           "prices": {
-            "avgMarket": 118,
+            "avgMarket": 118.56,
             "psa10": 364.05,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 113.75,
-            "tcgplayer": 122.24,
+            "tcgplayer": 123.36,
             "pokescope": null
           },
           "grading": {
             "gemRate": 39
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/07/06",
+            "tcgplayer": "2026/07/07",
             "priceCharting": "2026/06/28"
           },
           "externalUrls": {
@@ -1062,20 +1062,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 66.37,
+            "avgMarket": 65.93,
             "psa10": 877.5,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 65,
-            "tcgplayer": 67.74,
+            "tcgplayer": 66.85,
             "pokescope": null
           },
           "grading": {
             "gemRate": 15
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/07/06",
+            "tcgplayer": "2026/07/07",
             "priceCharting": "2026/06/28"
           },
           "externalUrls": {
@@ -1111,7 +1111,7 @@
             "gemRate": 12
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/07/06",
+            "tcgplayer": "2026/07/07",
             "priceCharting": "2026/06/28"
           },
           "externalUrls": {
@@ -1134,20 +1134,20 @@
           "holo": true,
           "chase": true,
           "prices": {
-            "avgMarket": 403.09,
+            "avgMarket": 403.02,
             "psa10": 4925,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 377.83,
-            "tcgplayer": 428.34,
+            "tcgplayer": 428.2,
             "pokescope": null
           },
           "grading": {
             "gemRate": 16
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/07/06",
+            "tcgplayer": "2026/07/07",
             "priceCharting": "2026/06/28"
           },
           "externalUrls": {
@@ -1169,20 +1169,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 15.45,
+            "avgMarket": 15.47,
             "psa10": 300,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 14.93,
-            "tcgplayer": 15.97,
+            "tcgplayer": 16.01,
             "pokescope": null
           },
           "grading": {
             "gemRate": 17
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/07/06",
+            "tcgplayer": "2026/07/07",
             "priceCharting": "2026/06/28"
           },
           "externalUrls": {
@@ -1217,7 +1217,7 @@
             "gemRate": 37
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/07/06",
+            "tcgplayer": "2026/07/07",
             "priceCharting": "2026/06/28"
           },
           "externalUrls": {
@@ -1239,20 +1239,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 5.66,
+            "avgMarket": 5.72,
             "psa10": 93.5,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 5.95,
-            "tcgplayer": 5.36,
+            "tcgplayer": 5.49,
             "pokescope": null
           },
           "grading": {
             "gemRate": 31
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/07/06",
+            "tcgplayer": "2026/07/07",
             "priceCharting": "2026/06/28"
           },
           "externalUrls": {
@@ -1287,7 +1287,7 @@
             "gemRate": 45
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/07/06",
+            "tcgplayer": "2026/07/07",
             "priceCharting": "2026/06/28"
           },
           "externalUrls": {
@@ -1309,20 +1309,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 53.93,
+            "avgMarket": 54.25,
             "psa10": 212.62,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 51.05,
-            "tcgplayer": 56.81,
+            "tcgplayer": 57.45,
             "pokescope": null
           },
           "grading": {
             "gemRate": 54
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/07/06",
+            "tcgplayer": "2026/07/07",
             "priceCharting": "2026/06/28"
           },
           "externalUrls": {
@@ -1344,20 +1344,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 5.11,
+            "avgMarket": 5.13,
             "psa10": 58.71,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 4.83,
-            "tcgplayer": 5.38,
+            "tcgplayer": 5.42,
             "pokescope": null
           },
           "grading": {
             "gemRate": 40
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/07/06",
+            "tcgplayer": "2026/07/07",
             "priceCharting": "2026/06/28"
           },
           "externalUrls": {
@@ -1379,20 +1379,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 4.92,
+            "avgMarket": 4.95,
             "psa10": 71.01,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 4.5,
-            "tcgplayer": 5.34,
+            "tcgplayer": 5.39,
             "pokescope": null
           },
           "grading": {
             "gemRate": 25
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/07/06",
+            "tcgplayer": "2026/07/07",
             "priceCharting": "2026/06/28"
           },
           "externalUrls": {
@@ -1414,20 +1414,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 11.21,
+            "avgMarket": 10.93,
             "psa10": 90.01,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 9.53,
-            "tcgplayer": 12.88,
+            "tcgplayer": 12.33,
             "pokescope": null
           },
           "grading": {
             "gemRate": 45
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/07/06",
+            "tcgplayer": "2026/07/07",
             "priceCharting": "2026/06/28"
           },
           "externalUrls": {
@@ -1450,20 +1450,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 9.38,
+            "avgMarket": 9.56,
             "psa10": 48,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 7.99,
-            "tcgplayer": 10.76,
+            "tcgplayer": 11.12,
             "pokescope": null
           },
           "grading": {
             "gemRate": 12
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/07/06",
+            "tcgplayer": "2026/07/07",
             "priceCharting": "2026/06/28"
           },
           "externalUrls": {
@@ -1485,20 +1485,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 47.7,
+            "avgMarket": 47.46,
             "psa10": 261.65,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 44,
-            "tcgplayer": 51.4,
+            "tcgplayer": 50.91,
             "pokescope": null
           },
           "grading": {
             "gemRate": 35
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/07/06",
+            "tcgplayer": "2026/07/07",
             "priceCharting": "2026/06/28"
           },
           "externalUrls": {
@@ -1520,20 +1520,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 47.2,
+            "avgMarket": 47.47,
             "psa10": 284,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 45,
-            "tcgplayer": 49.4,
+            "tcgplayer": 49.93,
             "pokescope": null
           },
           "grading": {
             "gemRate": 31
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/07/06",
+            "tcgplayer": "2026/07/07",
             "priceCharting": "2026/06/28"
           },
           "externalUrls": {
@@ -1555,20 +1555,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 15.06,
+            "avgMarket": 15.04,
             "psa10": 160.19,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 14.1,
-            "tcgplayer": 16.02,
+            "tcgplayer": 15.97,
             "pokescope": null
           },
           "grading": {
             "gemRate": 48
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/07/06",
+            "tcgplayer": "2026/07/07",
             "priceCharting": "2026/06/28"
           },
           "externalUrls": {
@@ -1591,20 +1591,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 14.05,
+            "avgMarket": 13.97,
             "psa10": 100,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 12.25,
-            "tcgplayer": 15.85,
+            "tcgplayer": 15.69,
             "pokescope": null
           },
           "grading": {
             "gemRate": 27
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/07/06",
+            "tcgplayer": "2026/07/07",
             "priceCharting": "2026/06/28"
           },
           "externalUrls": {
@@ -1626,20 +1626,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 18.48,
+            "avgMarket": 18.49,
             "psa10": 194.5,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 17.25,
-            "tcgplayer": 19.71,
+            "tcgplayer": 19.73,
             "pokescope": null
           },
           "grading": {
             "gemRate": 19
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/07/06",
+            "tcgplayer": "2026/07/07",
             "priceCharting": "2026/06/28"
           },
           "externalUrls": {
@@ -1662,20 +1662,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 53.17,
+            "avgMarket": 53.19,
             "psa10": 367.5,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 51,
-            "tcgplayer": 55.34,
+            "tcgplayer": 55.37,
             "pokescope": null
           },
           "grading": {
             "gemRate": 32
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/07/06",
+            "tcgplayer": "2026/07/07",
             "priceCharting": "2026/06/28"
           },
           "externalUrls": {
@@ -1698,20 +1698,20 @@
           "holo": true,
           "chase": true,
           "prices": {
-            "avgMarket": 105.27,
+            "avgMarket": 105.32,
             "psa10": 699.99,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 105,
-            "tcgplayer": 105.53,
+            "tcgplayer": 105.63,
             "pokescope": null
           },
           "grading": {
             "gemRate": 35
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/07/06",
+            "tcgplayer": "2026/07/07",
             "priceCharting": "2026/06/28"
           },
           "externalUrls": {
@@ -1734,20 +1734,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 19.43,
+            "avgMarket": 19.54,
             "psa10": 160,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 18.49,
-            "tcgplayer": 20.37,
+            "tcgplayer": 20.59,
             "pokescope": null
           },
           "grading": {
             "gemRate": 20
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/07/06",
+            "tcgplayer": "2026/07/07",
             "priceCharting": "2026/06/28"
           },
           "externalUrls": {
@@ -1814,7 +1814,7 @@
             "gemRate": 16
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/07/06",
+            "tcgplayer": "2026/07/07",
             "priceCharting": "2026/06/28"
           },
           "externalUrls": {
@@ -1836,20 +1836,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 36.57,
+            "avgMarket": 36.55,
             "psa10": 121.45,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 33.14,
-            "tcgplayer": 39.99,
+            "tcgplayer": 39.96,
             "pokescope": null
           },
           "grading": {
             "gemRate": 55
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/07/06",
+            "tcgplayer": "2026/07/07",
             "priceCharting": "2026/06/28"
           },
           "externalUrls": {
@@ -1871,20 +1871,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 10.34,
+            "avgMarket": 10.28,
             "psa10": 75,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 10.07,
-            "tcgplayer": 10.6,
+            "tcgplayer": 10.49,
             "pokescope": null
           },
           "grading": {
             "gemRate": 39
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/07/06",
+            "tcgplayer": "2026/07/07",
             "priceCharting": "2026/06/28"
           },
           "externalUrls": {
@@ -1906,20 +1906,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 28.3,
+            "avgMarket": 28.2,
             "psa10": 160.75,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 26,
-            "tcgplayer": 30.59,
+            "tcgplayer": 30.4,
             "pokescope": null
           },
           "grading": {
             "gemRate": 36
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/07/06",
+            "tcgplayer": "2026/07/07",
             "priceCharting": "2026/06/28"
           },
           "externalUrls": {
@@ -1942,20 +1942,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 14.93,
+            "avgMarket": 14.97,
             "psa10": 97.51,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 12.72,
-            "tcgplayer": 17.13,
+            "tcgplayer": 17.21,
             "pokescope": null
           },
           "grading": {
             "gemRate": 42
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/07/06",
+            "tcgplayer": "2026/07/07",
             "priceCharting": "2026/06/28"
           },
           "externalUrls": {
@@ -2052,13 +2052,13 @@
           "holo": true,
           "chase": true,
           "prices": {
-            "avgMarket": 997.25,
+            "avgMarket": 997.11,
             "psa10": 3895.5,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 905.04,
-            "tcgplayer": 1089.46,
+            "tcgplayer": 1089.18,
             "pokescope": null
           },
           "grading": {
@@ -2066,7 +2066,7 @@
           },
           "sourceUpdatedAt": {
             "priceCharting": "2026/06/28",
-            "tcgplayer": "2026/07/06"
+            "tcgplayer": "2026/07/07"
           },
           "externalUrls": {
             "priceCharting": "https://www.pricecharting.com/game/pokemon-paldean-fates/mew-ex-232",
@@ -2102,7 +2102,7 @@
           },
           "sourceUpdatedAt": {
             "priceCharting": "2026/06/28",
-            "tcgplayer": "2026/07/06"
+            "tcgplayer": "2026/07/07"
           },
           "externalUrls": {
             "priceCharting": "https://www.pricecharting.com/game/pokemon-lost-origin/giratina-v-186",
@@ -2113,8 +2113,8 @@
               "unit": "EUR",
               "trend": 870.48,
               "average": 893.79,
-              "low": 200,
-              "updatedAt": "2026-07-05T22:58:40.702Z"
+              "low": 299,
+              "updatedAt": "2026-07-06T18:03:50.829Z"
             }
           }
         }
@@ -2137,10 +2137,10 @@
       "PokemonTCG",
       "TCGdex/Cardmarket"
     ],
-    "updatedCards": 64,
-    "pokemonTcgUpdatedCards": 56,
-    "cardmarketUpdatedCards": 8,
-    "cardmarketSkippedCards": 2,
-    "failedCards": 0
+    "updatedCards": 32,
+    "pokemonTcgUpdatedCards": 31,
+    "cardmarketUpdatedCards": 1,
+    "cardmarketSkippedCards": 0,
+    "failedCards": 25
   }
 }
