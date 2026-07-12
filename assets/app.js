@@ -396,7 +396,7 @@ async function handleCardAction(card, action) {
     render();
     els.updatedAt.textContent = "Saving card change...";
 
-    await updateRemoteCards(token, (data) => {
+    const updatedData = await updateRemoteCards(token, (data) => {
       const source = data.collections.find((item) => item.id === collection.id);
       if (!source) throw new Error("Current list no longer exists.");
       const sourceCards = source.cards || [];
@@ -419,16 +419,19 @@ async function handleCardAction(card, action) {
       data.lastUpdated = new Date().toISOString();
     }, commitMessageForAction(card, action, moveTarget));
 
-    await loadData();
+    state.data = updatedData;
     if (moveTarget) state.activeCollectionId = moveTarget;
-    els.updatedAt.textContent = "Card change saved.";
+    state.busyCardId = null;
     render();
+    els.updatedAt.textContent = "Card change saved.";
   } catch (error) {
     window.alert(error.message);
     els.updatedAt.textContent = error.message;
   } finally {
-    state.busyCardId = null;
-    render();
+    if (state.busyCardId !== null) {
+      state.busyCardId = null;
+      render();
+    }
   }
 }
 
@@ -452,6 +455,8 @@ async function updateRemoteCards(token, mutate, message) {
     const error = await response.json().catch(() => ({}));
     throw new Error(error.message || `GitHub commit failed (${response.status}).`);
   }
+
+  return data;
 }
 
 async function fetchGitHubData(token) {
