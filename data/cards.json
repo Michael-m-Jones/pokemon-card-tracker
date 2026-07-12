@@ -2,12 +2,12 @@
   "schemaVersion": 1,
   "title": "Poke Card Tracker",
   "description": "A shareable tracker for Pokemon card market prices and PSA 10 upside.",
-  "lastUpdated": "2026-07-12T15:04:32.899Z",
+  "lastUpdated": "2026-07-12T15:07:06.145Z",
   "collections": [
     {
       "id": "michael",
       "title": "Michael's Magnificent Hunt",
-      "tag": "The main collection · 26 cards tracked",
+      "tag": "The main collection · 27 cards tracked",
       "cards": [
         {
           "id": "sylveon-vmax-evolving-skies-212",
@@ -943,6 +943,41 @@
           },
           "markets": {},
           "nickname": "Stone building IR"
+        },
+        {
+          "id": "darkrai-bw-black-star-promos-bw73",
+          "pokemonTcgId": "bwp-BW73",
+          "name": "Darkrai",
+          "set": "BW Black Star Promos",
+          "year": 2011,
+          "rarity": "Promo",
+          "number": "BW73",
+          "imageUrl": "https://images.pokemontcg.io/bwp/BW73_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/bwp/BW73.png",
+          "holo": true,
+          "chase": true,
+          "prices": {
+            "avgMarket": 192.5,
+            "psa10": 15925,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 159.56,
+            "tcgplayer": 225.44,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": 2
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/07/12",
+            "priceCharting": "2026-07-12"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/bwp-BW73",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-promo/darkrai-bw73"
+          },
+          "markets": {}
         }
       ]
     },
