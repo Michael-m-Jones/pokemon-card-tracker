@@ -2,7 +2,15 @@ const state = {
   data: null,
   activeCollectionId: null,
   sortKey: "raw",
-  summaryHidden: false
+  summaryHidden: false,
+  busyCardId: null
+};
+
+const repo = {
+  owner: "Michael-m-Jones",
+  name: "pokemon-card-tracker",
+  branch: "main",
+  dataPath: "data/cards.json"
 };
 
 const sortOptions = [
@@ -266,10 +274,12 @@ function renderCard(card) {
   const gem = gemInfo(card.grading?.gemRate);
   const hasPsa = psa10(card) !== null;
   const article = document.createElement("article");
-  article.className = "card";
+  article.className = `card${card.collected ? " collected" : ""}`;
 
   const body = document.createElement("div");
   body.className = "card-body";
+
+  body.append(renderCardActions(card));
 
   const imageWrap = document.createElement("div");
   imageWrap.className = `card-image${card.holo ? " holo" : ""}`;
@@ -299,6 +309,11 @@ function renderCard(card) {
   const setBadge = setText(document.createElement("span"), `${card.set} · ${card.year}`);
   setBadge.className = "set-badge";
   badges.append(setBadge);
+  if (card.collected) {
+    const collectedBadge = setText(document.createElement("span"), "Collected");
+    collectedBadge.className = "collected-badge";
+    badges.append(collectedBadge);
+  }
   body.append(badges);
 
   if (card.nickname) {
@@ -324,6 +339,166 @@ function renderCard(card) {
   body.append(renderGem(gem));
   article.append(body);
   return article;
+}
+
+function renderCardActions(card) {
+  const wrap = document.createElement("div");
+  wrap.className = "card-actions";
+
+  const select = document.createElement("select");
+  select.className = "card-action-select";
+  select.setAttribute("aria-label", `Actions for ${card.name}`);
+  select.disabled = state.busyCardId === card.id;
+  select.append(actionOption("", state.busyCardId === card.id ? "Saving..." : "Options"));
+
+  const current = activeCollection();
+  collections().forEach((collection) => {
+    if (collection.id === current?.id) return;
+    select.append(actionOption(`move:${collection.id}`, `Move to ${shortCollectionName(collection)}`));
+  });
+  select.append(actionOption("toggle-collected", card.collected ? "Mark uncollected" : "Mark collected"));
+  select.append(actionOption("delete", "Delete"));
+
+  select.addEventListener("change", async () => {
+    const value = select.value;
+    select.value = "";
+    if (!value) return;
+    await handleCardAction(card, value);
+  });
+
+  wrap.append(select);
+  return wrap;
+}
+
+function actionOption(value, label) {
+  const option = document.createElement("option");
+  option.value = value;
+  option.textContent = label;
+  return option;
+}
+
+async function handleCardAction(card, action) {
+  const collection = activeCollection();
+  if (!collection) return;
+
+  const token = localStorage.getItem("pokemonTrackerGitHubToken") || "";
+  if (!token) {
+    window.alert("Save your GitHub token on the Add Card admin page first.");
+    return;
+  }
+
+  if (action === "delete" && !window.confirm(`Delete ${card.name} from ${collection.title}?`)) return;
+  const moveTarget = action.startsWith("move:") ? action.split(":")[1] : "";
+  if (moveTarget && !window.confirm(`Move ${card.name} to ${collectionTitle(moveTarget)}?`)) return;
+
+  try {
+    state.busyCardId = card.id;
+    render();
+    els.updatedAt.textContent = "Saving card change...";
+
+    await updateRemoteCards(token, (data) => {
+      const source = data.collections.find((item) => item.id === collection.id);
+      if (!source) throw new Error("Current list no longer exists.");
+      const sourceCards = source.cards || [];
+      const cardIndex = sourceCards.findIndex((item) => item.id === card.id);
+      if (cardIndex < 0) throw new Error("That card was not found in the latest data.");
+
+      if (action === "delete") {
+        sourceCards.splice(cardIndex, 1);
+      } else if (moveTarget) {
+        const target = data.collections.find((item) => item.id === moveTarget);
+        if (!target) throw new Error("Target list no longer exists.");
+        const [movedCard] = sourceCards.splice(cardIndex, 1);
+        target.cards ||= [];
+        target.cards.push(movedCard);
+      } else if (action === "toggle-collected") {
+        sourceCards[cardIndex].collected = !sourceCards[cardIndex].collected;
+      }
+
+      updateCollectionTags(data);
+      data.lastUpdated = new Date().toISOString();
+    }, commitMessageForAction(card, action, moveTarget));
+
+    await loadData();
+    if (moveTarget) state.activeCollectionId = moveTarget;
+    els.updatedAt.textContent = "Card change saved.";
+    render();
+  } catch (error) {
+    window.alert(error.message);
+    els.updatedAt.textContent = error.message;
+  } finally {
+    state.busyCardId = null;
+    render();
+  }
+}
+
+async function updateRemoteCards(token, mutate, message) {
+  const file = await fetchGitHubData(token);
+  const data = JSON.parse(decodeBase64(file.content));
+  mutate(data);
+
+  const response = await fetch(`https://api.github.com/repos/${repo.owner}/${repo.name}/contents/${repo.dataPath}`, {
+    method: "PUT",
+    headers: githubHeaders(token),
+    body: JSON.stringify({
+      message,
+      content: encodeBase64(`${JSON.stringify(data, null, 2)}\n`),
+      sha: file.sha,
+      branch: repo.branch
+    })
+  });
+
+  if (!response.ok) {
+    const error = await response.json().catch(() => ({}));
+    throw new Error(error.message || `GitHub commit failed (${response.status}).`);
+  }
+}
+
+async function fetchGitHubData(token) {
+  const response = await fetch(`https://api.github.com/repos/${repo.owner}/${repo.name}/contents/${repo.dataPath}?ref=${repo.branch}&ts=${Date.now()}`, {
+    headers: githubHeaders(token)
+  });
+  if (!response.ok) throw new Error(`Could not read GitHub data file (${response.status}).`);
+  return response.json();
+}
+
+function githubHeaders(token) {
+  return {
+    Accept: "application/vnd.github+json",
+    Authorization: `Bearer ${token}`,
+    "X-GitHub-Api-Version": "2022-11-28"
+  };
+}
+
+function commitMessageForAction(card, action, moveTarget) {
+  if (action === "delete") return `Delete ${card.name}`;
+  if (moveTarget) return `Move ${card.name} to ${collectionTitle(moveTarget)}`;
+  return `${card.collected ? "Unmark" : "Mark"} ${card.name} collected`;
+}
+
+function updateCollectionTags(data) {
+  (data.collections || []).forEach((collection) => {
+    collection.tag = collectionTag(collection);
+  });
+}
+
+function collectionTag(collection) {
+  const count = (collection.cards || []).length;
+  if (collection.id === "grails") return `${count} PSA 10 grails tracked`;
+  if (collection.id === "samantha") return `A cozy couples collecting page · ${count} cards tracked`;
+  if (collection.id === "michael") return `The main collection · ${count} cards tracked`;
+  return `${count} cards tracked`;
+}
+
+function collectionTitle(id) {
+  return collections().find((collection) => collection.id === id)?.title || id;
+}
+
+function shortCollectionName(collection) {
+  if (collection.id === "michael") return "Michael";
+  if (collection.id === "samantha") return "Samantha";
+  if (collection.id === "grails") return "Grails";
+  return collection.title;
 }
 
 function priceBox(label, value, valueClass = "", estimated = false) {
@@ -466,6 +641,14 @@ els.summaryToggle.addEventListener("click", () => {
 function showError(error) {
   els.updatedAt.textContent = error.message;
   els.cards.replaceChildren();
+}
+
+function encodeBase64(value) {
+  return btoa(unescape(encodeURIComponent(value)));
+}
+
+function decodeBase64(value) {
+  return decodeURIComponent(escape(atob(value.replace(/\n/g, ""))));
 }
 
 loadData().catch(showError);

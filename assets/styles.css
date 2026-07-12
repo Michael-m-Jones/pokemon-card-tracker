@@ -477,6 +477,10 @@ body[data-active-collection="samantha"] .soft-button:hover {
   box-shadow: var(--shadow);
 }
 
+.card.collected {
+  border-color: rgba(31, 157, 87, 0.42);
+}
+
 body[data-active-collection="samantha"] .card {
   border-color: rgba(205, 226, 236, 0.95);
   box-shadow:
@@ -497,6 +501,31 @@ body[data-active-collection="samantha"] .card {
   flex: 1;
   flex-direction: column;
   padding: 12px;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: flex-end;
+  min-height: 32px;
+  margin: -2px 0 8px;
+}
+
+.card-action-select {
+  max-width: 118px;
+  min-height: 30px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #ffffff;
+  color: var(--muted);
+  padding: 4px 8px;
+  font-size: 11px;
+  font-weight: 850;
+  outline: none;
+}
+
+.card-action-select:focus {
+  border-color: rgba(47, 111, 237, 0.72);
+  box-shadow: 0 0 0 3px rgba(47, 111, 237, 0.12);
 }
 
 body[data-active-collection="samantha"] .card-body {
@@ -561,6 +590,18 @@ body[data-active-collection="samantha"] .card-body {
 
 .set-badge {
   background: var(--ink);
+}
+
+.collected-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 23px;
+  padding: 3px 7px;
+  border-radius: 6px;
+  background: rgba(31, 157, 87, 0.12);
+  color: var(--green);
+  font-size: 10px;
+  font-weight: 950;
 }
 
 .nickname {

@@ -571,7 +571,7 @@ async function commitCard(card, collectionId, token) {
 
   collection.cards ||= [];
   collection.cards.push(card);
-  collection.tag = collection.tag.replace(/\d+ cards tracked/, `${collection.cards.length} cards tracked`);
+  collection.tag = collectionTag(collection);
   data.lastUpdated = new Date().toISOString();
 
   const body = {
@@ -693,6 +693,14 @@ function gemLabel(value) {
 
 function collectionTitle(id) {
   return state.data.collections.find((collection) => collection.id === id)?.title || id;
+}
+
+function collectionTag(collection) {
+  const count = (collection.cards || []).length;
+  if (collection.id === "grails") return `${count} PSA 10 grails tracked`;
+  if (collection.id === "samantha") return `A cozy couples collecting page · ${count} cards tracked`;
+  if (collection.id === "michael") return `The main collection · ${count} cards tracked`;
+  return `${count} cards tracked`;
 }
 
 function today() {
