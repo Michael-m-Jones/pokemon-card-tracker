@@ -2,12 +2,12 @@
   "schemaVersion": 1,
   "title": "Poke Card Tracker",
   "description": "A shareable tracker for Pokemon card market prices and PSA 10 upside.",
-  "lastUpdated": "2026-07-12T15:16:01.148Z",
+  "lastUpdated": "2026-07-12T15:16:36.849Z",
   "collections": [
     {
       "id": "michael",
       "title": "Michael's Magnificent Hunt",
-      "tag": "The main collection · 28 cards tracked",
+      "tag": "The main collection · 27 cards tracked",
       "cards": [
         {
           "id": "sylveon-vmax-evolving-skies-212",
@@ -475,48 +475,6 @@
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/xyp-XY114"
           },
           "markets": {}
-        },
-        {
-          "id": "charizard-v-swsh-promo-ultra-premium-collection-swsh260",
-          "pokemonTcgId": "swshp-SWSH260",
-          "name": "Charizard V",
-          "nickname": "\"Sleeping\" Charizard",
-          "set": "SWSH Promo (Ultra Premium Collection)",
-          "year": 2022,
-          "rarity": "Alt-Art promo",
-          "number": "SWSH260",
-          "imageUrl": "https://images.pokemontcg.io/swshp/SWSH260_hires.png",
-          "fallbackImageUrl": "https://images.pokemontcg.io/swshp/SWSH260.png",
-          "holo": false,
-          "chase": false,
-          "prices": {
-            "avgMarket": 55.14,
-            "psa10": 425,
-            "psa10Estimated": true
-          },
-          "sources": {
-            "priceCharting": 50,
-            "tcgplayer": 54.43,
-            "pokescope": 61
-          },
-          "grading": {
-            "gemRate": 20
-          },
-          "sourceUpdatedAt": {
-            "tcgplayer": "2026/07/12"
-          },
-          "externalUrls": {
-            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swshp-SWSH260"
-          },
-          "markets": {
-            "cardmarket": {
-              "unit": "EUR",
-              "trend": 22.6,
-              "average": 19.57,
-              "low": 5.49,
-              "updatedAt": "2026-07-11T18:04:08.843Z"
-            }
-          }
         },
         {
           "id": "pikachu-crown-zenith-160",
