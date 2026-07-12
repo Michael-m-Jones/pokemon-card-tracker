@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "title": "Poke Card Tracker",
   "description": "A shareable tracker for Pokemon card market prices and PSA 10 upside.",
-  "lastUpdated": "2026-07-12T15:01:49.932Z",
+  "lastUpdated": "2026-07-12T15:03:25.162Z",
   "collections": [
     {
       "id": "michael",
@@ -2011,7 +2011,7 @@
     {
       "id": "grails",
       "title": "Grail Watchlist",
-      "tag": "5 PSA 10 grails tracked",
+      "tag": "6 PSA 10 grails tracked",
       "cards": [
         {
           "id": "team-aquas-kyogre-ex-japanese-double-crisis-6",
@@ -2193,6 +2193,41 @@
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/bw10-100",
             "priceCharting": "https://www.pricecharting.com/game/pokemon-plasma-blast/palkia-ex-100"
+          },
+          "markets": {}
+        },
+        {
+          "id": "lugia-ex-plasma-storm-134-2",
+          "pokemonTcgId": "bw8-134",
+          "name": "Lugia-EX",
+          "set": "Plasma Storm",
+          "year": 2013,
+          "rarity": "Rare Ultra",
+          "number": "134",
+          "imageUrl": "https://images.pokemontcg.io/bw8/134_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/bw8/134.png",
+          "holo": true,
+          "chase": true,
+          "prices": {
+            "avgMarket": 466.57,
+            "psa10": 4284.85,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 320.63,
+            "tcgplayer": 612.5,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": 1
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/07/12",
+            "priceCharting": "2026-07-12"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/bw8-134",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-plasma-storm/lugia-ex-134"
           },
           "markets": {}
         }
