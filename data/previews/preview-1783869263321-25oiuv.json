@@ -1,0 +1,39 @@
+{
+  "ok": true,
+  "card": {
+    "id": "dark-sylveon-v-swsh-black-star-promos-swsh134",
+    "pokemonTcgId": "swshp-SWSH134",
+    "name": "Dark Sylveon V",
+    "set": "SWSH Black Star Promos",
+    "year": 2019,
+    "rarity": "Promo",
+    "number": "SWSH134",
+    "imageUrl": "https://images.pokemontcg.io/swshp/SWSH134_hires.png",
+    "fallbackImageUrl": "https://images.pokemontcg.io/swshp/SWSH134.png",
+    "holo": true,
+    "chase": false,
+    "prices": {
+      "avgMarket": 8.57,
+      "psa10": 192.75,
+      "psa10Estimated": false
+    },
+    "sources": {
+      "priceCharting": 8.07,
+      "tcgplayer": 9.08,
+      "pokescope": null
+    },
+    "grading": {
+      "gemRate": null
+    },
+    "sourceUpdatedAt": {
+      "tcgplayer": "2026/07/12",
+      "priceCharting": "2026-07-12"
+    },
+    "externalUrls": {
+      "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swshp-SWSH134",
+      "priceCharting": "https://www.pricecharting.com/game/pokemon-celebrations/dark-sylveon-v-swsh134"
+    },
+    "markets": {}
+  },
+  "generatedAt": "2026-07-12T15:14:37.295Z"
+}
