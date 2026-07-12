@@ -3,7 +3,8 @@ const state = {
   activeCollectionId: null,
   sortKey: "raw",
   summaryHidden: false,
-  busyCardId: null
+  busyCardId: null,
+  promoOnly: false
 };
 
 const repo = {
@@ -150,6 +151,16 @@ function gradeUpside(card) {
   return raw > 0 && psa !== null ? psa / raw : -1;
 }
 
+function isPromoCard(card) {
+  const set = `${card.set || ""} ${card.rarity || ""}`;
+  const number = String(card.number || "").trim();
+  const tcgId = String(card.pokemonTcgId || "").trim();
+  return /promo|black star/i.test(set)
+    || /^(smp|swshp|xyp|bwp|svp)-/i.test(tcgId)
+    || /^(SM|SWSH|XY|BW)\d+$/i.test(number)
+    || /^SVP\s*\d+$/i.test(number);
+}
+
 function gemInfo(rate) {
   const value = finiteNumber(rate);
   if (value === null) {
@@ -173,6 +184,11 @@ function sortedCards(cards) {
     return avgMarket(b) - avgMarket(a);
   });
   return copy;
+}
+
+function visibleCards(collection) {
+  const cards = collection.cards || [];
+  return state.promoOnly ? cards.filter(isPromoCard) : cards;
 }
 
 function availableSortOptions(collection) {
@@ -199,6 +215,7 @@ function setText(node, value) {
 function render() {
   const collection = activeCollection();
   if (!collection) return;
+  if (state.promoOnly && !(collection.cards || []).some(isPromoCard)) state.promoOnly = false;
   ensureSortAvailable(collection);
   document.body.classList.toggle("hide-summary", state.summaryHidden);
   document.body.classList.toggle("theme-empty", !!collection.theme && !(collection.cards || []).length);
@@ -232,7 +249,21 @@ function renderTabs() {
 }
 
 function renderSorts(collection) {
-  els.sorts.replaceChildren(...availableSortOptions(collection).map(([key, label]) => {
+  const controls = [];
+  const hasPromos = (collection.cards || []).some(isPromoCard);
+
+  if (hasPromos) {
+    controls.push(filterButton("all", "All", !state.promoOnly, () => {
+      state.promoOnly = false;
+      render();
+    }));
+    controls.push(filterButton("promos", "Promos", state.promoOnly, () => {
+      state.promoOnly = true;
+      render();
+    }));
+  }
+
+  controls.push(...availableSortOptions(collection).map(([key, label]) => {
     const button = document.createElement("button");
     button.type = "button";
     button.className = `sort-button${key === state.sortKey ? " active" : ""}`;
@@ -243,10 +274,23 @@ function renderSorts(collection) {
     });
     return button;
   }));
+
+  els.sorts.replaceChildren(...controls);
+}
+
+function filterButton(key, label, active, onClick) {
+  const button = document.createElement("button");
+  button.type = "button";
+  button.dataset.filter = key;
+  button.className = `sort-button filter-button${active ? " active" : ""}`;
+  button.textContent = label;
+  button.addEventListener("click", onClick);
+  return button;
 }
 
 function renderStats(collection) {
   const cards = collection.cards || [];
+  const promoCount = cards.filter(isPromoCard).length;
   const totalRaw = cards.reduce((sum, card) => sum + avgMarket(card), 0);
   const psaValues = cards.map(psa10).filter((value) => value !== null);
   const totalPsa = psaValues.reduce((sum, value) => sum + value, 0);
@@ -257,6 +301,7 @@ function renderStats(collection) {
   ];
   if (psaValues.length) {
     stats.push(["Total PSA 10", formatSummaryMoney(totalPsa)]);
+    if (promoCount) stats.push(["Promos", String(promoCount)]);
     if (bestUpside && gradeUpside(bestUpside) >= 0) {
       stats.push(["Top upside", `${bestUpside.name} ${gradeUpside(bestUpside).toFixed(1)}x`]);
     }
@@ -273,13 +318,13 @@ function renderStats(collection) {
 }
 
 function renderCards(collection) {
-  const cards = collection.cards || [];
+  const cards = visibleCards(collection);
   if (!cards.length) {
     const node = els.emptyTemplate.content.cloneNode(true);
     const stateCopy = collection.emptyState || {};
     const emptyState = node.querySelector(".empty-state");
-    node.querySelector("h2").textContent = stateCopy.title || collection.title;
-    node.querySelector("p").textContent = stateCopy.message || "No cards here yet.";
+    node.querySelector("h2").textContent = state.promoOnly ? "No promos here yet" : stateCopy.title || collection.title;
+    node.querySelector("p").textContent = state.promoOnly ? "Switch back to All to see every card in this list." : stateCopy.message || "No cards here yet.";
     if (collection.theme) {
       emptyState.classList.add("sam-empty");
       emptyState.prepend(renderSamEmptyArt());
@@ -329,6 +374,11 @@ function renderCard(card) {
   const setBadge = setText(document.createElement("span"), `${card.set} · ${card.year}`);
   setBadge.className = "set-badge";
   badges.append(setBadge);
+  if (isPromoCard(card)) {
+    const promoBadge = setText(document.createElement("span"), "Promo");
+    promoBadge.className = "promo-badge";
+    badges.append(promoBadge);
+  }
   if (card.collected) {
     const collectedBadge = setText(document.createElement("span"), "Collected");
     collectedBadge.className = "collected-badge";
