@@ -1,0 +1,39 @@
+{
+  "ok": true,
+  "card": {
+    "id": "darkrai-vstar-crown-zenith-galarian-gallery-gg50",
+    "pokemonTcgId": "swsh12pt5gg-GG50",
+    "name": "Darkrai VSTAR",
+    "set": "Crown Zenith Galarian Gallery",
+    "year": 2023,
+    "rarity": "Rare Holo VSTAR",
+    "number": "GG50",
+    "imageUrl": "https://images.pokemontcg.io/swsh12pt5gg/GG50_hires.png",
+    "fallbackImageUrl": "https://images.pokemontcg.io/swsh12pt5gg/GG50.png",
+    "holo": true,
+    "chase": true,
+    "prices": {
+      "avgMarket": 109.12,
+      "psa10": 350,
+      "psa10Estimated": false
+    },
+    "sources": {
+      "priceCharting": 102.5,
+      "tcgplayer": 115.74,
+      "pokescope": null
+    },
+    "grading": {
+      "gemRate": 59
+    },
+    "sourceUpdatedAt": {
+      "tcgplayer": "2026/07/12",
+      "priceCharting": "2026-07-12"
+    },
+    "externalUrls": {
+      "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG50",
+      "priceCharting": "https://www.pricecharting.com/game/pokemon-crown-zenith/darkrai-vstar-gg50"
+    },
+    "markets": {}
+  },
+  "generatedAt": "2026-07-12T18:25:40.384Z"
+}
