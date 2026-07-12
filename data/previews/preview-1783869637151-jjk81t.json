@@ -1,0 +1,39 @@
+{
+  "ok": true,
+  "card": {
+    "id": "ancient-technical-machine-ice-hidden-legends-84",
+    "pokemonTcgId": "ex5-84",
+    "name": "Ancient Technical Machine [Ice]",
+    "set": "Hidden Legends",
+    "year": 2004,
+    "rarity": "Uncommon",
+    "number": "84",
+    "imageUrl": "https://images.pokemontcg.io/ex5/84_hires.png",
+    "fallbackImageUrl": "https://images.pokemontcg.io/ex5/84.png",
+    "holo": true,
+    "chase": false,
+    "prices": {
+      "avgMarket": 56.62,
+      "psa10": 2979,
+      "psa10Estimated": false
+    },
+    "sources": {
+      "priceCharting": 112.5,
+      "tcgplayer": 0.74,
+      "pokescope": null
+    },
+    "grading": {
+      "gemRate": 5
+    },
+    "sourceUpdatedAt": {
+      "tcgplayer": "2026/07/12",
+      "priceCharting": "2026-07-12"
+    },
+    "externalUrls": {
+      "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/ex5-84",
+      "priceCharting": "https://www.pricecharting.com/game/pokemon-promo/ancient-mew"
+    },
+    "markets": {}
+  },
+  "generatedAt": "2026-07-12T15:20:46.852Z"
+}
