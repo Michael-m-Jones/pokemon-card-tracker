@@ -13,6 +13,8 @@ const repo = {
   dataPath: "data/cards.json"
 };
 
+const ACTIVE_COLLECTION_KEY = "pokemonTrackerActiveCollection";
+
 const sortOptions = [
   ["raw", "Price high-low"],
   ["rawAsc", "Price low-high"],
@@ -76,12 +78,30 @@ async function loadData() {
     throw new Error(`Could not load card data (${response.status})`);
   }
   state.data = await response.json();
-  state.activeCollectionId ||= collections()[0]?.id;
+  state.activeCollectionId = resolveActiveCollectionId();
   render();
 }
 
 function activeCollection() {
   return collections().find((collection) => collection.id === state.activeCollectionId) || collections()[0];
+}
+
+function resolveActiveCollectionId() {
+  const ids = new Set(collections().map((collection) => collection.id));
+  const hashId = decodeURIComponent(window.location.hash.replace(/^#/, ""));
+  const storedId = localStorage.getItem(ACTIVE_COLLECTION_KEY);
+  if (ids.has(state.activeCollectionId)) return state.activeCollectionId;
+  if (ids.has(hashId)) return hashId;
+  if (ids.has(storedId)) return storedId;
+  return collections()[0]?.id;
+}
+
+function setActiveCollection(id, updateUrl = true) {
+  state.activeCollectionId = id;
+  localStorage.setItem(ACTIVE_COLLECTION_KEY, id);
+  if (updateUrl) {
+    history.replaceState(null, "", `#${encodeURIComponent(id)}`);
+  }
 }
 
 function finiteNumber(value) {
@@ -204,7 +224,7 @@ function renderTabs() {
     button.style.setProperty("--tab-color", tabColor);
     button.textContent = collection.title;
     button.addEventListener("click", () => {
-      state.activeCollectionId = collection.id;
+      setActiveCollection(collection.id);
       render();
     });
     return button;
@@ -420,7 +440,7 @@ async function handleCardAction(card, action) {
     }, commitMessageForAction(card, action, moveTarget));
 
     state.data = updatedData;
-    if (moveTarget) state.activeCollectionId = moveTarget;
+    if (moveTarget) setActiveCollection(moveTarget);
     state.busyCardId = null;
     render();
     els.updatedAt.textContent = "Card change saved.";
@@ -641,6 +661,14 @@ els.refresh.addEventListener("click", () => {
 els.summaryToggle.addEventListener("click", () => {
   state.summaryHidden = !state.summaryHidden;
   render();
+});
+
+window.addEventListener("hashchange", () => {
+  const hashId = decodeURIComponent(window.location.hash.replace(/^#/, ""));
+  if (collections().some((collection) => collection.id === hashId)) {
+    setActiveCollection(hashId, false);
+    render();
+  }
 });
 
 function showError(error) {
