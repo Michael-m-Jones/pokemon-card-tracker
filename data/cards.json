@@ -2,12 +2,12 @@
   "schemaVersion": 1,
   "title": "Poke Card Tracker",
   "description": "A shareable tracker for Pokemon card market prices and PSA 10 upside.",
-  "lastUpdated": "2026-07-12T15:16:36.849Z",
+  "lastUpdated": "2026-07-12T15:29:00.000Z",
   "collections": [
     {
       "id": "michael",
       "title": "Michael's Magnificent Hunt",
-      "tag": "The main collection · 27 cards tracked",
+      "tag": "The main collection · 28 cards tracked",
       "cards": [
         {
           "id": "sylveon-vmax-evolving-skies-212",
@@ -156,6 +156,39 @@
               "updatedAt": "2026-07-11T18:04:08.843Z"
             }
           }
+        },
+        {
+          "id": "mew-japanese-dream-shine-collection-cp5-017",
+          "name": "Mew",
+          "nickname": "CP5 Mythical & Legendary Dream Shine Collection",
+          "set": "Japanese Dream Shine Collection",
+          "year": 2016,
+          "rarity": "Holo",
+          "number": "017/036",
+          "imageUrl": "https://storage.googleapis.com/images.pricecharting.com/93af77b1fb2fae5f843ff7af67b9996fa64421c6dc28ed4a91590cf73ca38ee4/1600.jpg",
+          "fallbackImageUrl": "https://storage.googleapis.com/images.pricecharting.com/93af77b1fb2fae5f843ff7af67b9996fa64421c6dc28ed4a91590cf73ca38ee4/240.jpg",
+          "holo": true,
+          "chase": true,
+          "prices": {
+            "avgMarket": 301.49,
+            "psa10": 2600,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 301.49,
+            "tcgplayer": null,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": 66
+          },
+          "sourceUpdatedAt": {
+            "priceCharting": "2026-07-12"
+          },
+          "externalUrls": {
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-japanese-dream-shine-collection/mew-17"
+          },
+          "markets": {}
         },
         {
           "id": "eevee-and-snorlax-gx-sm-black-star-promo-tag-team-tins-sm169",
