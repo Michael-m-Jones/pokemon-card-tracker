@@ -2,12 +2,12 @@
   "schemaVersion": 1,
   "title": "Poke Card Tracker",
   "description": "A shareable tracker for Pokemon card market prices and PSA 10 upside.",
-  "lastUpdated": "2026-07-12T14:55:32.627Z",
+  "lastUpdated": "2026-07-12T14:56:55.335Z",
   "collections": [
     {
       "id": "michael",
       "title": "Michael's Magnificent Hunt",
-      "tag": "The main collection · 26 cards tracked",
+      "tag": "The main collection · 27 cards tracked",
       "cards": [
         {
           "id": "sylveon-vmax-evolving-skies-212",
@@ -943,6 +943,41 @@
           },
           "markets": {},
           "nickname": "Stone building IR"
+        },
+        {
+          "id": "palkia-ex-plasma-blast-100",
+          "pokemonTcgId": "bw10-100",
+          "name": "Palkia-EX",
+          "set": "Plasma Blast",
+          "year": 2013,
+          "rarity": "Rare Ultra",
+          "number": "100",
+          "imageUrl": "https://images.pokemontcg.io/bw10/100_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/bw10/100.png",
+          "holo": true,
+          "chase": true,
+          "prices": {
+            "avgMarket": 402.09,
+            "psa10": 3382.4,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 262.83,
+            "tcgplayer": 541.35,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": 4
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/07/12",
+            "priceCharting": "2026-07-12"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/bw10-100",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-plasma-blast/palkia-ex-100"
+          },
+          "markets": {}
         }
       ]
     },
