@@ -1,0 +1,38 @@
+{
+  "ok": true,
+  "card": {
+    "id": "darkrai-and-cresselia-legend-hs-triumphant-99",
+    "pokemonTcgId": "hgss4-99",
+    "name": "Darkrai & Cresselia LEGEND",
+    "set": "HS—Triumphant",
+    "year": 2010,
+    "rarity": "LEGEND",
+    "number": "99",
+    "imageUrl": "https://images.pokemontcg.io/hgss4/99_hires.png",
+    "fallbackImageUrl": "https://images.pokemontcg.io/hgss4/99.png",
+    "holo": true,
+    "chase": true,
+    "prices": {
+      "avgMarket": 189.41,
+      "psa10": null,
+      "psa10Estimated": false
+    },
+    "sources": {
+      "priceCharting": null,
+      "tcgplayer": 189.41,
+      "pokescope": null
+    },
+    "grading": {
+      "gemRate": null
+    },
+    "sourceUpdatedAt": {
+      "tcgplayer": "2026/07/12"
+    },
+    "externalUrls": {
+      "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/hgss4-99",
+      "tcgplayerProduct": "https://www.tcgplayer.com/product/84703/pokemon-black-and-white-promos-darkrai-team-plasma-bw73"
+    },
+    "markets": {}
+  },
+  "generatedAt": "2026-07-12T15:05:59.032Z"
+}
