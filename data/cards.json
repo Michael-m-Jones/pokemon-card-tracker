@@ -2,12 +2,12 @@
   "schemaVersion": 1,
   "title": "Poke Card Tracker",
   "description": "A shareable tracker for Pokemon card market prices and PSA 10 upside.",
-  "lastUpdated": "2026-07-13T15:47:25.700Z",
+  "lastUpdated": "2026-07-14T05:25:00.000Z",
   "collections": [
     {
       "id": "michael",
       "title": "Michael's Magnificent Hunt",
-      "tag": "The main collection · 28 cards tracked",
+      "tag": "The main collection · 31 cards tracked",
       "cards": [
         {
           "id": "sylveon-vmax-evolving-skies-212",
@@ -1004,6 +1004,111 @@
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG50",
             "priceCharting": "https://www.pricecharting.com/game/pokemon-crown-zenith/darkrai-vstar-gg50"
+          },
+          "markets": {}
+        },
+        {
+          "id": "deoxys-crown-zenith-galarian-gallery-gg12",
+          "pokemonTcgId": "swsh12pt5gg-GG12",
+          "name": "Deoxys",
+          "set": "Crown Zenith: Galarian Gallery",
+          "year": 2023,
+          "rarity": "Holo Rare",
+          "number": "GG12/GG70",
+          "imageUrl": "https://images.pokemontcg.io/swsh12pt5gg/GG12_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/swsh12pt5gg/GG12.png",
+          "holo": true,
+          "chase": false,
+          "prices": {
+            "avgMarket": 19.34,
+            "psa10": 409.39,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 19.49,
+            "tcgplayer": 19.18,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": 32
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/07/13",
+            "priceCharting": "2026-07-14"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG12",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-crown-zenith/deoxys-gg12"
+          },
+          "markets": {}
+        },
+        {
+          "id": "darkrai-gx-hidden-fates-shiny-vault-sv70",
+          "pokemonTcgId": "sma-SV70",
+          "name": "Darkrai GX",
+          "set": "Hidden Fates: Shiny Vault",
+          "year": 2019,
+          "rarity": "Shiny Holo Rare",
+          "number": "SV70/SV94",
+          "imageUrl": "https://images.pokemontcg.io/sma/SV70_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/sma/SV70.png",
+          "holo": true,
+          "chase": false,
+          "prices": {
+            "avgMarket": 93.47,
+            "psa10": 290,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 87.46,
+            "tcgplayer": 99.47,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": 59
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/07/13",
+            "priceCharting": "2026-07-14"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sma-SV70",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-hidden-fates/darkrai-gx-sv70"
+          },
+          "markets": {}
+        },
+        {
+          "id": "darkrai-ex-full-art-breakpoint-118",
+          "pokemonTcgId": "xy9-118",
+          "name": "Darkrai EX (Full Art)",
+          "set": "BREAKpoint",
+          "year": 2016,
+          "rarity": "Ultra Rare",
+          "number": "118/122",
+          "imageUrl": "https://images.pokemontcg.io/xy9/118_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/xy9/118.png",
+          "holo": true,
+          "chase": false,
+          "prices": {
+            "avgMarket": 53.07,
+            "psa10": 1435.69,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 43.5,
+            "tcgplayer": 62.64,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": 23
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/07/13",
+            "priceCharting": "2026-07-14"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/xy9-118",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-breakpoint/darkrai-ex-118"
           },
           "markets": {}
         }
