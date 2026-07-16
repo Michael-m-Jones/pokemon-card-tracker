@@ -2,12 +2,12 @@
   "schemaVersion": 1,
   "title": "Poke Card Tracker",
   "description": "A shareable tracker for Pokemon card market prices and PSA 10 upside.",
-  "lastUpdated": "2026-07-16T15:07:55.567Z",
+  "lastUpdated": "2026-07-16T19:04:29.555Z",
   "collections": [
     {
       "id": "michael",
       "title": "Michael's Magnificent Hunt",
-      "tag": "The main collection · 31 cards tracked",
+      "tag": "The main collection · 32 cards tracked",
       "cards": [
         {
           "id": "sylveon-vmax-evolving-skies-212",
@@ -1127,6 +1127,41 @@
               "updatedAt": "2026-07-14T18:04:08.636Z"
             }
           }
+        },
+        {
+          "id": "origin-forme-palkia-v-astral-radiance-167",
+          "pokemonTcgId": "swsh10-167",
+          "name": "Origin Forme Palkia V",
+          "set": "Astral Radiance",
+          "year": 2022,
+          "rarity": "Rare Ultra",
+          "number": "167",
+          "imageUrl": "https://images.pokemontcg.io/swsh10/167_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/swsh10/167.png",
+          "holo": true,
+          "chase": false,
+          "prices": {
+            "avgMarket": 89.73,
+            "psa10": 375,
+            "psa10Estimated": false
+          },
+          "sources": {
+            "priceCharting": 86.1,
+            "tcgplayer": 93.35,
+            "pokescope": null
+          },
+          "grading": {
+            "gemRate": 53
+          },
+          "sourceUpdatedAt": {
+            "tcgplayer": "2026/07/16",
+            "priceCharting": "2026-07-16"
+          },
+          "externalUrls": {
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swsh10-167",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-astral-radiance/origin-forme-palkia-v-167"
+          },
+          "markets": {}
         }
       ]
     },
