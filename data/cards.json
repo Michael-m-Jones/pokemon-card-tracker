@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "title": "Poke Card Tracker",
   "description": "A shareable tracker for Pokemon card market prices and PSA 10 upside.",
-  "lastUpdated": "2026-07-16T19:04:29.555Z",
+  "lastUpdated": "2026-07-16T19:07:33.928Z",
   "collections": [
     {
       "id": "michael",
@@ -158,35 +158,37 @@
           }
         },
         {
-          "id": "mew-japanese-dream-shine-collection-cp5-017",
+          "id": "mew-xy-black-star-promos-xy110",
+          "pokemonTcgId": "xyp-XY110",
           "name": "Mew",
-          "nickname": "CP5 Mythical & Legendary Dream Shine Collection",
-          "set": "Japanese Dream Shine Collection",
-          "year": 2016,
-          "rarity": "Holo",
-          "number": "017/036",
-          "imageUrl": "https://storage.googleapis.com/images.pricecharting.com/93af77b1fb2fae5f843ff7af67b9996fa64421c6dc28ed4a91590cf73ca38ee4/1600.jpg",
-          "fallbackImageUrl": "https://storage.googleapis.com/images.pricecharting.com/93af77b1fb2fae5f843ff7af67b9996fa64421c6dc28ed4a91590cf73ca38ee4/240.jpg",
+          "set": "XY Black Star Promos",
+          "year": 2013,
+          "rarity": "Promo",
+          "number": "XY110",
+          "imageUrl": "https://images.pokemontcg.io/xyp/XY110_hires.png",
+          "fallbackImageUrl": "https://images.pokemontcg.io/xyp/XY110.png",
           "holo": true,
-          "chase": true,
+          "chase": false,
           "prices": {
-            "avgMarket": 301.49,
-            "psa10": 2600,
+            "avgMarket": 124.15,
+            "psa10": 3551.38,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": 301.49,
-            "tcgplayer": null,
+            "priceCharting": 100.95,
+            "tcgplayer": 147.34,
             "pokescope": null
           },
           "grading": {
-            "gemRate": 66
+            "gemRate": 4
           },
           "sourceUpdatedAt": {
-            "priceCharting": "2026-07-12"
+            "tcgplayer": "2026/07/16",
+            "priceCharting": "2026-07-16"
           },
           "externalUrls": {
-            "priceCharting": "https://www.pricecharting.com/game/pokemon-japanese-dream-shine-collection/mew-17"
+            "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/xyp-XY110",
+            "priceCharting": "https://www.pricecharting.com/game/pokemon-promo/mew-xy110"
           },
           "markets": {}
         },
