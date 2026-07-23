@@ -1,8 +1,8 @@
-name: Update card prices
+name: Refresh PriceCharting and PSA data
 
 on:
   schedule:
-    - cron: "15 */6 * * *"
+    - cron: "35 14 * * *"
   workflow_dispatch:
 
 permissions:
@@ -13,7 +13,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  update-prices:
+  refresh-graded-data:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -24,15 +24,16 @@ jobs:
         with:
           node-version: 24
 
-      - name: Refresh PokemonTCG prices
+      - name: Refresh market and grading data
         env:
           POKEMONTCG_API_KEY: ${{ secrets.POKEMONTCG_API_KEY }}
+          REFRESH_PRICECHARTING: "true"
         run: node scripts/update-prices.mjs
 
       - name: Validate data
         run: node scripts/validate-data.mjs
 
-      - name: Commit updated data
+      - name: Commit refreshed data
         run: |
           if git diff --quiet data/cards.json; then
             echo "No price changes to commit."
@@ -41,5 +42,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/cards.json
-          git commit -m "Update card prices"
+          git commit -m "Refresh PriceCharting and PSA data"
           git push

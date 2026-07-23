@@ -4,7 +4,10 @@ const state = {
   sortKey: "raw",
   summaryHidden: false,
   busyCardId: null,
-  promoOnly: false
+  promoOnly: false,
+  livePricesLoading: false,
+  livePricesCheckedAt: null,
+  livePricesUpdated: 0
 };
 
 const repo = {
@@ -15,6 +18,9 @@ const repo = {
 };
 
 const ACTIVE_COLLECTION_KEY = "pokemonTrackerActiveCollection";
+const LIVE_PRICE_CACHE_KEY = "pokemonTrackerLivePrices";
+const POKEMON_TCG_API = "https://api.pokemontcg.io/v2/cards";
+const TCGDEX_CARD_API = "https://api.tcgdex.net/v2/en/cards";
 
 const sortOptions = [
   ["raw", "Price high-low"],
@@ -81,6 +87,10 @@ async function loadData() {
   state.data = await response.json();
   state.activeCollectionId = resolveActiveCollectionId();
   render();
+  refreshActiveCollectionPrices().catch((error) => {
+    console.warn("Could not refresh live prices", error);
+    renderUpdatedAt();
+  });
 }
 
 function activeCollection() {
@@ -243,6 +253,10 @@ function renderTabs() {
     button.addEventListener("click", () => {
       setActiveCollection(collection.id);
       render();
+      refreshActiveCollectionPrices().catch((error) => {
+        console.warn("Could not refresh live prices", error);
+        renderUpdatedAt();
+      });
     });
     return button;
   }));
@@ -699,14 +713,176 @@ function renderNotes() {
 
 function renderUpdatedAt() {
   const updated = state.data.lastUpdated ? new Date(state.data.lastUpdated) : null;
-  els.updatedAt.textContent = updated && !Number.isNaN(updated.getTime())
-    ? `Updated ${updated.toLocaleString([], { dateStyle: "medium", timeStyle: "short" })}`
-    : "Updated date unavailable";
+  const saved = updated && !Number.isNaN(updated.getTime())
+    ? `Saved ${updated.toLocaleString([], { dateStyle: "medium", timeStyle: "short" })}`
+    : "Saved date unavailable";
+  if (state.livePricesLoading) {
+    els.updatedAt.textContent = `${saved} · Checking live TCGplayer prices...`;
+    return;
+  }
+  if (state.livePricesCheckedAt) {
+    const checked = state.livePricesCheckedAt.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
+    els.updatedAt.textContent = `Live TCGplayer prices checked ${checked} (${state.livePricesUpdated} updated) · ${saved}`;
+    return;
+  }
+  els.updatedAt.textContent = saved;
 }
 
 els.refresh.addEventListener("click", () => {
   loadData().catch(showError);
 });
+
+async function refreshActiveCollectionPrices() {
+  if (!state.data || state.livePricesLoading) return;
+  const collection = activeCollection();
+  const cards = (collection?.cards || []).filter((card) => card.pokemonTcgId);
+  if (!cards.length) return;
+
+  state.livePricesLoading = true;
+  renderUpdatedAt();
+
+  const cache = readLivePriceCache();
+  applyLivePrices(cards, cache);
+  const uniqueIds = [...new Set(cards.map((card) => card.pokemonTcgId))];
+  const settled = await mapWithConcurrency(uniqueIds, 6, fetchLivePrice);
+  let updated = 0;
+
+  settled.forEach((result) => {
+    if (result.status !== "fulfilled" || result.value.market === null) return;
+    const { id, market, updatedAt } = result.value;
+    cache[id] = { market, updatedAt, fetchedAt: new Date().toISOString() };
+    cards.filter((card) => card.pokemonTcgId === id).forEach((card) => {
+      applyLivePrice(card, cache[id]);
+      updated += 1;
+    });
+  });
+
+  writeLivePriceCache(cache);
+  state.livePricesLoading = false;
+  state.livePricesCheckedAt = new Date();
+  state.livePricesUpdated = updated;
+  render();
+}
+
+async function fetchLivePrice(id) {
+  const params = new URLSearchParams({
+    q: `id:${id}`,
+    select: "id,tcgplayer",
+    pageSize: "1"
+  });
+  try {
+    const response = await fetch(`${POKEMON_TCG_API}?${params}`, {
+      cache: "no-store",
+      signal: AbortSignal.timeout(8000)
+    });
+    if (response.ok) {
+      const payload = await response.json();
+      const card = payload.data?.[0];
+      const market = marketPrice(card?.tcgplayer?.prices);
+      if (market !== null) {
+        return { id, market, updatedAt: card?.tcgplayer?.updatedAt || new Date().toISOString().slice(0, 10) };
+      }
+    }
+  } catch {
+    // TCGdex carries the same TCGplayer market feed and is a dependable fallback.
+  }
+
+  const fallback = await fetch(`${TCGDEX_CARD_API}/${encodeURIComponent(id)}`, {
+    cache: "no-store",
+    signal: AbortSignal.timeout(8000)
+  });
+  if (!fallback.ok) throw new Error(`Live price lookup failed (${fallback.status})`);
+  const card = await fallback.json();
+  return {
+    id,
+    market: tcgDexTcgPlayerPrice(card),
+    updatedAt: tcgDexUpdatedAt(card) || new Date().toISOString().slice(0, 10)
+  };
+}
+
+function applyLivePrices(cards, cache) {
+  cards.forEach((card) => {
+    const cached = cache[card.pokemonTcgId];
+    if (cached && finiteNumber(cached.market) !== null) applyLivePrice(card, cached);
+  });
+}
+
+function applyLivePrice(card, price) {
+  card.sources ||= {};
+  card.sources.tcgplayer = roundPrice(price.market);
+  card.sourceUpdatedAt ||= {};
+  card.sourceUpdatedAt.tcgplayer = price.updatedAt;
+  card.prices ||= {};
+  card.prices.avgMarket = roundPrice(sourceAverage(card.sources));
+}
+
+function marketPrice(prices = {}) {
+  const preferred = ["holofoil", "normal", "reverseHolofoil", "1stEditionHolofoil", "unlimitedHolofoil"];
+  for (const key of preferred) {
+    const price = finiteNumber(prices[key]?.market ?? prices[key]?.mid);
+    if (price !== null) return price;
+  }
+  for (const price of Object.values(prices || {})) {
+    const value = finiteNumber(price?.market ?? price?.mid);
+    if (value !== null) return value;
+  }
+  return null;
+}
+
+function tcgDexTcgPlayerPrice(card) {
+  const pricing = [card?.pricing?.tcgplayer, ...(card?.variants_detailed || []).map((variant) => variant.pricing?.tcgplayer)];
+  for (const source of pricing) {
+    for (const value of Object.values(source || {})) {
+      const market = finiteNumber(value?.marketPrice ?? value?.market ?? value?.midPrice);
+      if (market !== null) return market;
+    }
+  }
+  return null;
+}
+
+function tcgDexUpdatedAt(card) {
+  const pricing = [card?.pricing?.tcgplayer, ...(card?.variants_detailed || []).map((variant) => variant.pricing?.tcgplayer)];
+  return pricing.map((source) => source?.updated).find(Boolean) || null;
+}
+
+function roundPrice(value) {
+  const number = finiteNumber(value);
+  return number === null ? null : Math.round(number * 100) / 100;
+}
+
+function readLivePriceCache() {
+  try {
+    return JSON.parse(localStorage.getItem(LIVE_PRICE_CACHE_KEY) || "{}") || {};
+  } catch {
+    return {};
+  }
+}
+
+function writeLivePriceCache(cache) {
+  try {
+    localStorage.setItem(LIVE_PRICE_CACHE_KEY, JSON.stringify(cache));
+  } catch {
+    // The live update remains useful even if browser storage is unavailable.
+  }
+}
+
+async function mapWithConcurrency(items, limit, worker) {
+  const results = new Array(items.length);
+  let cursor = 0;
+  const runners = Array.from({ length: Math.min(limit, items.length) }, async () => {
+    while (cursor < items.length) {
+      const index = cursor;
+      cursor += 1;
+      try {
+        results[index] = { status: "fulfilled", value: await worker(items[index]) };
+      } catch (reason) {
+        results[index] = { status: "rejected", reason };
+      }
+    }
+  });
+  await Promise.all(runners);
+  return results;
+}
 
 els.summaryToggle.addEventListener("click", () => {
   state.summaryHidden = !state.summaryHidden;

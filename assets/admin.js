@@ -16,6 +16,7 @@ const els = {
   collection: document.querySelector("#collection-select"),
   token: document.querySelector("#github-token"),
   saveToken: document.querySelector("#save-token"),
+  requestCard: document.querySelector("#request-card"),
   status: document.querySelector("#admin-status"),
   reviewPanel: document.querySelector("#review-panel"),
   previewCard: document.querySelector("#preview-card"),
@@ -96,6 +97,28 @@ els.lookupForm.addEventListener("submit", async (event) => {
   }
 });
 
+els.requestCard.addEventListener("click", () => {
+  const url = els.url.value.trim();
+  if (!url) {
+    setStatus("Paste the card URL first.", "error");
+    els.url.focus();
+    return;
+  }
+  try {
+    normalizeUrl(url);
+    const params = new URLSearchParams({
+      template: "add-card.yml",
+      title: "Add card",
+      collection: els.collection.value,
+      card_url: url
+    });
+    window.open(`https://github.com/${repo.owner}/${repo.name}/issues/new?${params}`, "_blank", "noopener");
+    setStatus("Finish the GitHub request in the new tab. It will add the card after the lookup completes.", "success");
+  } catch (error) {
+    setStatus(error.message, "error");
+  }
+});
+
 els.saveToken.addEventListener("click", () => {
   localStorage.setItem("pokemonTrackerGitHubToken", els.token.value.trim());
   setStatus("Token saved in this browser.", "success");
@@ -144,7 +167,7 @@ async function buildCandidate(inputUrl) {
     throw new Error("Use a PriceCharting, TCGplayer, or PokemonTCG price URL.");
   }
   const token = els.token.value.trim();
-  if (!token) throw new Error("Add a GitHub token before previewing.");
+  if (!token) throw new Error("Use Send request for a token-free add, or add an optional GitHub token to preview and commit here.");
   return buildViaWorkflow(url.href, token);
 }
 

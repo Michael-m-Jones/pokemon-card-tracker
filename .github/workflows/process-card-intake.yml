@@ -1,0 +1,92 @@
+name: Process card request
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: card-data
+  cancel-in-progress: false
+
+jobs:
+  process-card-intake:
+    if: contains(github.event.issue.labels.*.name, 'card-intake')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check requester
+        id: requester
+        env:
+          OWNER: ${{ github.repository_owner }}
+          REQUESTER: ${{ github.event.issue.user.login }}
+          ALLOWED_USERS: ${{ vars.CARD_INTAKE_USERS }}
+        run: |
+          IFS=',' read -ra USERS <<< "$ALLOWED_USERS"
+          ALLOWED=false
+          if [ "$REQUESTER" = "$OWNER" ]; then ALLOWED=true; fi
+          for USER in "${USERS[@]}"; do
+            if [ "$(echo "$USER" | xargs)" = "$REQUESTER" ]; then ALLOWED=true; fi
+          done
+          echo "allowed=$ALLOWED" >> "$GITHUB_OUTPUT"
+
+      - name: Check out repository
+        if: steps.requester.outputs.allowed == 'true'
+        uses: actions/checkout@v7
+
+      - name: Set up Node
+        if: steps.requester.outputs.allowed == 'true'
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+
+      - name: Build and add card
+        if: steps.requester.outputs.allowed == 'true'
+        id: add
+        env:
+          ISSUE_EVENT_PATH: ${{ github.event_path }}
+        run: |
+          node scripts/process-card-intake.mjs > card-intake-result.json
+          node -e "const fs=require('fs'); const value=JSON.parse(fs.readFileSync('card-intake-result.json','utf8')); fs.appendFileSync(process.env.GITHUB_OUTPUT, 'ok=' + value.ok + '\\nmessage<<EOF\\n' + value.message + '\\nEOF\\n');"
+
+      - name: Commit card
+        if: steps.requester.outputs.allowed == 'true' && steps.add.outputs.ok == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/cards.json
+          git commit -m "Add card from request #${{ github.event.issue.number }}"
+          git push
+
+      - name: Respond to request
+        uses: actions/github-script@v8
+        env:
+          ALLOWED: ${{ steps.requester.outputs.allowed }}
+          SUCCESS: ${{ steps.add.outputs.ok }}
+          MESSAGE: ${{ steps.add.outputs.message }}
+        with:
+          script: |
+            const allowed = process.env.ALLOWED === 'true';
+            const success = process.env.SUCCESS === 'true';
+            let body;
+            if (!allowed) {
+              body = 'This card request was not processed because this GitHub account is not approved for card intake. The repository owner can add usernames to the `CARD_INTAKE_USERS` repository variable.';
+            } else {
+              body = success ? `Added to the tracker. ${process.env.MESSAGE}` : `I could not add this card. ${process.env.MESSAGE}`;
+            }
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body
+            });
+            if (allowed && success) {
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                state: 'closed'
+              });
+            }

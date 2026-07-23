@@ -1,0 +1,24 @@
+name: Add a card
+description: Add a card to one of the collection lists without using a personal access token.
+title: "Add card"
+labels:
+  - card-intake
+body:
+  - type: dropdown
+    id: collection
+    attributes:
+      label: List
+      options:
+        - Michael
+        - Samantha
+        - Grails
+    validations:
+      required: true
+  - type: input
+    id: card_url
+    attributes:
+      label: Card URL
+      description: PriceCharting, TCGplayer, or PokemonTCG card URL.
+      placeholder: https://www.pricecharting.com/game/...
+    validations:
+      required: true

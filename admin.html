@@ -6,7 +6,7 @@
     <meta name="description" content="Review and add cards to the Pokemon card tracker.">
     <title>Add Card · Poke Card Tracker</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="assets/styles.css?v=20260712-promo-filter">
+    <link rel="stylesheet" href="assets/styles.css?v=20260723-live-prices">
   </head>
   <body class="admin-page">
     <header class="site-header admin-header">
@@ -20,7 +20,7 @@
         <div>
           <p class="eyebrow">Card intake</p>
           <h1>Add a Card</h1>
-          <p class="tagline">Paste, review, then commit to the tracker.</p>
+          <p class="tagline">Paste a link and add it your way.</p>
         </div>
         <a class="admin-link admin-home-link" href="index.html" aria-label="Back to tracker">←</a>
       </div>
@@ -40,13 +40,21 @@
           <button class="primary-button" type="submit">Preview</button>
         </form>
 
-        <div class="admin-token-row">
+        <div class="admin-request-row">
+          <p>Prefer the easy route? Send the URL through GitHub and the tracker will add it after it verifies the card.</p>
+          <button id="request-card" class="soft-button" type="button">Send request</button>
+        </div>
+
+        <details class="admin-auth">
+          <summary>Advanced: preview and commit here with a GitHub token</summary>
+          <div class="admin-token-row">
           <div class="field wide">
             <label for="github-token">GitHub token</label>
             <input id="github-token" name="github-token" type="password" autocomplete="off" placeholder="Only saved in this browser">
           </div>
           <button id="save-token" class="soft-button" type="button">Save</button>
-        </div>
+          </div>
+        </details>
 
         <p id="admin-status" class="admin-status" role="status">Loading collections...</p>
       </section>
@@ -113,6 +121,6 @@
       </section>
     </main>
 
-    <script src="assets/admin.js?v=20260712-card-actions" defer></script>
+    <script src="assets/admin.js?v=20260723-token-free-intake" defer></script>
   </body>
 </html>

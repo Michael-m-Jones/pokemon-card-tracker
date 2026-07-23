@@ -8,8 +8,8 @@ Live site: https://michael-m-jones.github.io/pokemon-card-tracker/
 
 - `index.html`, `assets/styles.css`, and `assets/app.js` render the public site.
 - `data/cards.json` is the source of truth for collections, cards, prices, PSA values, and notes.
-- `.github/workflows/update-prices.yml` runs daily and refreshes TCGplayer market prices through the PokemonTCG API.
-- PriceCharting, PokeScope, PSA 10 values, and gem rates stay editable in `data/cards.json` unless you add another updater.
+- `.github/workflows/update-prices.yml` runs every six hours and refreshes TCGplayer market prices through the PokemonTCG API. The public site also checks the active list's TCGplayer prices when it opens, without storing a credential in the browser.
+- A daily PriceCharting/PSA population workflow refreshes raw prices, PSA 10 values, and gem rates where a PriceCharting source is available. PokeScope values stay editable in `data/cards.json`.
 
 ## Local checks
 
@@ -25,9 +25,9 @@ Serve the folder with any static file server, then open `index.html` through tha
 
 ## Add-card admin
 
-Open `/admin.html` to paste a PriceCharting, TCGplayer, or PokemonTCG URL, generate a preview, edit the reviewed JSON, and commit the card to one of the lists.
+Open `/admin.html` to paste a PriceCharting, TCGplayer, or PokemonTCG URL. `Send request` opens a GitHub issue form and the workflow adds the verified card without a personal access token. Repository owner accounts are always allowed; add additional GitHub usernames as a comma-separated `CARD_INTAKE_USERS` repository variable for shared use.
 
-The preview step runs `.github/workflows/preview-card.yml`, so the GitHub token used in the browser needs permission to run Actions and read/write repository contents. The token is stored only in local browser storage.
+The in-page preview and direct commit route remains available as an advanced option. It needs a GitHub token with Actions and repository contents permission, and the token is stored only in local browser storage.
 
 ## Optional secret
 
