@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "title": "Poke Card Tracker",
   "description": "A shareable tracker for Pokemon card market prices and PSA 10 upside.",
-  "lastUpdated": "2026-07-24T19:45:27.065Z",
+  "lastUpdated": "2026-07-25T03:37:07.696Z",
   "collections": [
     {
       "id": "michael",
@@ -35,7 +35,7 @@
             "gemRate": 73
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026-07-24T08:02:38.657Z"
+            "tcgplayer": "2026/07/24"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swsh7-212"
@@ -525,20 +525,20 @@
           "holo": false,
           "chase": false,
           "prices": {
-            "avgMarket": 40.75,
+            "avgMarket": 40.73,
             "psa10": 594.85,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 36,
-            "tcgplayer": 46.26,
+            "tcgplayer": 46.18,
             "pokescope": 40
           },
           "grading": {
             "gemRate": 24
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/07/24"
+            "tcgplayer": "2026-07-24T08:02:37.329Z"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swshp-SWSH261"
@@ -965,7 +965,7 @@
             "gemRate": null
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/07/24",
+            "tcgplayer": "2026-07-24T08:02:37.329Z",
             "priceCharting": "2026-07-24"
           },
           "externalUrls": {
@@ -978,7 +978,7 @@
               "trend": 10.55,
               "average": 14.8,
               "low": 5.2,
-              "updatedAt": "2026-07-24T08:02:25.846Z"
+              "updatedAt": "2026-07-24T08:02:25.318Z"
             }
           }
         },
@@ -1406,20 +1406,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 14.52,
+            "avgMarket": 14.5,
             "psa10": 325.75,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 15,
-            "tcgplayer": 14.04,
+            "tcgplayer": 13.99,
             "pokescope": null
           },
           "grading": {
             "gemRate": 17
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/07/23",
+            "tcgplayer": "2026/07/24",
             "priceCharting": "2026-07-24"
           },
           "externalUrls": {
@@ -1616,20 +1616,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 5.54,
+            "avgMarket": 5.42,
             "psa10": 80,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 4.81,
-            "tcgplayer": 6.26,
+            "tcgplayer": 6.03,
             "pokescope": null
           },
           "grading": {
             "gemRate": 25
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/07/23",
+            "tcgplayer": "2026/07/24",
             "priceCharting": "2026-07-24"
           },
           "externalUrls": {
@@ -1948,7 +1948,7 @@
             "gemRate": 35
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/07/23",
+            "tcgplayer": "2026/07/24",
             "priceCharting": "2026-07-24"
           },
           "externalUrls": {
@@ -2339,7 +2339,7 @@
           },
           "sourceUpdatedAt": {
             "priceCharting": "2026-07-24",
-            "tcgplayer": "2026-07-24T08:02:39.537Z"
+            "tcgplayer": "2026/07/24"
           },
           "externalUrls": {
             "priceCharting": "https://www.pricecharting.com/game/pokemon-lost-origin/giratina-v-186",
@@ -2351,7 +2351,7 @@
               "trend": 1286.93,
               "average": 1095.44,
               "low": 299,
-              "updatedAt": "2026-07-24T08:02:25.318Z"
+              "updatedAt": "2026-07-24T08:02:25.846Z"
             }
           }
         },
@@ -2444,12 +2444,12 @@
       "PokemonTCG",
       "TCGdex/Cardmarket"
     ],
-    "updatedCards": 52,
-    "pokemonTcgUpdatedCards": 41,
+    "updatedCards": 51,
+    "pokemonTcgUpdatedCards": 40,
     "cardmarketUpdatedCards": 11,
     "cardmarketSkippedCards": 2,
     "priceChartingUpdatedCards": 0,
     "gradingUpdatedCards": 0,
-    "failedCards": 27
+    "failedCards": 28
   }
 }
