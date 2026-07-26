@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "title": "Poke Card Tracker",
   "description": "A shareable tracker for Pokemon card market prices and PSA 10 upside.",
-  "lastUpdated": "2026-07-25T19:34:05.823Z",
+  "lastUpdated": "2026-07-26T03:54:19.486Z",
   "collections": [
     {
       "id": "michael",
@@ -46,7 +46,7 @@
               "trend": 341.85,
               "average": 325.12,
               "low": 40,
-              "updatedAt": "2026-07-25T08:02:24.890Z"
+              "updatedAt": "2026-07-25T08:02:25.594Z"
             }
           }
         },
@@ -153,7 +153,7 @@
               "trend": 214.5,
               "average": 210.36,
               "low": 50,
-              "updatedAt": "2026-07-25T08:02:25.131Z"
+              "updatedAt": "2026-07-25T08:02:24.890Z"
             }
           }
         },
@@ -263,7 +263,7 @@
               "trend": 149.13,
               "average": 170.49,
               "low": 52,
-              "updatedAt": "2026-07-25T08:02:24.890Z"
+              "updatedAt": "2026-07-25T08:02:25.603Z"
             }
           }
         },
@@ -369,7 +369,7 @@
               "trend": 41.86,
               "average": 106.57,
               "low": 45,
-              "updatedAt": "2026-07-25T08:02:24.890Z"
+              "updatedAt": "2026-07-25T08:02:25.594Z"
             }
           }
         },
@@ -442,7 +442,7 @@
               "trend": 53.75,
               "average": 60.24,
               "low": 10.99,
-              "updatedAt": "2026-07-25T08:02:24.890Z"
+              "updatedAt": "2026-07-25T08:02:25.054Z"
             }
           }
         },
@@ -549,7 +549,7 @@
               "trend": 44.45,
               "average": 60.59,
               "low": 25,
-              "updatedAt": "2026-07-25T08:02:24.890Z"
+              "updatedAt": "2026-07-25T08:02:25.594Z"
             }
           }
         },
@@ -792,7 +792,7 @@
               "trend": 31.91,
               "average": 87.46,
               "low": 17.5,
-              "updatedAt": "2026-07-25T08:02:24.890Z"
+              "updatedAt": "2026-07-25T08:02:25.594Z"
             }
           },
           "nickname": "Cosmic Eclipse tag team"
@@ -978,7 +978,7 @@
               "trend": 12.51,
               "average": 14.8,
               "low": 5.2,
-              "updatedAt": "2026-07-25T08:02:24.890Z"
+              "updatedAt": "2026-07-25T08:02:25.594Z"
             }
           }
         },
@@ -1126,7 +1126,7 @@
               "trend": 81.68,
               "average": 80,
               "low": 15,
-              "updatedAt": "2026-07-25T08:02:24.890Z"
+              "updatedAt": "2026-07-25T08:02:25.594Z"
             }
           }
         },
@@ -1169,7 +1169,7 @@
               "trend": 89.89,
               "average": 98.15,
               "low": 44.99,
-              "updatedAt": "2026-07-25T08:02:24.890Z"
+              "updatedAt": "2026-07-25T08:02:25.594Z"
             }
           }
         }
@@ -2351,7 +2351,7 @@
               "trend": 1286.93,
               "average": 1095.44,
               "low": 299,
-              "updatedAt": "2026-07-25T08:02:24.890Z"
+              "updatedAt": "2026-07-25T08:02:25.603Z"
             }
           }
         },
@@ -2444,12 +2444,12 @@
       "PokemonTCG",
       "TCGdex/Cardmarket"
     ],
-    "updatedCards": 49,
-    "pokemonTcgUpdatedCards": 38,
+    "updatedCards": 43,
+    "pokemonTcgUpdatedCards": 32,
     "cardmarketUpdatedCards": 11,
     "cardmarketSkippedCards": 2,
     "priceChartingUpdatedCards": 0,
     "gradingUpdatedCards": 0,
-    "failedCards": 32
+    "failedCards": 38
   }
 }
