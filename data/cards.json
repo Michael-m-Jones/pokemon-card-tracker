@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "title": "Poke Card Tracker",
   "description": "A shareable tracker for Pokemon card market prices and PSA 10 upside.",
-  "lastUpdated": "2026-08-07T15:30:46.042Z",
+  "lastUpdated": "2026-08-07T19:16:55.413Z",
   "collections": [
     {
       "id": "michael",
@@ -35,7 +35,7 @@
             "gemRate": 73
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026-08-07T08:02:38.779Z"
+            "tcgplayer": "2026/08/07"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swsh7-212"
@@ -263,7 +263,7 @@
               "trend": 145.85,
               "average": 188.02,
               "low": 40,
-              "updatedAt": "2026-08-07T08:02:24.872Z"
+              "updatedAt": "2026-08-07T08:02:25.763Z"
             }
           }
         },
@@ -369,7 +369,7 @@
               "trend": 94.77,
               "average": 82.39,
               "low": 45,
-              "updatedAt": "2026-08-07T08:02:24.872Z"
+              "updatedAt": "2026-08-07T08:02:25.763Z"
             }
           }
         },
@@ -431,7 +431,7 @@
             "gemRate": 1
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/08/05"
+            "tcgplayer": "2026/08/07"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/xyp-XY76"
@@ -442,7 +442,7 @@
               "trend": 45.96,
               "average": 50.25,
               "low": 22,
-              "updatedAt": "2026-08-07T08:02:25.343Z"
+              "updatedAt": "2026-08-07T08:02:25.763Z"
             }
           }
         },
@@ -549,7 +549,7 @@
               "trend": 50.89,
               "average": 52.59,
               "low": 24.9,
-              "updatedAt": "2026-08-07T08:02:25.343Z"
+              "updatedAt": "2026-08-07T08:02:25.763Z"
             }
           }
         },
@@ -598,20 +598,20 @@
           "holo": false,
           "chase": false,
           "prices": {
-            "avgMarket": 21.26,
+            "avgMarket": 20.91,
             "psa10": 209.07,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 18,
-            "tcgplayer": 21.79,
+            "tcgplayer": 20.74,
             "pokescope": 24
           },
           "grading": {
             "gemRate": 30
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/08/05"
+            "tcgplayer": "2026/08/07"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/svp-51"
@@ -792,7 +792,7 @@
               "trend": 50.02,
               "average": 52.75,
               "low": 18,
-              "updatedAt": "2026-08-07T08:02:25.343Z"
+              "updatedAt": "2026-08-07T08:02:25.763Z"
             }
           },
           "nickname": "Cosmic Eclipse tag team"
@@ -978,7 +978,7 @@
               "trend": 13.76,
               "average": 13.41,
               "low": 6.95,
-              "updatedAt": "2026-08-07T08:02:25.343Z"
+              "updatedAt": "2026-08-07T08:02:25.763Z"
             }
           }
         },
@@ -1113,7 +1113,7 @@
             "gemRate": 23
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/08/07",
+            "tcgplayer": "2026-08-07T08:02:33.925Z",
             "priceCharting": "2026-08-07"
           },
           "externalUrls": {
@@ -1126,7 +1126,7 @@
               "trend": 86.08,
               "average": 81.31,
               "low": 15,
-              "updatedAt": "2026-08-07T08:02:25.343Z"
+              "updatedAt": "2026-08-07T08:02:25.763Z"
             }
           }
         },
@@ -1156,7 +1156,7 @@
             "gemRate": 53
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/08/07",
+            "tcgplayer": "2026-08-07T08:02:39.401Z",
             "priceCharting": "2026-08-07"
           },
           "externalUrls": {
@@ -1169,7 +1169,7 @@
               "trend": 101.32,
               "average": 93.8,
               "low": 45,
-              "updatedAt": "2026-08-07T08:02:25.343Z"
+              "updatedAt": "2026-08-07T08:02:25.422Z"
             }
           }
         }
@@ -1757,20 +1757,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 46.83,
+            "avgMarket": 46.76,
             "psa10": 266.43,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 44.98,
-            "tcgplayer": 48.67,
+            "tcgplayer": 48.53,
             "pokescope": null
           },
           "grading": {
             "gemRate": 31
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/08/05",
+            "tcgplayer": "2026/08/07",
             "priceCharting": "2026-08-07"
           },
           "externalUrls": {
@@ -2339,7 +2339,7 @@
           },
           "sourceUpdatedAt": {
             "priceCharting": "2026-08-07",
-            "tcgplayer": "2026-08-07T08:02:39.568Z"
+            "tcgplayer": "2026/08/07"
           },
           "externalUrls": {
             "priceCharting": "https://www.pricecharting.com/game/pokemon-lost-origin/giratina-v-186",
@@ -2351,7 +2351,7 @@
               "trend": 1027.68,
               "average": 966.54,
               "low": 300,
-              "updatedAt": "2026-08-07T08:02:25.343Z"
+              "updatedAt": "2026-08-07T08:02:25.763Z"
             }
           }
         },
@@ -2442,15 +2442,14 @@
   "updateSummary": {
     "providers": [
       "PokemonTCG",
-      "TCGdex/Cardmarket",
-      "PriceCharting/PSA population"
+      "TCGdex/Cardmarket"
     ],
-    "updatedCards": 184,
-    "pokemonTcgUpdatedCards": 32,
+    "updatedCards": 35,
+    "pokemonTcgUpdatedCards": 24,
     "cardmarketUpdatedCards": 11,
     "cardmarketSkippedCards": 2,
-    "priceChartingUpdatedCards": 49,
-    "gradingUpdatedCards": 92,
-    "failedCards": 39
+    "priceChartingUpdatedCards": 0,
+    "gradingUpdatedCards": 0,
+    "failedCards": 43
   }
 }
