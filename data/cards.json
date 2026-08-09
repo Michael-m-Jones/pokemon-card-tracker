@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "title": "Poke Card Tracker",
   "description": "A shareable tracker for Pokemon card market prices and PSA 10 upside.",
-  "lastUpdated": "2026-08-09T02:31:36.935Z",
+  "lastUpdated": "2026-08-09T07:18:47.247Z",
   "collections": [
     {
       "id": "michael",
@@ -35,7 +35,7 @@
             "gemRate": 73
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/08/08"
+            "tcgplayer": "2026-08-08T08:02:38.791Z"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swsh7-212"
@@ -46,7 +46,7 @@
               "trend": 353.18,
               "average": 381.09,
               "low": 35.99,
-              "updatedAt": "2026-08-08T08:02:26.159Z"
+              "updatedAt": "2026-08-08T08:02:25.108Z"
             }
           }
         },
@@ -153,7 +153,7 @@
               "trend": 250.07,
               "average": 217.22,
               "low": 50,
-              "updatedAt": "2026-08-08T08:02:26.159Z"
+              "updatedAt": "2026-08-08T08:02:25.108Z"
             }
           }
         },
@@ -250,7 +250,7 @@
             "gemRate": 44
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/08/08",
+            "tcgplayer": "2026-08-08T08:02:38.962Z",
             "priceCharting": "2026-08-08"
           },
           "externalUrls": {
@@ -263,7 +263,7 @@
               "trend": 131.87,
               "average": 188.02,
               "low": 40,
-              "updatedAt": "2026-08-08T08:02:26.159Z"
+              "updatedAt": "2026-08-08T08:02:25.108Z"
             }
           }
         },
@@ -369,7 +369,7 @@
               "trend": 92.6,
               "average": 82.39,
               "low": 44.99,
-              "updatedAt": "2026-08-08T08:02:25.640Z"
+              "updatedAt": "2026-08-08T08:02:25.108Z"
             }
           }
         },
@@ -442,7 +442,7 @@
               "trend": 45.96,
               "average": 50.25,
               "low": 24,
-              "updatedAt": "2026-08-08T08:02:25.640Z"
+              "updatedAt": "2026-08-08T08:02:25.108Z"
             }
           }
         },
@@ -549,7 +549,7 @@
               "trend": 48.46,
               "average": 52.59,
               "low": 24.89,
-              "updatedAt": "2026-08-08T08:02:25.640Z"
+              "updatedAt": "2026-08-08T08:02:25.108Z"
             }
           }
         },
@@ -792,7 +792,7 @@
               "trend": 56.42,
               "average": 52.75,
               "low": 18,
-              "updatedAt": "2026-08-08T08:02:25.640Z"
+              "updatedAt": "2026-08-08T08:02:25.108Z"
             }
           },
           "nickname": "Cosmic Eclipse tag team"
@@ -978,7 +978,7 @@
               "trend": 13.3,
               "average": 13.41,
               "low": 6.95,
-              "updatedAt": "2026-08-08T08:02:25.640Z"
+              "updatedAt": "2026-08-08T08:02:25.108Z"
             }
           }
         },
@@ -1126,7 +1126,7 @@
               "trend": 82.53,
               "average": 81.31,
               "low": 15,
-              "updatedAt": "2026-08-08T08:02:26.159Z"
+              "updatedAt": "2026-08-08T08:02:25.108Z"
             }
           }
         },
@@ -1156,7 +1156,7 @@
             "gemRate": 53
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026-08-08T08:02:39.258Z",
+            "tcgplayer": "2026/08/08",
             "priceCharting": "2026-08-08"
           },
           "externalUrls": {
@@ -1169,7 +1169,7 @@
               "trend": 99.75,
               "average": 93.8,
               "low": 45,
-              "updatedAt": "2026-08-08T08:02:26.159Z"
+              "updatedAt": "2026-08-08T08:02:25.108Z"
             }
           }
         }
@@ -2339,7 +2339,7 @@
           },
           "sourceUpdatedAt": {
             "priceCharting": "2026-08-07",
-            "tcgplayer": "2026-08-08T08:02:39.541Z"
+            "tcgplayer": "2026/08/08"
           },
           "externalUrls": {
             "priceCharting": "https://www.pricecharting.com/game/pokemon-lost-origin/giratina-v-186",
@@ -2351,7 +2351,7 @@
               "trend": 991.1,
               "average": 966.54,
               "low": 300,
-              "updatedAt": "2026-08-08T08:02:25.640Z"
+              "updatedAt": "2026-08-08T08:02:25.108Z"
             }
           }
         },
@@ -2444,12 +2444,12 @@
       "PokemonTCG",
       "TCGdex/Cardmarket"
     ],
-    "updatedCards": 44,
-    "pokemonTcgUpdatedCards": 33,
+    "updatedCards": 33,
+    "pokemonTcgUpdatedCards": 22,
     "cardmarketUpdatedCards": 11,
     "cardmarketSkippedCards": 2,
     "priceChartingUpdatedCards": 0,
     "gradingUpdatedCards": 0,
-    "failedCards": 35
+    "failedCards": 46
   }
 }
