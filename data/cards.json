@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "title": "Poke Card Tracker",
   "description": "A shareable tracker for Pokemon card market prices and PSA 10 upside.",
-  "lastUpdated": "2026-08-15T14:52:48.622Z",
+  "lastUpdated": "2026-08-15T18:46:25.084Z",
   "collections": [
     {
       "id": "michael",
@@ -46,7 +46,7 @@
               "trend": 345,
               "average": 381.09,
               "low": 40,
-              "updatedAt": "2026-08-15T08:02:24.939Z"
+              "updatedAt": "2026-08-15T08:02:25.100Z"
             }
           }
         },
@@ -153,7 +153,7 @@
               "trend": 219.31,
               "average": 161.72,
               "low": 54.9,
-              "updatedAt": "2026-08-15T08:02:24.939Z"
+              "updatedAt": "2026-08-15T08:02:25.100Z"
             }
           }
         },
@@ -196,7 +196,7 @@
               "trend": 313.11,
               "average": 515.33,
               "low": 20,
-              "updatedAt": "2026-08-15T08:02:24.939Z"
+              "updatedAt": "2026-08-15T08:02:25.100Z"
             }
           }
         },
@@ -271,7 +271,7 @@
               "trend": 156.26,
               "average": 188.02,
               "low": 40,
-              "updatedAt": "2026-08-15T08:02:24.939Z"
+              "updatedAt": "2026-08-15T08:02:25.100Z"
             }
           }
         },
@@ -377,7 +377,7 @@
               "trend": 85.04,
               "average": 82.39,
               "low": 44.99,
-              "updatedAt": "2026-08-15T08:02:24.939Z"
+              "updatedAt": "2026-08-15T08:02:25.100Z"
             }
           }
         },
@@ -450,7 +450,7 @@
               "trend": 43.45,
               "average": 39.77,
               "low": 24,
-              "updatedAt": "2026-08-15T08:02:24.939Z"
+              "updatedAt": "2026-08-15T08:02:25.100Z"
             }
           }
         },
@@ -557,7 +557,7 @@
               "trend": 34.75,
               "average": 52.59,
               "low": 25,
-              "updatedAt": "2026-08-15T08:02:24.939Z"
+              "updatedAt": "2026-08-15T08:02:25.100Z"
             }
           }
         },
@@ -788,7 +788,7 @@
           },
           "sourceUpdatedAt": {
             "priceCharting": "2026-08-15",
-            "tcgplayer": "2026-08-15T08:02:38.729Z"
+            "tcgplayer": "2026/08/15"
           },
           "externalUrls": {
             "priceCharting": "https://www.pricecharting.com/game/pokemon-cosmic-eclipse/reshiram-&-zekrom-gx-157",
@@ -800,7 +800,7 @@
               "trend": 58.05,
               "average": 57.5,
               "low": 18,
-              "updatedAt": "2026-08-15T08:02:24.939Z"
+              "updatedAt": "2026-08-15T08:02:25.100Z"
             }
           },
           "nickname": "Cosmic Eclipse tag team"
@@ -960,20 +960,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 7.91,
+            "avgMarket": 7.89,
             "psa10": 174.39,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 8,
-            "tcgplayer": 7.82,
+            "tcgplayer": 7.78,
             "pokescope": null
           },
           "grading": {
             "gemRate": null
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026-08-15T08:02:38.817Z",
+            "tcgplayer": "2026/08/15",
             "priceCharting": "2026-08-15"
           },
           "externalUrls": {
@@ -986,7 +986,7 @@
               "trend": 12.51,
               "average": 13.41,
               "low": 5.99,
-              "updatedAt": "2026-08-15T08:02:24.939Z"
+              "updatedAt": "2026-08-15T08:02:25.100Z"
             }
           }
         },
@@ -1134,7 +1134,7 @@
               "trend": 82.53,
               "average": 81.31,
               "low": 19.99,
-              "updatedAt": "2026-08-15T08:02:24.939Z"
+              "updatedAt": "2026-08-15T08:02:25.100Z"
             }
           }
         },
@@ -1164,7 +1164,7 @@
             "gemRate": 53
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/08/15",
+            "tcgplayer": "2026-08-15T08:02:40.909Z",
             "priceCharting": "2026-08-15"
           },
           "externalUrls": {
@@ -1379,20 +1379,20 @@
           "holo": true,
           "chase": true,
           "prices": {
-            "avgMarket": 386.44,
+            "avgMarket": 385.8,
             "psa10": 4175.5,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 382.16,
-            "tcgplayer": 390.72,
+            "tcgplayer": 389.43,
             "pokescope": null
           },
           "grading": {
             "gemRate": 16
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/08/13",
+            "tcgplayer": "2026/08/15",
             "priceCharting": "2026-08-15"
           },
           "externalUrls": {
@@ -1659,20 +1659,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 11.88,
+            "avgMarket": 11.58,
             "psa10": 95.57,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 11.66,
-            "tcgplayer": 12.1,
+            "tcgplayer": 11.49,
             "pokescope": null
           },
           "grading": {
             "gemRate": 45
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/08/14",
+            "tcgplayer": "2026/08/15",
             "priceCharting": "2026-08-15"
           },
           "externalUrls": {
@@ -2450,15 +2450,14 @@
   "updateSummary": {
     "providers": [
       "PokemonTCG",
-      "TCGdex/Cardmarket",
-      "PriceCharting/PSA population"
+      "TCGdex/Cardmarket"
     ],
-    "updatedCards": 196,
-    "pokemonTcgUpdatedCards": 37,
+    "updatedCards": 45,
+    "pokemonTcgUpdatedCards": 33,
     "cardmarketUpdatedCards": 12,
     "cardmarketSkippedCards": 1,
-    "priceChartingUpdatedCards": 51,
-    "gradingUpdatedCards": 96,
-    "failedCards": 35
+    "priceChartingUpdatedCards": 0,
+    "gradingUpdatedCards": 0,
+    "failedCards": 36
   }
 }
