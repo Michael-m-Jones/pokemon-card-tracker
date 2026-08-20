@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "title": "Poke Card Tracker",
   "description": "A shareable tracker for Pokemon card market prices and PSA 10 upside.",
-  "lastUpdated": "2026-08-19T18:51:48.726Z",
+  "lastUpdated": "2026-08-20T01:50:24.874Z",
   "collections": [
     {
       "id": "michael",
@@ -46,7 +46,7 @@
               "trend": 318.53,
               "average": 297.89,
               "low": 35.99,
-              "updatedAt": "2026-08-19T08:02:25.615Z"
+              "updatedAt": "2026-08-19T08:02:25.557Z"
             }
           }
         },
@@ -153,7 +153,7 @@
               "trend": 219.31,
               "average": 161.72,
               "low": 54.9,
-              "updatedAt": "2026-08-19T08:02:25.615Z"
+              "updatedAt": "2026-08-19T08:02:24.974Z"
             }
           }
         },
@@ -196,7 +196,7 @@
               "trend": 164.33,
               "average": 515.33,
               "low": 29,
-              "updatedAt": "2026-08-19T08:02:25.615Z"
+              "updatedAt": "2026-08-19T08:02:24.974Z"
             }
           }
         },
@@ -271,7 +271,7 @@
               "trend": 176.94,
               "average": 166.08,
               "low": 40,
-              "updatedAt": "2026-08-19T08:02:25.615Z"
+              "updatedAt": "2026-08-19T08:02:25.557Z"
             }
           }
         },
@@ -320,20 +320,20 @@
           "holo": false,
           "chase": false,
           "prices": {
-            "avgMarket": 85.7,
+            "avgMarket": 85.47,
             "psa10": 612.5,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 84,
-            "tcgplayer": 90.09,
+            "tcgplayer": 89.41,
             "pokescope": 83
           },
           "grading": {
             "gemRate": 84
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/08/18"
+            "tcgplayer": "2026/08/19"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv3pt5-173"
@@ -377,7 +377,7 @@
               "trend": 101.82,
               "average": 82.39,
               "low": 44.99,
-              "updatedAt": "2026-08-19T08:02:25.615Z"
+              "updatedAt": "2026-08-19T08:02:25.557Z"
             }
           }
         },
@@ -450,7 +450,7 @@
               "trend": 42.95,
               "average": 39.77,
               "low": 24,
-              "updatedAt": "2026-08-19T08:02:25.615Z"
+              "updatedAt": "2026-08-19T08:02:25.557Z"
             }
           }
         },
@@ -557,7 +557,7 @@
               "trend": 33.13,
               "average": 52.59,
               "low": 26.99,
-              "updatedAt": "2026-08-19T08:02:25.615Z"
+              "updatedAt": "2026-08-19T08:02:25.557Z"
             }
           }
         },
@@ -788,7 +788,7 @@
           },
           "sourceUpdatedAt": {
             "priceCharting": "2026-08-19",
-            "tcgplayer": "2026/08/19"
+            "tcgplayer": "2026-08-19T08:02:51.358Z"
           },
           "externalUrls": {
             "priceCharting": "https://www.pricecharting.com/game/pokemon-cosmic-eclipse/reshiram-&-zekrom-gx-157",
@@ -800,7 +800,7 @@
               "trend": 57.75,
               "average": 57.5,
               "low": 20,
-              "updatedAt": "2026-08-19T08:02:25.615Z"
+              "updatedAt": "2026-08-19T08:02:25.557Z"
             }
           },
           "nickname": "Cosmic Eclipse tag team"
@@ -973,7 +973,7 @@
             "gemRate": null
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/08/19",
+            "tcgplayer": "2026-08-19T08:02:51.597Z",
             "priceCharting": "2026-08-19"
           },
           "externalUrls": {
@@ -986,7 +986,7 @@
               "trend": 11.78,
               "average": 11.44,
               "low": 6.95,
-              "updatedAt": "2026-08-19T08:02:25.615Z"
+              "updatedAt": "2026-08-19T08:02:25.457Z"
             }
           }
         },
@@ -1134,7 +1134,7 @@
               "trend": 76.63,
               "average": 81.31,
               "low": 19.99,
-              "updatedAt": "2026-08-19T08:02:25.615Z"
+              "updatedAt": "2026-08-19T08:02:25.457Z"
             }
           }
         },
@@ -1164,7 +1164,7 @@
             "gemRate": 53
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/08/19",
+            "tcgplayer": "2026-08-19T08:02:54.551Z",
             "priceCharting": "2026-08-18"
           },
           "externalUrls": {
@@ -1177,7 +1177,7 @@
               "trend": 120.68,
               "average": 93.8,
               "low": 45,
-              "updatedAt": "2026-08-19T08:02:25.615Z"
+              "updatedAt": "2026-08-19T08:02:24.974Z"
             }
           }
         }
@@ -1836,20 +1836,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 15.68,
+            "avgMarket": 15.59,
             "psa10": 266.89,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 15,
-            "tcgplayer": 16.35,
+            "tcgplayer": 16.17,
             "pokescope": null
           },
           "grading": {
             "gemRate": 27
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/08/18",
+            "tcgplayer": "2026/08/19",
             "priceCharting": "2026-08-18"
           },
           "externalUrls": {
@@ -2347,7 +2347,7 @@
           },
           "sourceUpdatedAt": {
             "priceCharting": "2026-08-19",
-            "tcgplayer": "2026/08/19"
+            "tcgplayer": "2026-08-19T08:02:54.950Z"
           },
           "externalUrls": {
             "priceCharting": "https://www.pricecharting.com/game/pokemon-lost-origin/giratina-v-186",
@@ -2359,7 +2359,7 @@
               "trend": 696.05,
               "average": 966.54,
               "low": 320,
-              "updatedAt": "2026-08-19T08:02:25.615Z"
+              "updatedAt": "2026-08-19T08:02:25.557Z"
             }
           }
         },
@@ -2452,12 +2452,12 @@
       "PokemonTCG",
       "TCGdex/Cardmarket"
     ],
-    "updatedCards": 44,
-    "pokemonTcgUpdatedCards": 32,
+    "updatedCards": 45,
+    "pokemonTcgUpdatedCards": 33,
     "cardmarketUpdatedCards": 12,
     "cardmarketSkippedCards": 1,
     "priceChartingUpdatedCards": 0,
     "gradingUpdatedCards": 0,
-    "failedCards": 34
+    "failedCards": 37
   }
 }
