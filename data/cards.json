@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "title": "Poke Card Tracker",
   "description": "A shareable tracker for Pokemon card market prices and PSA 10 upside.",
-  "lastUpdated": "2026-08-22T18:47:38.288Z",
+  "lastUpdated": "2026-08-23T01:58:58.193Z",
   "collections": [
     {
       "id": "michael",
@@ -35,7 +35,7 @@
             "gemRate": 73
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026-08-22T10:36:22.007Z"
+            "tcgplayer": "2026/08/22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swsh7-212"
@@ -258,7 +258,7 @@
             "gemRate": 44
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026-08-22T10:46:02.651Z",
+            "tcgplayer": "2026/08/22",
             "priceCharting": "2026-08-22"
           },
           "externalUrls": {
@@ -788,7 +788,7 @@
           },
           "sourceUpdatedAt": {
             "priceCharting": "2026-08-22",
-            "tcgplayer": "2026-08-22T10:28:57.212Z"
+            "tcgplayer": "2026/08/22"
           },
           "externalUrls": {
             "priceCharting": "https://www.pricecharting.com/game/pokemon-cosmic-eclipse/reshiram-&-zekrom-gx-157",
@@ -1121,7 +1121,7 @@
             "gemRate": 23
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/08/22",
+            "tcgplayer": "2026-08-22T10:28:40.774Z",
             "priceCharting": "2026-08-22"
           },
           "externalUrls": {
@@ -2333,13 +2333,13 @@
           "holo": true,
           "chase": true,
           "prices": {
-            "avgMarket": 765.84,
+            "avgMarket": 764.84,
             "psa10": 3463.52,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 707.98,
-            "tcgplayer": 823.7,
+            "tcgplayer": 821.7,
             "pokescope": null
           },
           "grading": {
@@ -2347,7 +2347,7 @@
           },
           "sourceUpdatedAt": {
             "priceCharting": "2026-08-22",
-            "tcgplayer": "2026-08-21T08:03:22.652Z"
+            "tcgplayer": "2026/08/22"
           },
           "externalUrls": {
             "priceCharting": "https://www.pricecharting.com/game/pokemon-lost-origin/giratina-v-186",
@@ -2359,7 +2359,7 @@
               "trend": 611.06,
               "average": 966.54,
               "low": 290,
-              "updatedAt": "2026-08-21T08:03:04.016Z"
+              "updatedAt": "2026-08-21T08:03:04.342Z"
             }
           }
         },
@@ -2424,7 +2424,7 @@
             "gemRate": 3
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/08/21",
+            "tcgplayer": "2026/08/22",
             "priceCharting": "2026-08-21"
           },
           "externalUrls": {
@@ -2452,8 +2452,8 @@
       "PokemonTCG",
       "TCGdex/Cardmarket"
     ],
-    "updatedCards": 46,
-    "pokemonTcgUpdatedCards": 34,
+    "updatedCards": 43,
+    "pokemonTcgUpdatedCards": 31,
     "cardmarketUpdatedCards": 12,
     "cardmarketSkippedCards": 1,
     "priceChartingUpdatedCards": 0,
