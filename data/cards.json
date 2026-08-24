@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "title": "Poke Card Tracker",
   "description": "A shareable tracker for Pokemon card market prices and PSA 10 upside.",
-  "lastUpdated": "2026-08-24T15:19:19.467Z",
+  "lastUpdated": "2026-08-24T18:58:00.725Z",
   "collections": [
     {
       "id": "michael",
@@ -276,7 +276,7 @@
             "gemRate": 44
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026-08-24T14:59:17.194Z",
+            "tcgplayer": "2026/08/24",
             "priceCharting": "2026-08-24"
           },
           "externalUrls": {
@@ -371,20 +371,20 @@
           "holo": false,
           "chase": false,
           "prices": {
-            "avgMarket": 84.76,
+            "avgMarket": 84.37,
             "psa10": 1621.01,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 85,
-            "tcgplayer": 80.28,
+            "tcgplayer": 79.1,
             "pokescope": 89
           },
           "grading": {
             "gemRate": 17
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/08/23"
+            "tcgplayer": "2026/08/24"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swshp-SWSH262"
@@ -895,7 +895,7 @@
           },
           "sourceUpdatedAt": {
             "priceCharting": "2026-08-24",
-            "tcgplayer": "2026-08-24T14:59:12.821Z"
+            "tcgplayer": "2026/08/24"
           },
           "externalUrls": {
             "priceCharting": "https://www.pricecharting.com/game/pokemon-promo/espeon-&-deoxys-gx-sm240",
@@ -1164,7 +1164,7 @@
             "gemRate": 23
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026-08-24T14:59:11.906Z",
+            "tcgplayer": "2026/08/24",
             "priceCharting": "2026-08-24"
           },
           "externalUrls": {
@@ -1702,20 +1702,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 12.13,
+            "avgMarket": 12.14,
             "psa10": 95,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 11.5,
-            "tcgplayer": 12.76,
+            "tcgplayer": 12.77,
             "pokescope": null
           },
           "grading": {
             "gemRate": 45
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/08/23",
+            "tcgplayer": "2026/08/24",
             "priceCharting": "2026-08-23"
           },
           "externalUrls": {
@@ -2493,15 +2493,14 @@
   "updateSummary": {
     "providers": [
       "PokemonTCG",
-      "TCGdex/Cardmarket",
-      "PriceCharting/PSA population"
+      "TCGdex/Cardmarket"
     ],
-    "updatedCards": 149,
-    "pokemonTcgUpdatedCards": 40,
-    "cardmarketUpdatedCards": 17,
-    "cardmarketSkippedCards": 3,
-    "priceChartingUpdatedCards": 34,
-    "gradingUpdatedCards": 58,
-    "failedCards": 53
+    "updatedCards": 29,
+    "pokemonTcgUpdatedCards": 29,
+    "cardmarketUpdatedCards": 0,
+    "cardmarketSkippedCards": 0,
+    "priceChartingUpdatedCards": 0,
+    "gradingUpdatedCards": 0,
+    "failedCards": 99
   }
 }
