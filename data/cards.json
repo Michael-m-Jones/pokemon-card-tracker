@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "title": "Poke Card Tracker",
   "description": "A shareable tracker for Pokemon card market prices and PSA 10 upside.",
-  "lastUpdated": "2026-08-29T17:53:35.827Z",
+  "lastUpdated": "2026-08-29T20:53:47.985Z",
   "collections": [
     {
       "id": "michael",
@@ -1409,7 +1409,7 @@
             "gemRate": 11
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/08/28",
+            "tcgplayer": "2026/08/29",
             "priceCharting": "2026-08-29"
           },
           "externalUrls": {
@@ -1585,7 +1585,7 @@
             "gemRate": 45
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/08/28",
+            "tcgplayer": "2026/08/29",
             "priceCharting": "2026-08-29"
           },
           "externalUrls": {
@@ -2503,15 +2503,14 @@
   "updateSummary": {
     "providers": [
       "PokemonTCG",
-      "TCGdex/Cardmarket",
-      "PriceCharting/PSA population"
+      "TCGdex/Cardmarket"
     ],
-    "updatedCards": 177,
-    "pokemonTcgUpdatedCards": 31,
+    "updatedCards": 29,
+    "pokemonTcgUpdatedCards": 29,
     "cardmarketUpdatedCards": 0,
     "cardmarketSkippedCards": 0,
-    "priceChartingUpdatedCards": 50,
-    "gradingUpdatedCards": 96,
-    "failedCards": 98
+    "priceChartingUpdatedCards": 0,
+    "gradingUpdatedCards": 0,
+    "failedCards": 99
   }
 }
