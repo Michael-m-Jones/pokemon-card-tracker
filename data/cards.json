@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "title": "Poke Card Tracker",
   "description": "A shareable tracker for Pokemon card market prices and PSA 10 upside.",
-  "lastUpdated": "2026-08-29T20:53:47.985Z",
+  "lastUpdated": "2026-08-30T05:21:39.246Z",
   "collections": [
     {
       "id": "michael",
@@ -158,7 +158,7 @@
             "gemRate": null
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/08/28",
+            "tcgplayer": "2026/08/29",
             "priceCharting": "2026-08-29"
           },
           "externalUrls": {
@@ -348,20 +348,20 @@
           "holo": false,
           "chase": false,
           "prices": {
-            "avgMarket": 84.93,
+            "avgMarket": 84.61,
             "psa10": 612.5,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 84,
-            "tcgplayer": 87.8,
+            "tcgplayer": 86.84,
             "pokescope": 83
           },
           "grading": {
             "gemRate": 84
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/08/28"
+            "tcgplayer": "2026/08/29"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv3pt5-173"
@@ -1502,20 +1502,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 55.86,
+            "avgMarket": 55.78,
             "psa10": 235.88,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 51.86,
-            "tcgplayer": 59.85,
+            "tcgplayer": 59.69,
             "pokescope": null
           },
           "grading": {
             "gemRate": 37
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/08/28",
+            "tcgplayer": "2026/08/29",
             "priceCharting": "2026-08-29"
           },
           "externalUrls": {
@@ -1937,7 +1937,7 @@
             "gemRate": 19
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/08/28",
+            "tcgplayer": "2026/08/29",
             "priceCharting": "2026-08-29"
           },
           "externalUrls": {
@@ -2505,12 +2505,12 @@
       "PokemonTCG",
       "TCGdex/Cardmarket"
     ],
-    "updatedCards": 29,
-    "pokemonTcgUpdatedCards": 29,
+    "updatedCards": 34,
+    "pokemonTcgUpdatedCards": 34,
     "cardmarketUpdatedCards": 0,
     "cardmarketSkippedCards": 0,
     "priceChartingUpdatedCards": 0,
     "gradingUpdatedCards": 0,
-    "failedCards": 99
+    "failedCards": 94
   }
 }
