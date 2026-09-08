@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "title": "Poke Card Tracker",
   "description": "A shareable tracker for Pokemon card market prices and PSA 10 upside.",
-  "lastUpdated": "2026-09-08T18:04:04.436Z",
+  "lastUpdated": "2026-09-08T21:07:58.942Z",
   "collections": [
     {
       "id": "michael",
@@ -46,7 +46,7 @@
               "trend": 253.3,
               "average": 272.62,
               "low": 80,
-              "updatedAt": "2026-09-08T17:33:02.461Z"
+              "updatedAt": "2026-09-08T17:33:02.663Z"
             }
           }
         },
@@ -87,7 +87,7 @@
               "trend": 612.84,
               "average": 593.76,
               "low": 80,
-              "updatedAt": "2026-09-08T17:33:02.348Z"
+              "updatedAt": "2026-09-08T17:33:02.663Z"
             }
           }
         },
@@ -128,7 +128,7 @@
               "trend": 273.36,
               "average": 275.3,
               "low": 65,
-              "updatedAt": "2026-09-08T17:33:02.348Z"
+              "updatedAt": "2026-09-08T17:33:02.663Z"
             }
           }
         },
@@ -171,7 +171,7 @@
               "trend": 153.48,
               "average": 150.99,
               "low": 59,
-              "updatedAt": "2026-09-08T17:33:02.348Z"
+              "updatedAt": "2026-09-08T17:33:02.663Z"
             }
           }
         },
@@ -328,7 +328,7 @@
             "gemRate": 53
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/09/08"
+            "tcgplayer": "2026-09-08T17:33:06.660Z"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/smp-SM193"
@@ -339,7 +339,7 @@
               "trend": 245.73,
               "average": 214.76,
               "low": 37,
-              "updatedAt": "2026-09-08T17:33:02.348Z"
+              "updatedAt": "2026-09-08T17:33:02.663Z"
             }
           }
         },
@@ -413,7 +413,7 @@
               "trend": 73.09,
               "average": 93.23,
               "low": 30,
-              "updatedAt": "2026-09-08T17:33:02.348Z"
+              "updatedAt": "2026-09-08T17:33:02.663Z"
             }
           }
         },
@@ -454,7 +454,7 @@
               "trend": 31.75,
               "average": 24.88,
               "low": 3.5,
-              "updatedAt": "2026-09-08T17:33:02.348Z"
+              "updatedAt": "2026-09-08T17:33:02.663Z"
             }
           }
         },
@@ -602,7 +602,7 @@
               "trend": 37.64,
               "average": 41.81,
               "low": 20,
-              "updatedAt": "2026-09-08T17:33:02.348Z"
+              "updatedAt": "2026-09-08T17:33:02.663Z"
             }
           }
         },
@@ -1004,7 +1004,7 @@
               "trend": 12.91,
               "average": 13.49,
               "low": 1.99,
-              "updatedAt": "2026-09-08T17:33:02.348Z"
+              "updatedAt": "2026-09-08T17:33:02.663Z"
             }
           }
         },
@@ -1238,7 +1238,7 @@
               "trend": 95.57,
               "average": 122.12,
               "low": 39.99,
-              "updatedAt": "2026-09-08T17:33:02.663Z"
+              "updatedAt": "2026-09-08T17:33:01.564Z"
             }
           }
         }
@@ -1297,20 +1297,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 43.37,
+            "avgMarket": 43.61,
             "psa10": 287.5,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 42.5,
-            "tcgplayer": 44.24,
+            "tcgplayer": 44.72,
             "pokescope": null
           },
           "grading": {
             "gemRate": 27
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/09/06",
+            "tcgplayer": "2026/09/08",
             "priceCharting": "2026-09-07"
           },
           "externalUrls": {
@@ -2177,20 +2177,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 9.9,
+            "avgMarket": 9.91,
             "psa10": 81,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 9.14,
-            "tcgplayer": 10.66,
+            "tcgplayer": 10.67,
             "pokescope": null
           },
           "grading": {
             "gemRate": 39
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/09/06",
+            "tcgplayer": "2026/09/08",
             "priceCharting": "2026-09-08"
           },
           "externalUrls": {
@@ -2248,20 +2248,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 16.58,
+            "avgMarket": 16.77,
             "psa10": 105,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 15.99,
-            "tcgplayer": 17.16,
+            "tcgplayer": 17.56,
             "pokescope": null
           },
           "grading": {
             "gemRate": 42
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/09/06",
+            "tcgplayer": "2026/09/08",
             "priceCharting": "2026-09-08"
           },
           "externalUrls": {
@@ -2408,7 +2408,7 @@
           },
           "sourceUpdatedAt": {
             "priceCharting": "2026-09-08",
-            "tcgplayer": "2026-09-08T17:33:09.770Z"
+            "tcgplayer": "2026/09/08"
           },
           "externalUrls": {
             "priceCharting": "https://www.pricecharting.com/game/pokemon-lost-origin/giratina-v-186",
@@ -2511,15 +2511,14 @@
   "updateSummary": {
     "providers": [
       "PokemonTCG",
-      "TCGdex/Cardmarket",
-      "PriceCharting/PSA population"
+      "TCGdex/Cardmarket"
     ],
-    "updatedCards": 190,
-    "pokemonTcgUpdatedCards": 28,
+    "updatedCards": 54,
+    "pokemonTcgUpdatedCards": 35,
     "cardmarketUpdatedCards": 19,
     "cardmarketSkippedCards": 1,
-    "priceChartingUpdatedCards": 49,
-    "gradingUpdatedCards": 94,
-    "failedCards": 49
+    "priceChartingUpdatedCards": 0,
+    "gradingUpdatedCards": 0,
+    "failedCards": 40
   }
 }
