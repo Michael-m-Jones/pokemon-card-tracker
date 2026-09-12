@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "title": "Poke Card Tracker",
   "description": "A shareable tracker for Pokemon card market prices and PSA 10 upside.",
-  "lastUpdated": "2026-09-12T17:26:38.149Z",
+  "lastUpdated": "2026-09-12T20:33:00.512Z",
   "collections": [
     {
       "id": "michael",
@@ -35,7 +35,7 @@
             "gemRate": 73
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/09/12"
+            "tcgplayer": "2026-09-12T04:05:03.995Z"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swsh7-212"
@@ -76,7 +76,7 @@
             "gemRate": 51
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026-09-12T04:04:27.166Z"
+            "tcgplayer": "2026/09/12"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/smp-SM191"
@@ -328,7 +328,7 @@
             "gemRate": 53
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026-09-12T04:04:27.166Z"
+            "tcgplayer": "2026/09/12"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/smp-SM193"
@@ -1021,20 +1021,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 7.96,
+            "avgMarket": 7.95,
             "psa10": 144.23,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 7.99,
-            "tcgplayer": 7.93,
+            "tcgplayer": 7.9,
             "pokescope": null
           },
           "grading": {
             "gemRate": null
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026-09-12T04:04:52.495Z",
+            "tcgplayer": "2026/09/12",
             "priceCharting": "2026-09-12"
           },
           "externalUrls": {
@@ -1212,20 +1212,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 88.25,
+            "avgMarket": 88.28,
             "psa10": 340,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 85.11,
-            "tcgplayer": 91.39,
+            "tcgplayer": 91.45,
             "pokescope": null
           },
           "grading": {
             "gemRate": 53
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/09/12",
+            "tcgplayer": "2026-09-12T04:05:11.236Z",
             "priceCharting": "2026-09-12"
           },
           "externalUrls": {
@@ -1510,20 +1510,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 55.32,
+            "avgMarket": 55.17,
             "psa10": 234.71,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 50.76,
-            "tcgplayer": 59.87,
+            "tcgplayer": 59.57,
             "pokescope": null
           },
           "grading": {
             "gemRate": 37
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/09/11",
+            "tcgplayer": "2026/09/12",
             "priceCharting": "2026-09-12"
           },
           "externalUrls": {
@@ -1615,20 +1615,20 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 52.88,
+            "avgMarket": 53,
             "psa10": 227.52,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 50.86,
-            "tcgplayer": 54.9,
+            "tcgplayer": 55.14,
             "pokescope": null
           },
           "grading": {
             "gemRate": 54
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/09/11",
+            "tcgplayer": "2026/09/12",
             "priceCharting": "2026-09-12"
           },
           "externalUrls": {
@@ -2511,15 +2511,14 @@
   "updateSummary": {
     "providers": [
       "PokemonTCG",
-      "TCGdex/Cardmarket",
-      "PriceCharting/PSA population"
+      "TCGdex/Cardmarket"
     ],
-    "updatedCards": 178,
-    "pokemonTcgUpdatedCards": 28,
-    "cardmarketUpdatedCards": 19,
+    "updatedCards": 44,
+    "pokemonTcgUpdatedCards": 26,
+    "cardmarketUpdatedCards": 18,
     "cardmarketSkippedCards": 1,
-    "priceChartingUpdatedCards": 45,
-    "gradingUpdatedCards": 86,
-    "failedCards": 56
+    "priceChartingUpdatedCards": 0,
+    "gradingUpdatedCards": 0,
+    "failedCards": 49
   }
 }
