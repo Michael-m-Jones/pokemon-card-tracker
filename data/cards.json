@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "title": "Poke Card Tracker",
   "description": "A shareable tracker for Pokemon card market prices and PSA 10 upside.",
-  "lastUpdated": "2026-11-22T19:32:27.885Z",
+  "lastUpdated": "2026-11-22T20:49:33.109Z",
   "collections": [
     {
       "id": "michael",
@@ -22,20 +22,20 @@
           "holo": true,
           "chase": true,
           "prices": {
-            "avgMarket": 350.18,
+            "avgMarket": 360.69,
             "psa10": 735,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 369,
-            "tcgplayer": 352.54,
+            "tcgplayer": 384.06,
             "pokescope": 329
           },
           "grading": {
             "gemRate": 73
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026-11-21T22:16:31.642Z"
+            "tcgplayer": "2026/10/15"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swsh7-212"
@@ -46,7 +46,7 @@
               "trend": 250.53,
               "average": 232.78,
               "low": 90,
-              "updatedAt": "2026-11-21T22:16:19.015Z"
+              "updatedAt": "2026-11-21T22:16:19.023Z"
             }
           }
         },
@@ -87,7 +87,7 @@
               "trend": 384.8,
               "average": 392.84,
               "low": 106.78,
-              "updatedAt": "2026-11-21T22:16:19.023Z"
+              "updatedAt": "2026-11-21T22:16:19.006Z"
             }
           }
         },
@@ -104,20 +104,20 @@
           "holo": true,
           "chase": true,
           "prices": {
-            "avgMarket": 185.86,
+            "avgMarket": 171.77,
             "psa10": 2462.5,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 139,
-            "tcgplayer": 232.71,
+            "tcgplayer": 204.54,
             "pokescope": null
           },
           "grading": {
             "gemRate": 9
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/10/15"
+            "tcgplayer": "2026-11-21T22:16:29.065Z"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/smp-SM241"
@@ -128,7 +128,7 @@
               "trend": 216.3,
               "average": 245.22,
               "low": 65,
-              "updatedAt": "2026-11-21T22:16:19.023Z"
+              "updatedAt": "2026-11-21T22:16:19.006Z"
             }
           }
         },
@@ -145,12 +145,12 @@
           "holo": true,
           "chase": true,
           "prices": {
-            "avgMarket": 188.32,
+            "avgMarket": 208.8,
             "psa10": 30775,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": 131.78,
+            "priceCharting": 193.21,
             "tcgplayer": 259.19,
             "pokescope": 174
           },
@@ -159,7 +159,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-21"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/bw11-RC24",
@@ -171,7 +171,7 @@
               "trend": 178.96,
               "average": 179.61,
               "low": 49.99,
-              "updatedAt": "2026-11-21T22:16:19.015Z"
+              "updatedAt": "2026-11-21T22:16:19.006Z"
             }
           }
         },
@@ -202,7 +202,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-21"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/xyp-XY110",
@@ -214,7 +214,7 @@
               "trend": 85.57,
               "average": 141.53,
               "low": 23,
-              "updatedAt": "2026-11-21T22:16:19.014Z"
+              "updatedAt": "2026-11-21T22:16:19.023Z"
             }
           }
         },
@@ -255,7 +255,7 @@
               "trend": 195.22,
               "average": 178.83,
               "low": 59.99,
-              "updatedAt": "2026-11-21T22:16:19.015Z"
+              "updatedAt": "2026-11-21T22:16:19.019Z"
             }
           }
         },
@@ -286,7 +286,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026-11-21T22:16:31.815Z",
-            "priceCharting": "2026-11-21"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swsh8-251",
@@ -298,7 +298,7 @@
               "trend": 90.1,
               "average": 123.98,
               "low": 40,
-              "updatedAt": "2026-11-21T22:16:19.015Z"
+              "updatedAt": "2026-11-21T22:16:19.030Z"
             }
           }
         },
@@ -315,20 +315,20 @@
           "holo": false,
           "chase": false,
           "prices": {
-            "avgMarket": 96.36,
+            "avgMarket": 95.54,
             "psa10": 610,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 85,
-            "tcgplayer": 108.08,
+            "tcgplayer": 105.61,
             "pokescope": 96
           },
           "grading": {
             "gemRate": 53
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/10/15"
+            "tcgplayer": "2026-11-21T22:16:29.065Z"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/smp-SM193"
@@ -339,7 +339,7 @@
               "trend": 126.04,
               "average": 127.51,
               "low": 43.99,
-              "updatedAt": "2026-11-21T22:16:19.014Z"
+              "updatedAt": "2026-11-21T22:16:19.030Z"
             }
           }
         },
@@ -389,20 +389,20 @@
           "holo": false,
           "chase": false,
           "prices": {
-            "avgMarket": 79.11,
+            "avgMarket": 80.31,
             "psa10": 1621.01,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 85,
-            "tcgplayer": 63.33,
+            "tcgplayer": 66.93,
             "pokescope": 89
           },
           "grading": {
             "gemRate": 17
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026-11-21T22:16:30.831Z"
+            "tcgplayer": "2026/10/15"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swshp-SWSH262"
@@ -413,7 +413,7 @@
               "trend": 66.39,
               "average": 72.68,
               "low": 45,
-              "updatedAt": "2026-11-21T22:16:19.023Z"
+              "updatedAt": "2026-11-21T22:16:19.014Z"
             }
           }
         },
@@ -454,7 +454,7 @@
               "trend": 48.13,
               "average": 22.75,
               "low": 3.89,
-              "updatedAt": "2026-11-21T22:16:19.030Z"
+              "updatedAt": "2026-11-21T22:16:19.014Z"
             }
           }
         },
@@ -495,7 +495,7 @@
               "trend": 41.27,
               "average": 46.82,
               "low": 4.99,
-              "updatedAt": "2026-11-21T22:16:19.015Z"
+              "updatedAt": "2026-11-21T22:16:19.003Z"
             }
           }
         },
@@ -578,20 +578,20 @@
           "holo": false,
           "chase": false,
           "prices": {
-            "avgMarket": 38.13,
+            "avgMarket": 37.8,
             "psa10": 594.85,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 36,
-            "tcgplayer": 38.39,
+            "tcgplayer": 37.41,
             "pokescope": 40
           },
           "grading": {
             "gemRate": 24
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/10/15"
+            "tcgplayer": "2026-11-21T22:16:30.831Z"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swshp-SWSH261"
@@ -602,7 +602,7 @@
               "trend": 32.51,
               "average": 37.03,
               "low": 14.99,
-              "updatedAt": "2026-11-21T22:16:19.015Z"
+              "updatedAt": "2026-11-21T22:16:19.014Z"
             }
           }
         },
@@ -697,7 +697,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-21"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/svp-75",
@@ -749,12 +749,12 @@
           "holo": true,
           "chase": true,
           "prices": {
-            "avgMarket": 93.13,
-            "psa10": 500,
+            "avgMarket": 91.94,
+            "psa10": 505.06,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": 84.26,
+            "priceCharting": 81.88,
             "tcgplayer": 102,
             "pokescope": null
           },
@@ -763,7 +763,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-21"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv4-199",
@@ -798,7 +798,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-21"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv7-143",
@@ -819,21 +819,21 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 93.76,
+            "avgMarket": 89.52,
             "psa10": 675,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": 88,
-            "tcgplayer": 99.51,
+            "priceCharting": 86.01,
+            "tcgplayer": 93.02,
             "pokescope": null
           },
           "grading": {
             "gemRate": 32
           },
           "sourceUpdatedAt": {
-            "priceCharting": "2026-11-21",
-            "tcgplayer": "2026/10/15"
+            "priceCharting": "2026-11-22",
+            "tcgplayer": "2026-11-21T22:16:30.721Z"
           },
           "externalUrls": {
             "priceCharting": "https://www.pricecharting.com/game/pokemon-cosmic-eclipse/reshiram-&-zekrom-gx-157",
@@ -845,7 +845,7 @@
               "trend": 68.34,
               "average": 69.92,
               "low": 15,
-              "updatedAt": "2026-11-21T22:16:19.015Z"
+              "updatedAt": "2026-11-21T22:16:19.030Z"
             }
           },
           "nickname": "Cosmic Eclipse tag team"
@@ -863,12 +863,12 @@
           "holo": true,
           "chase": true,
           "prices": {
-            "avgMarket": 90.1,
-            "psa10": 357.15,
+            "avgMarket": 90.32,
+            "psa10": 352.5,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": 87.69,
+            "priceCharting": 88.13,
             "tcgplayer": 92.52,
             "pokescope": null
           },
@@ -876,7 +876,7 @@
             "gemRate": 30
           },
           "sourceUpdatedAt": {
-            "priceCharting": "2026-11-21",
+            "priceCharting": "2026-11-22",
             "tcgplayer": "2026/10/15"
           },
           "externalUrls": {
@@ -912,7 +912,7 @@
             "gemRate": 9
           },
           "sourceUpdatedAt": {
-            "priceCharting": "2026-11-21",
+            "priceCharting": "2026-11-22",
             "tcgplayer": "2026-11-21T22:16:29.065Z"
           },
           "externalUrls": {
@@ -943,12 +943,12 @@
           "holo": true,
           "chase": true,
           "prices": {
-            "avgMarket": 239.99,
+            "avgMarket": 239.9,
             "psa10": 62150,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": 196.79,
+            "priceCharting": 196.6,
             "tcgplayer": 283.19,
             "pokescope": null
           },
@@ -957,7 +957,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-21"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/bwp-BW73",
@@ -978,12 +978,12 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 13.29,
-            "psa10": 538.79,
+            "avgMarket": 13.79,
+            "psa10": 474.96,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": 15,
+            "priceCharting": 16,
             "tcgplayer": 11.58,
             "pokescope": null
           },
@@ -992,7 +992,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-21"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swsh9tg-TG05",
@@ -1004,7 +1004,7 @@
               "trend": 10.25,
               "average": 13.79,
               "low": 0.99,
-              "updatedAt": "2026-11-21T22:16:19.015Z"
+              "updatedAt": "2026-11-21T22:16:19.003Z"
             }
           }
         },
@@ -1021,21 +1021,21 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 6.3,
+            "avgMarket": 6.68,
             "psa10": 151.53,
             "psa10Estimated": false
           },
           "sources": {
             "priceCharting": 6.8,
-            "tcgplayer": 5.79,
+            "tcgplayer": 6.55,
             "pokescope": null
           },
           "grading": {
             "gemRate": null
           },
           "sourceUpdatedAt": {
-            "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-21"
+            "tcgplayer": "2026-11-21T22:16:30.831Z",
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swshp-SWSH134",
@@ -1047,7 +1047,7 @@
               "trend": 11.58,
               "average": 10.86,
               "low": 3,
-              "updatedAt": "2026-11-21T22:16:18.973Z"
+              "updatedAt": "2026-11-21T22:16:19.021Z"
             }
           }
         },
@@ -1078,7 +1078,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-21"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG50",
@@ -1113,7 +1113,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-21"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swsh12pt5gg-GG12",
@@ -1148,7 +1148,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-21"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sma-SV70",
@@ -1183,7 +1183,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-21"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/xy9-118",
@@ -1195,7 +1195,7 @@
               "trend": 69.59,
               "average": 57.17,
               "low": 12.99,
-              "updatedAt": "2026-11-21T22:16:19.015Z"
+              "updatedAt": "2026-11-21T22:16:19.023Z"
             }
           }
         },
@@ -1212,12 +1212,12 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 84.88,
+            "avgMarket": 85.89,
             "psa10": 297,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": 81,
+            "priceCharting": 83.01,
             "tcgplayer": 88.76,
             "pokescope": null
           },
@@ -1226,7 +1226,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026-11-21T22:16:32.004Z",
-            "priceCharting": "2026-11-21"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/swsh10-167",
@@ -1238,7 +1238,7 @@
               "trend": 97.27,
               "average": 92.87,
               "low": 43.99,
-              "updatedAt": "2026-11-21T22:16:19.006Z"
+              "updatedAt": "2026-11-21T22:16:19.036Z"
             }
           }
         }
@@ -1346,7 +1346,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-21"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv7-143",
@@ -1368,12 +1368,12 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 47.66,
+            "avgMarket": 46.73,
             "psa10": 1014.15,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": 49.2,
+            "priceCharting": 47.34,
             "tcgplayer": 46.12,
             "pokescope": null
           },
@@ -1382,7 +1382,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-21"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv1-210",
@@ -1418,7 +1418,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-21"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/zsv10pt5-95",
@@ -1454,7 +1454,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-21"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv2-203",
@@ -1489,7 +1489,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-21"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv1-207",
@@ -1524,7 +1524,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-21"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv5-166",
@@ -1559,7 +1559,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-21"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv8-214",
@@ -1580,12 +1580,12 @@
           "holo": true,
           "chase": true,
           "prices": {
-            "avgMarket": 273.72,
-            "psa10": 592.5,
+            "avgMarket": 271.22,
+            "psa10": 582.5,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": 230,
+            "priceCharting": 225,
             "tcgplayer": 317.44,
             "pokescope": null
           },
@@ -1594,7 +1594,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-21"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv6-214",
@@ -1629,7 +1629,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-21"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv2-259",
@@ -1664,7 +1664,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-21"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv4-184",
@@ -1699,7 +1699,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-21"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv8-193",
@@ -1734,7 +1734,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-21"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv6-185",
@@ -1770,7 +1770,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-21"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/zsv10pt5-132",
@@ -1826,12 +1826,12 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 37.41,
+            "avgMarket": 38.08,
             "psa10": 209.86,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": 36.17,
+            "priceCharting": 37.52,
             "tcgplayer": 38.64,
             "pokescope": null
           },
@@ -1840,7 +1840,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-21"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv3pt5-181",
@@ -1861,12 +1861,12 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 10.09,
-            "psa10": 83,
+            "avgMarket": 10.54,
+            "psa10": 85,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": 9,
+            "priceCharting": 9.9,
             "tcgplayer": 11.18,
             "pokescope": null
           },
@@ -1875,7 +1875,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-17"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/me2-98",
@@ -1946,7 +1946,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-21"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/zsv10pt5-113",
@@ -1982,7 +1982,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-21"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv3pt5-176",
@@ -2004,12 +2004,12 @@
           "holo": true,
           "chase": true,
           "prices": {
-            "avgMarket": 85.28,
-            "psa10": 509,
+            "avgMarket": 84.19,
+            "psa10": 501.45,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": 79,
+            "priceCharting": 76.82,
             "tcgplayer": 91.56,
             "pokescope": null
           },
@@ -2018,7 +2018,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-21"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv5-177",
@@ -2121,7 +2121,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-21"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv2-228",
@@ -2142,12 +2142,12 @@
           "holo": true,
           "chase": false,
           "prices": {
-            "avgMarket": 32.18,
+            "avgMarket": 32.56,
             "psa10": 100.92,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": 29.96,
+            "priceCharting": 30.71,
             "tcgplayer": 34.4,
             "pokescope": null
           },
@@ -2156,7 +2156,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-21"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv2-258",
@@ -2226,7 +2226,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-21"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv6pt5-71",
@@ -2262,7 +2262,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-21"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/sv5-168",
@@ -2394,12 +2394,12 @@
           "holo": true,
           "chase": true,
           "prices": {
-            "avgMarket": 782.55,
-            "psa10": 3050,
+            "avgMarket": 796.44,
+            "psa10": 3146.13,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": 744.18,
+            "priceCharting": 771.97,
             "tcgplayer": 820.91,
             "pokescope": null
           },
@@ -2407,7 +2407,7 @@
             "gemRate": 41
           },
           "sourceUpdatedAt": {
-            "priceCharting": "2026-11-20",
+            "priceCharting": "2026-11-22",
             "tcgplayer": "2026-11-21T22:16:32.207Z"
           },
           "externalUrls": {
@@ -2472,12 +2472,12 @@
           "holo": true,
           "chase": true,
           "prices": {
-            "avgMarket": 423.64,
+            "avgMarket": 387.33,
             "psa10": 4251,
             "psa10Estimated": false
           },
           "sources": {
-            "priceCharting": 339.15,
+            "priceCharting": 266.53,
             "tcgplayer": 508.12,
             "pokescope": null
           },
@@ -2486,7 +2486,7 @@
           },
           "sourceUpdatedAt": {
             "tcgplayer": "2026/10/15",
-            "priceCharting": "2026-11-20"
+            "priceCharting": "2026-11-22"
           },
           "externalUrls": {
             "tcgplayer": "https://prices.pokemontcg.io/tcgplayer/bw10-100",
@@ -2511,14 +2511,15 @@
   "updateSummary": {
     "providers": [
       "PokemonTCG",
-      "TCGdex/Cardmarket"
+      "TCGdex/Cardmarket",
+      "PriceCharting/PSA population"
     ],
-    "updatedCards": 58,
-    "pokemonTcgUpdatedCards": 39,
-    "cardmarketUpdatedCards": 19,
+    "updatedCards": 158,
+    "pokemonTcgUpdatedCards": 36,
+    "cardmarketUpdatedCards": 18,
     "cardmarketSkippedCards": 1,
-    "priceChartingUpdatedCards": 0,
-    "gradingUpdatedCards": 0,
-    "failedCards": 32
+    "priceChartingUpdatedCards": 41,
+    "gradingUpdatedCards": 63,
+    "failedCards": 64
   }
 }
